@@ -10,20 +10,20 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
         <Button
-                android:id="@+id/buttonDz0"
+                android:id="@+id/dz0Button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/dz0"
                 android:textColor="@color/colorPrimaryDark"
-                android:layout_margin="10sp"/>
+                android:layout_margin="10dp"/>
 
         <Button
-                android:id="@+id/buttonDz1"
+                android:id="@+id/dz1Button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/dz1"
                 android:textColor="@color/colorPrimaryDark"
-                android:layout_margin="10sp"/>
+                android:layout_margin="10dp"/>
 
     </LinearLayout>
 </LinearLayout>

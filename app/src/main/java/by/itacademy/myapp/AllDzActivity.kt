@@ -20,16 +20,16 @@ class AllDzActivity : Activity() {
             lateinit var intent : Intent
 
             when (v.id){
-                R.id.buttonDz0 ->{
+                R.id.dz0Button ->{
                     intent = Intent(this, Dz0Activity::class.java)
                 }
-                R.id.buttonDz1 ->{
+                R.id.dz1Button ->{
                     intent = Intent(this, Dz1Activity::class.java)
                 }
             }
             startActivity(intent)
         }
-        buttonDz0.setOnClickListener(onClickListener)
-        buttonDz1.setOnClickListener(onClickListener)
+        dz0Button.setOnClickListener(onClickListener)
+        dz1Button.setOnClickListener(onClickListener)
     }
 }
