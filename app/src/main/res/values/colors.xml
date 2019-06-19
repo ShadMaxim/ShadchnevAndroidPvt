@@ -6,4 +6,6 @@
     <color name="colorTv1">#2962FF</color>
     <color name="colorTv2">#00BFA5</color>
     <color name="colorButton">#64DD17</color>
+    <color name="loginEditText">#33FAF7F7</color>
+    <color name="backgButton">#5D8B63</color>
 </resources>

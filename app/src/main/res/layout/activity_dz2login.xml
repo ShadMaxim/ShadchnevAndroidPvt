@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/login_bg" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="120dp"
+            android:background="@drawable/login_logo" />
+
+        <EditText
+            style="@style/Name_pass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:drawableLeft="@drawable/ic_login_name"
+            android:drawablePadding="20dp"
+            android:hint="@string/user_name"
+            android:inputType="text"
+            android:paddingLeft="20dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp" />
+
+        <EditText
+            style="@style/Name_pass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:drawableLeft="@drawable/ic_login_password"
+            android:drawablePadding="20dp"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:paddingLeft="20dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"/>
+
+        <TextView
+            style="@style/LogIn_CreateAcc"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginRight="20dp"
+            android:background="@android:color/holo_blue_light"
+            android:gravity="center"
+            android:text="LOG IN"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginRight="20dp"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:gravity="center"
+            android:text="@string/username_password"
+            android:textSize="15sp"
+            android:textColor="@android:color/white"/>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <TextView
+            style="@style/LogIn_CreateAcc"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="30dp"
+            android:background="@color/backgButton"
+            android:gravity="center"
+            android:text="@string/create_account"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+</FrameLayout>
