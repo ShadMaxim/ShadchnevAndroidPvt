@@ -8,8 +8,8 @@
     <color name="colorButton">#64DD17</color>
     <color name="loginEditText">#33FAF7F7</color>
     <color name="backgButton">#5D8B63</color>
-    <color name="dz2_butoon_press">#8FBCA7</color>
-    <color name="dz2_butoon_unpress">#8FB9BC</color>
-    <color name="dz2_background">#8FBC8F</color>
-    <color name="dz2_background_editText">#8FBCA7</color>
+    <color name="dz2_butoon_press">#7C46266A</color>
+    <color name="dz2_butoon_unpress">#46266A</color>
+    <color name="dz2_background">#231335</color>
+    <color name="dz2_background_editText">#231335</color>
 </resources>
