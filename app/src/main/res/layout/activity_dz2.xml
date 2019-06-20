@@ -5,23 +5,29 @@
     android:orientation="vertical">
 
     <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@android:color/white"
-        android:scaleType="centerCrop" />
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/black"
+            android:scaleType="centerCrop" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
 
+        <ProgressBar
+                android:id="@+id/progressBarDz2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"/>
+
         <ImageView
-            android:id="@+id/showImageView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="250dp"
-            android:layout_marginRight="30dp"
-            android:layout_marginLeft="30dp"/>
+                android:id="@+id/showImageView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="100dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"/>
 
         <View
             android:layout_width="match_parent"
@@ -29,22 +35,26 @@
             android:layout_weight="1"/>
 
         <EditText
-            android:id="@+id/uriEditText"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="30dp"
-            android:layout_marginRight="30dp"
-            android:layout_marginLeft="30dp"
-            android:background="@color/loginEditText"/>
+                android:id="@+id/uriEditText"
+                android:hint="@string/ent_address_edit"
+                android:textColor="@android:color/white"
+                android:textColorHint="@android:color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:background="@color/colorPrimaryDark"/>
 
         <Button
-            android:id="@+id/loadButton"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="30dp"
-            android:layout_marginBottom="60dp"
-            android:layout_marginRight="30dp"
-            android:background="@color/loginEditText"/>
+                android:id="@+id/loadButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginBottom="60dp"
+                android:layout_marginRight="30dp"
+                android:text="@string/load_picture"
+                android:background="@color/colorPrimaryDark"/>
 
     </LinearLayout>
 
