@@ -1,26 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-
-    <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
-    </style>
-
-    <style name="AllDzStyle">
-        <item name="android:textColor">@color/colorPrimaryDark</item>
-        <item name="android:textSize">15sp</item>
-        <item name="android:layout_margin">10dp</item>
-        <item name="android:layout_width">wrap_content</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:background">@android:color/darker_gray</item>
-    </style>
-
     <style name="Dz3CapTextStyle">
         <item name="android:textSize">15sp</item>
         <item name="android:textColor">@color/textTitleColorDz3</item>
-        <item name="android:padding">20dp</item>
+        <item name="android:fontFamily">@font/monda_regular</item>
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:paddingRight">20dp</item>
     </style>
 
     <style name="Dz3NumberStyle">
@@ -28,6 +13,7 @@
         <item name="android:textSize">18sp</item>
         <item name="android:paddingLeft">20dp</item>
         <item name="android:paddingRight">20dp</item>
+        <item name="android:fontFamily">@font/monda_bold</item>
     </style>
 
     <style name="Dz3TitleStyle">
@@ -37,15 +23,16 @@
         <item name="android:layout_marginTop">15dp</item>
         <item name="android:layout_marginRight">20dp</item>
         <item name="android:padding">0dp</item>
+        <item name="android:fontFamily">@font/monda_regular</item>
     </style>
 
-    <style name="Dz3DStyle">
+    <style name="Dz3DataStyle">
         <item name="android:textColor">@color/textDataColorDz3</item>
         <item name="android:textSize">20sp</item>
         <item name="android:layout_marginLeft">20dp</item>
         <item name="android:layout_marginTop">15dp</item>
         <item name="android:layout_marginRight">20dp</item>
         <item name="android:padding">0dp</item>
+        <item name="android:fontFamily">@font/monda_bold</item>
     </style>
-
 </resources>

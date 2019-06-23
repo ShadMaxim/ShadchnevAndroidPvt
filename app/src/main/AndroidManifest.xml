@@ -3,6 +3,7 @@
           package="by.itacademy.myapp">
 
     <application
+            android:usesCleartextTraffic="true"
             android:allowBackup="true"
             android:icon="@mipmap/ic_launcher"
             android:label="@string/app_name"
@@ -12,6 +13,7 @@
 
         <activity android:name=".dz0.Dz0Activity"/>
         <activity android:name=".dz1.Dz1Activity"/>
+        <activity android:name=".dz3.Dz3Activity"/>
 
         <activity android:name=".AllDzActivity">
             <intent-filter>

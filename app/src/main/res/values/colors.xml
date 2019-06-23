@@ -6,4 +6,8 @@
     <color name="colorTv1">#2962FF</color>
     <color name="colorTv2">#00BFA5</color>
     <color name="colorButton">#64DD17</color>
+
+    <color name="numberColorDz3">#d45807</color>
+    <color name="textDataColorDz3">#ffffff </color>
+    <color name="textTitleColorDz3">#d4d3d3</color>
 </resources>
