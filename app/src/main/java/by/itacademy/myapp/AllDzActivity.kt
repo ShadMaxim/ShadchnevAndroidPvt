@@ -8,15 +8,18 @@ import by.itacademy.myapp.dz0.Dz0Activity
 import by.itacademy.myapp.dz1.Dz1Activity
 import kotlinx.android.synthetic.main.activity_alldz.*
 
-
 class AllDzActivity : Activity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_alldz)
 
-        val onClickListener = View.OnClickListener{v->
+        startAllDz()
 
+    }
+
+    private fun startAllDz(){
+        val onClickListener = View.OnClickListener{v->
             lateinit var intent : Intent
 
             when (v.id){
@@ -28,8 +31,10 @@ class AllDzActivity : Activity() {
                 }
             }
             startActivity(intent)
+
         }
         dz0Button.setOnClickListener(onClickListener)
         dz1Button.setOnClickListener(onClickListener)
+
     }
 }
