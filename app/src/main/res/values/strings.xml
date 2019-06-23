@@ -3,4 +3,6 @@
     <string name="textView1"> Some text </string>
     <string name="textView2"> Any text </string>
     <string name="button1">Change</string>
+    <string name="dz0">Dz0</string>
+    <string name="dz1">Dz1</string>
 </resources>
