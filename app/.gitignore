@@ -5,6 +5,8 @@
 /.idea
 .idea
 .DS_Store
+.idea
+/idea
 /build
 build/
 /captures

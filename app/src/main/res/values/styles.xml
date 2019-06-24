@@ -7,7 +7,7 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
-
+  
     <style name="Name_pass">
         <item name="android:paddingLeft">20dp</item>
         <item name="android:drawablePadding">20dp</item>
@@ -24,6 +24,14 @@
     <style name="LogIn_CreateAcc">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
+    <style/>
+      
+    <style name="AllDzStyle">
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@android:color/darker_gray</item>
     </style>
-
 </resources>

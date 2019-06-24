@@ -9,4 +9,6 @@
     <string name="username_password"><u>Forgot you username/password?</u></string>
     <string name="ent_address_edit">Enter please address pictures</string>
     <string name="load_picture">Load picture</string>
+    <string name="dz0">Dz0</string>
+    <string name="dz1">Dz1</string>
 </resources>
