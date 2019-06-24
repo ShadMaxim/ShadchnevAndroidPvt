@@ -15,4 +15,8 @@
     <color name="dz2_butoon_unpress">#46266A</color>
     <color name="dz2_background">#231335</color>
     <color name="dz2_background_editText">#231335</color>
+    <color name="allDz_butoon_press">#82C3CB</color>
+    <color name="allDz_butoon_unpress">#1D5D65</color>
+    <color name="allDzBackgroundColor">#3ABBCB</color>
+    <color name="allDzTextColor">#65C0CB</color>
 </resources>

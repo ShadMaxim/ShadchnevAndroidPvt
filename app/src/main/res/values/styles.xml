@@ -24,15 +24,15 @@
     <style name="LogIn_CreateAcc">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
-    <style/>
+    </style>
       
     <style name="AllDzStyle">
-        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:textColor">@color/allDzTextColor</item>
         <item name="android:textSize">15sp</item>
         <item name="android:layout_margin">10dp</item>
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:background">@android:color/darker_gray</item>
+        <item name="android:background">@drawable/alldz_button_selector</item>
     </style>
 
     <style name="Dz3CapTextStyle">

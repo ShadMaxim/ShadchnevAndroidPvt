@@ -7,18 +7,40 @@
         android:orientation="vertical">
 
     <LinearLayout
+            android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
         <Button
+                android:layout_weight="1"
                 android:id="@+id/dz0Button"
                 android:text="@string/dz0"
                 style="@style/AllDzStyle"/>
 
         <Button
+                android:layout_weight="1"
                 android:id="@+id/dz1Button"
                 style="@style/AllDzStyle"
                 android:text="@string/dz1"/>
+
+        <Button
+                android:layout_weight="1"
+                android:id="@+id/dz2Button"
+                style="@style/AllDzStyle"
+                android:text="@string/dz2"/>
+
+        <Button
+                android:layout_weight="1"
+                android:id="@+id/dz2_2Button"
+                style="@style/AllDzStyle"
+                android:text="@string/dz2_2"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
         <Button
                 android:id="@+id/dz3Button"
@@ -26,4 +48,5 @@
                 android:text="@string/dz3"/>
 
     </LinearLayout>
+
 </LinearLayout>
