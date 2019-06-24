@@ -3,7 +3,6 @@ package by.itacademy.myapp.dz2
 import android.app.Activity
 import android.os.Bundle
 import android.view.View
-import android.widget.ProgressBar
 import by.itacademy.myapp.R
 import com.squareup.picasso.Callback
 import com.squareup.picasso.Picasso
@@ -13,15 +12,11 @@ import java.lang.Exception
 
 class Dz2Activity : Activity() {
 
-    private lateinit var view: ProgressBar
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_dz2)
 
-        view = progressBarDz2
-
-        val OnClickListener = View.OnClickListener { v ->
+        val onClickListener = View.OnClickListener { v ->
             when (v.id) {
                 R.id.loadButton -> {
                     showProgressBar()
@@ -29,15 +24,15 @@ class Dz2Activity : Activity() {
                 }
             }
         }
-        loadButton.setOnClickListener(OnClickListener)
+        loadButton.setOnClickListener(onClickListener)
     }
 
     private fun showProgressBar() {
-        view.visibility = View.VISIBLE
+        progressBarDz2.visibility = View.VISIBLE
     }
 
     private fun unShowProgressBar() {
-        view.visibility = View.GONE
+        progressBarDz2.visibility = View.GONE
     }
 
     private fun workPicasso() {
