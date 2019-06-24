@@ -7,7 +7,25 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
+  
+    <style name="Name_pass">
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:drawablePadding">20dp</item>
+        <item name="android:background">@color/loginEditText</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:textCursorDrawable">@android:color/white</item>
+        <item name="android:textColorHint">@android:color/white</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginRight">20dp</item>
+        <item name="android:imeOptions">actionNext</item>
+    </style>
 
+    <style name="LogIn_CreateAcc">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    <style/>
+      
     <style name="AllDzStyle">
         <item name="android:textColor">@color/colorPrimaryDark</item>
         <item name="android:textSize">15sp</item>
@@ -16,5 +34,4 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:background">@android:color/darker_gray</item>
     </style>
-
 </resources>
