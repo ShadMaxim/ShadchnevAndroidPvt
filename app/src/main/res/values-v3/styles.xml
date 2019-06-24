@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Name_pass">
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:drawablePadding">20dp</item>
+        <item name="android:background">@color/loginEditText</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:textCursorDrawable">@android:color/white</item>
+        <item name="android:textColorHint">@android:color/white</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginRight">20dp</item>
+        <item name="android:imeOptions">actionNext</item>
+
+    </style>
+</resources>
