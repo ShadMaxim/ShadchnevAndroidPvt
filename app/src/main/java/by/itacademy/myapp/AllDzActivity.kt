@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.view.View
 import by.itacademy.myapp.dz0.Dz0Activity
 import by.itacademy.myapp.dz1.Dz1Activity
+import by.itacademy.myapp.dz3.Dz3Activity
 import kotlinx.android.synthetic.main.activity_alldz.*
 
 class AllDzActivity : Activity() {
@@ -29,12 +30,16 @@ class AllDzActivity : Activity() {
                 R.id.dz1Button ->{
                     intent = Intent(this, Dz1Activity::class.java)
                 }
+                R.id.dz3Button ->{
+                    intent = Intent(this, Dz3Activity::class.java)
+                }
             }
             startActivity(intent)
 
         }
         dz0Button.setOnClickListener(onClickListener)
         dz1Button.setOnClickListener(onClickListener)
+        dz3Button.setOnClickListener(onClickListener)
 
     }
 }

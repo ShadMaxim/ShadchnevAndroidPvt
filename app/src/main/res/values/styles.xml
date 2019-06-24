@@ -34,4 +34,36 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:background">@android:color/darker_gray</item>
     </style>
+
+    <style name="Dz3CapTextStyle">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/textTitleColorDz3</item>
+        <item name="android:padding">20dp</item>
+    </style>
+
+    <style name="Dz3NumberStyle">
+        <item name="android:textColor">@color/numberColorDz3</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:paddingRight">20dp</item>
+    </style>
+
+    <style name="Dz3TitleStyle">
+        <item name="android:textColor">@color/textTitleColorDz3</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginTop">15dp</item>
+        <item name="android:layout_marginRight">20dp</item>
+        <item name="android:padding">0dp</item>
+    </style>
+
+    <style name="Dz3DStyle">
+        <item name="android:textColor">@color/textDataColorDz3</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginTop">15dp</item>
+        <item name="android:layout_marginRight">20dp</item>
+        <item name="android:padding">0dp</item>
+    </style>
+
 </resources>

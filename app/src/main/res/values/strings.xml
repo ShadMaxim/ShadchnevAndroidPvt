@@ -11,4 +11,9 @@
     <string name="load_picture">Load picture</string>
     <string name="dz0">Dz0</string>
     <string name="dz1">Dz1</string>
+    <string name="nameTextViewDz3">Dylan Conner</string>
+    <string name="followers">FOLLOWERS</string>
+    <string name="following">FOLLOWING</string>
+    <string name="trophies">TROPHIES</string>
+    <string name="dz3">dz3</string>
 </resources>

@@ -20,5 +20,10 @@
                 style="@style/AllDzStyle"
                 android:text="@string/dz1"/>
 
+        <Button
+                android:id="@+id/dz3Button"
+                style="@style/AllDzStyle"
+                android:text="@string/dz3"/>
+
     </LinearLayout>
 </LinearLayout>
