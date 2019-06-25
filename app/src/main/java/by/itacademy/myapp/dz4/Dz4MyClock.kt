@@ -58,9 +58,9 @@ class Dz4MyClock : View {
         linePaintMedium.color = ContextCompat.getColor(context, android.R.color.white)
         numberPaint.color = ContextCompat.getColor(context, android.R.color.white)
 
-        linePaintBig.setStrokeWidth(10f)
-        linePaintLitle.setStrokeWidth(2f)
-        linePaintMedium.setStrokeWidth(4f)
+        linePaintBig.strokeWidth = resources.getDimension(R.dimen.dz4linePaintBigSize)
+        linePaintLitle.strokeWidth = resources.getDimension(R.dimen.dz4linePaintLitleSize)
+        linePaintMedium.strokeWidth = resources.getDimension(R.dimen.dz4linePaintMediumSize)
 
         numberPaint.style = Paint.Style.FILL
         numberPaint.textSize = resources.getDimension(R.dimen.dz4NumberSize)
