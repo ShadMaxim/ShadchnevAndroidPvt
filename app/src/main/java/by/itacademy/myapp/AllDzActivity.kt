@@ -9,9 +9,8 @@ import by.itacademy.myapp.dz1.Dz1Activity
 import by.itacademy.myapp.dz2.Dz2Activity
 import by.itacademy.myapp.dz2.Dz2LoginActivity
 import by.itacademy.myapp.dz3.Dz3Activity
-import by.itacademy.myapp.dz5.Dz5Activity
 import by.itacademy.myapp.dz5.Dz5ActivityOwl
-import by.itacademy.myapp.dz5.Dz5MyDiagramView
+import by.itacademy.myapp.dz5.Dz5DiagramActivity
 import kotlinx.android.synthetic.main.activity_alldz.*
 
 class AllDzActivity : Activity() {
@@ -48,7 +47,7 @@ class AllDzActivity : Activity() {
                     intent = Intent(this, Dz5ActivityOwl::class.java)
                 }
                 R.id.dz5_2Button ->{
-                    intent = Intent(this, Dz5Activity::class.java)
+                    intent = Intent(this, Dz5DiagramActivity::class.java)
                 }
             }
             startActivity(intent)
