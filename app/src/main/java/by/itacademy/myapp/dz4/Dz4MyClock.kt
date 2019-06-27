@@ -7,18 +7,12 @@ import android.os.Build
 import android.support.annotation.RequiresApi
 import android.support.v4.content.ContextCompat
 import android.util.AttributeSet
-import android.util.Log
 import android.view.View
 import by.itacademy.myapp.R
-import java.util.*
+import java.util.Calendar
 import kotlin.math.min
 
 class Dz4MyClock : View {
-
-    var calendar = Calendar.getInstance()
-    var minutes = calendar.get(Calendar.MINUTE)
-    var hour = calendar.get(Calendar.HOUR)
-    var seconds = calendar.get(Calendar.SECOND)
 
     private val circlePaintBig = Paint(Paint.ANTI_ALIAS_FLAG)
     private val circlePaintLitle = Paint(Paint.ANTI_ALIAS_FLAG)
@@ -84,13 +78,27 @@ class Dz4MyClock : View {
         super.onDraw(canvas)
         canvas ?: return
 
+        var calendar = Calendar.getInstance()
+
         drawMyCircles(canvas)
         drawLinesInCircle(canvas)
         drawNumberClock(canvas)
-        drawClockHands(canvas)
+        drawClockHands(canvas, calendar)
+
+        postInvalidateDelayed(500)
+        invalidate()
     }
 
-    fun drawClockHands(canvas: Canvas){
+    private fun drawClockHands(canvas: Canvas, calendar: Calendar){
+
+        var minutes = calendar.get(Calendar.MINUTE)
+        var hour = calendar.get(Calendar.HOUR)
+        var seconds = calendar.get(Calendar.SECOND)
+
+        canvas.save()
+        canvas.rotate(seconds*6f, centerX, centerY)
+        canvas.drawLine(centerX, centerY+50, centerX, centerY-200, linePaintLitle)
+        canvas.restore()
 
         canvas.save()
         canvas.rotate(hour*30f+(minutes/2), centerX, centerY)
@@ -102,20 +110,16 @@ class Dz4MyClock : View {
         canvas.drawLine(centerX, centerY+50, centerX, centerY-200, linePaintMedium)
         canvas.restore()
 
-        canvas.save()
-        canvas.rotate(seconds*6f, centerX, centerY)
-        canvas.drawLine(centerX, centerY+50, centerX, centerY-200, linePaintLitle)
-        canvas.restore()
     }
 
-    fun drawNumberClock(canvas: Canvas){
+    private fun drawNumberClock(canvas: Canvas){
         canvas.drawText(textNumberArr[2], (centerX-radius-50), centerY+15, numberPaint)
         canvas.drawText(textNumberArr[0], (centerX+radius+20), centerY+15, numberPaint)
         canvas.drawText(textNumberArr[3], (centerX-30), centerY-radius-20, numberPaint)
         canvas.drawText(textNumberArr[1], (centerX-15), centerY+radius+50, numberPaint)
     }
 
-    fun drawLinesInCircle(canvas: Canvas){
+    private fun drawLinesInCircle(canvas: Canvas){
         canvas.save()
 
         for(i in 0..60){
@@ -132,7 +136,7 @@ class Dz4MyClock : View {
         canvas.restore()
     }
 
-    fun drawMyCircles(canvas: Canvas){
+    private fun drawMyCircles(canvas: Canvas){
         canvas.drawCircle(centerX, centerY, (radius+70), circlePaintBig)
         canvas.drawCircle(centerX, centerY, radius+65, circlePaintLitle)
 
