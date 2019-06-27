@@ -17,8 +17,10 @@
         <activity android:name=".dz2.Dz2Activity"/>
         <activity android:name=".dz2.Dz2LoginActivity"/>
         <activity android:name=".dz3.Dz3Activity"/>
+        <activity android:name=".dz5.Dz5Activity"/>
+        <activity android:name=".dz5.Dz5ActivityOwl"/>
 
-        <activity android:name=".dz5.Dz5ActivityOwl">
+        <activity android:name=".AllDzActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
