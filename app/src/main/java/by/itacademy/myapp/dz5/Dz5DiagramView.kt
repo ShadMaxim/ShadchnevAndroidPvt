@@ -49,7 +49,6 @@ class Dz5DiagramView : View {
             R.color.dz5color10
         )
 
-
     init {
         textPaint.textSize = resources.getDimension(R.dimen.dz5TextSize)
         textPaint.color = ContextCompat.getColor(context, R.color.colorPrimary)
@@ -61,7 +60,6 @@ class Dz5DiagramView : View {
         pointPaint.color = ContextCompat.getColor(context, R.color.colorButton)
         pointPaint.style = Paint.Style.FILL
     }
-
 
     constructor(context: Context?) : super(context)
     constructor(context: Context?, attrs: AttributeSet?) : super(context, attrs)
