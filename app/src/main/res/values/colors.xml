@@ -19,4 +19,6 @@
     <color name="allDz_butoon_unpress">#1D5D65</color>
     <color name="allDzBackgroundColor">#3ABBCB</color>
     <color name="allDzTextColor">#65C0CB</color>
+    <color name="dz6_backgroundColor">#1B0505</color>
+    <color name="dz6_buttonColor">#FCFCFD</color>
 </resources>

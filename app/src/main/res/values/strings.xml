@@ -18,4 +18,6 @@
     <string name="dz3">dz3</string>
     <string name="dz2">dz2</string>
     <string name="dz2_2">dz2_2</string>
+    <string name="dz6_edit_profile">Edit profile</string>
+    <string name="dz6_delete_profile">Delete profile</string>
 </resources>
