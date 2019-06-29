@@ -7,9 +7,9 @@ import by.itacademy.myapp.R
 
 class Dz6ListAdapter(
     private val item: List<Student>,
-    private val listner: ClickListner) :
-    RecyclerView.Adapter<Dz6ListViewHolder>()
-{
+    private val listner: ClickListner
+) : RecyclerView.Adapter<Dz6ListViewHolder>() {
+
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): Dz6ListViewHolder {
 
         val view = LayoutInflater.from(parent.context)
@@ -28,14 +28,9 @@ class Dz6ListAdapter(
 
     override fun getItemCount(): Int {
         return item.size
-
     }
-
 
     interface ClickListner {
         fun onStudentClick(item: Student)
-
-
     }
-
 }
