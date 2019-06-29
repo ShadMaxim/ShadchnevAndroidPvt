@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="dz4NumberSize">50sp</dimen>
+    <dimen name="dz4linePaintBigSize">10dp</dimen>
+    <dimen name="dz4linePaintLitleSize">2dp</dimen>
+    <dimen name="dz4linePaintMediumSize">4dp</dimen>
+
+</resources>
