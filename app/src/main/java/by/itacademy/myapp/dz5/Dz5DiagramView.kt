@@ -10,7 +10,6 @@ import android.os.Build
 import android.util.AttributeSet
 import android.view.View
 import androidx.core.content.ContextCompat
-
 import by.itacademy.myapp.R
 import java.lang.Math.min
 
@@ -65,7 +64,6 @@ class Dz5DiagramView : View {
     constructor(context: Context?) : super(context)
     constructor(context: Context?, attrs: AttributeSet?) : super(context, attrs)
     constructor(context: Context?, attrs: AttributeSet?, defStyleAttr: Int) : super(context, attrs, defStyleAttr)
-
 
     @TargetApi(Build.VERSION_CODES.LOLLIPOP)
     constructor(context: Context?, attrs: AttributeSet?, defStyleAttr: Int, defStyleRes: Int) : super(
@@ -136,7 +134,6 @@ class Dz5DiagramView : View {
 
             canvas.drawArc(myRect, angleStart, angleStop, true, cyrclePaint)
             angleStart += angleStop
-
         }
     }
 }
