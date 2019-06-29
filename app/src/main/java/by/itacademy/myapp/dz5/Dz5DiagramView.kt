@@ -1,15 +1,16 @@
 package by.itacademy.myapp.dz5
 
+import android.annotation.TargetApi
 import android.content.Context
 import android.graphics.Canvas
 import android.graphics.Paint
 import android.graphics.Rect
 import android.graphics.RectF
 import android.os.Build
-import android.support.annotation.RequiresApi
-import android.support.v4.content.ContextCompat
 import android.util.AttributeSet
 import android.view.View
+import androidx.core.content.ContextCompat
+
 import by.itacademy.myapp.R
 import java.lang.Math.min
 
@@ -64,7 +65,9 @@ class Dz5DiagramView : View {
     constructor(context: Context?) : super(context)
     constructor(context: Context?, attrs: AttributeSet?) : super(context, attrs)
     constructor(context: Context?, attrs: AttributeSet?, defStyleAttr: Int) : super(context, attrs, defStyleAttr)
-    @RequiresApi(Build.VERSION_CODES.LOLLIPOP)
+
+
+    @TargetApi(Build.VERSION_CODES.LOLLIPOP)
     constructor(context: Context?, attrs: AttributeSet?, defStyleAttr: Int, defStyleRes: Int) : super(
         context,
         attrs,
@@ -114,7 +117,7 @@ class Dz5DiagramView : View {
         for (number in diagramData) {
 
             angleStop = ((number * 360) / dataSum).toFloat()
-            radianArc = (angleStart + angleStop / 2) * Math.PI / 180
+            radianArc = (angleStart + angleStop / 2) * Math.PI / 180f
 
             val circleX = (centerWeight + (radius * Math.cos(radianArc))).toFloat()
             val circleY = (centerHeight + (radius * Math.sin(radianArc))).toFloat()
