@@ -4,5 +4,5 @@ class Student(
     var id: String?,
     var url: String?,
     var name: String?,
-    var age: Int
+    var age: Int?
 )
