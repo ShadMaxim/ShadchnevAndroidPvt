@@ -5,10 +5,9 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import by.itacademy.myapp.R
 
-class Dz6ListAdapter(
-    private val item: List<Student>,
-    private val listner: ClickListner
-) : RecyclerView.Adapter<Dz6ListViewHolder>() {
+class Dz6ListAdapter
+    (private val items: ArrayList<Student>, private val listner: ClickListner)
+    : RecyclerView.Adapter<Dz6ListViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): Dz6ListViewHolder {
 
@@ -17,17 +16,22 @@ class Dz6ListAdapter(
 
         val holder = Dz6ListViewHolder(view)
         holder.itemView.setOnClickListener {
-            listner.onStudentClick(item[holder.adapterPosition])
+            listner.onStudentClick(items[holder.adapterPosition])
         }
         return holder
     }
 
     override fun onBindViewHolder(holder: Dz6ListViewHolder, position: Int) {
-        holder.bind(item[position])
+        holder.bind(items[position])
     }
 
     override fun getItemCount(): Int {
-        return item.size
+        return items.size
+    }
+
+    public fun updateList() {
+        var items = StudentsSinglton.instance.getStudents()
+        notifyDataSetChanged()
     }
 
     interface ClickListner {
