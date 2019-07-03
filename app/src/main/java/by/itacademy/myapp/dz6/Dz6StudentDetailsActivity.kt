@@ -8,20 +8,20 @@ import by.itacademy.myapp.R
 import by.itacademy.myapp.util.picassoLoader
 import kotlinx.android.synthetic.main.activity_dz6_profil_student.*
 
-class Dz6ProfilActivity : Activity() {
+class Dz6StudentDetailsActivity : Activity() {
 
     companion object {
         const val ID_KEY_SHOW = "ID_KEY_SHOW"
         const val ID_KEY_EDIT = "ID_KEY_EDIT"
     }
 
-    lateinit var student: Student
+    lateinit var student: Dz6Student
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_dz6_profil_student)
 
-        var studentsSinglton = StudentsSinglton
+        var studentsSinglton = Dz6StudentsSinglton
         val id = intent.getLongExtra(ID_KEY_SHOW, -1)
 
         student = studentsSinglton.findStudentById(id)
@@ -35,15 +35,15 @@ class Dz6ProfilActivity : Activity() {
         }
 
         editProfileButton.setOnClickListener {
-            val intent = Intent(this, Dz6EditProfileActivity::class.java)
+            val intent = Intent(this, Dz6StudentEditActivity::class.java)
             intent.putExtra(ID_KEY_EDIT, id/*studentsSinglton.getId(student)*/)
-            Toast.makeText(this, "You can edit the current profile" + id, Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, "You can edit the current profile", Toast.LENGTH_SHORT).show()
             startActivity(intent)
             this.finish()
         }
     }
 
-    fun showStudent(student: Student) {
+    fun showStudent(student: Dz6Student) {
         picassoLoader(student.url, avatarProfileImageView)
         nameProfilStudentTextView.text = student.name
         ageProfilStudentTextView.text = student.age.toString()

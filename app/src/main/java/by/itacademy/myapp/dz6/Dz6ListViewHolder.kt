@@ -12,7 +12,7 @@ class Dz6ListViewHolder(view: View) : RecyclerView.ViewHolder(view) {
     private val avatarMiniImageView = itemView.findViewById<ImageView>(R.id.avatarMiniImageView)
     private val nameForAvatarTextView = itemView.findViewById<TextView>(R.id.nameForAvatarTextView)
 
-    fun bind(student: Student) {
+    fun bind(student: Dz6Student) {
 
         picassoLoaderCircle(student.url, avatarMiniImageView)
         nameForAvatarTextView.text = student.name

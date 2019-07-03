@@ -5,12 +5,12 @@ import android.os.Bundle
 import android.util.Patterns
 import android.widget.Toast
 import by.itacademy.myapp.R
-import by.itacademy.myapp.dz6.StudentsSinglton.addNewStudent
-import by.itacademy.myapp.dz6.StudentsSinglton.creatureNewId
-import by.itacademy.myapp.dz6.StudentsSinglton.editStudent
+import by.itacademy.myapp.dz6.Dz6StudentsSinglton.addNewStudent
+import by.itacademy.myapp.dz6.Dz6StudentsSinglton.creatureNewId
+import by.itacademy.myapp.dz6.Dz6StudentsSinglton.editStudent
 import kotlinx.android.synthetic.main.activity_dz6_edit_profile.*
 
-class Dz6EditProfileActivity : Activity() {
+class Dz6StudentEditActivity : Activity() {
 
     private val pattern = Patterns.WEB_URL
 
@@ -18,7 +18,7 @@ class Dz6EditProfileActivity : Activity() {
         const val ID_KEY_EDIT = "ID_KEY_EDIT"
     }
 
-    private lateinit var student: Student
+    private lateinit var student: Dz6Student
     lateinit var name: String
     lateinit var url: String
     var age: Int = 0
@@ -27,7 +27,7 @@ class Dz6EditProfileActivity : Activity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_dz6_edit_profile)
 
-        if (intent.hasExtra(Dz6ProfilActivity.ID_KEY_EDIT)) {
+        if (intent.hasExtra(Dz6StudentDetailsActivity.ID_KEY_EDIT)) {
 
             returnIdAndStudent()
             showDataStudent()
@@ -39,7 +39,7 @@ class Dz6EditProfileActivity : Activity() {
 
     private fun returnIdAndStudent() {
         val id = intent.getLongExtra(ID_KEY_EDIT, -1)
-        var studentsSinglton = StudentsSinglton
+        var studentsSinglton = Dz6StudentsSinglton
         student = studentsSinglton.findStudentById(id)
     }
 
@@ -51,7 +51,7 @@ class Dz6EditProfileActivity : Activity() {
 
     private fun savedProfile() {
         saveEditProfileButton.setOnClickListener {
-            var studentDataEdited: Student
+            var studentDataEdited: Dz6Student
 
             try {
                 name = nameEditProfileEditText.text.toString()
@@ -68,7 +68,7 @@ class Dz6EditProfileActivity : Activity() {
                     Toast.makeText(this, "ERROR( NAME ): Not valid Name, must be filled", Toast.LENGTH_SHORT).show()
                     this.finish()
                 } else {
-                    studentDataEdited = Student(student.id, url, name, age)
+                    studentDataEdited = Dz6Student(student.id, url, name, age)
                     editStudent(student, studentDataEdited)
 
                     Toast.makeText(this, "profile successfully edited", Toast.LENGTH_SHORT).show()
@@ -102,7 +102,7 @@ class Dz6EditProfileActivity : Activity() {
                     this.finish()
                 } else {
 
-                    val studentNew = Student(creatureNewId(), url, name, age)
+                    val studentNew = Dz6Student(creatureNewId(), url, name, age)
                     addNewStudent(studentNew)
 
                     Toast.makeText(this, "New profile successfully created", Toast.LENGTH_SHORT).show()

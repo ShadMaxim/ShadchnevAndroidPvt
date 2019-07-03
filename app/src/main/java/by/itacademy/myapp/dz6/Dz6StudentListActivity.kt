@@ -14,7 +14,7 @@ import androidx.recyclerview.widget.RecyclerView
 import by.itacademy.myapp.R
 import kotlinx.android.synthetic.main.activity_dz6_recycler.*
 
-class Dz6Activity : Activity(), Dz6ListAdapter.ClickListener {
+class Dz6StudentListActivity : Activity(), Dz6ListAdapter.ClickListener {
 
     private lateinit var adapter: Dz6ListAdapter
 
@@ -38,7 +38,7 @@ class Dz6Activity : Activity(), Dz6ListAdapter.ClickListener {
         recyclerView.layoutManager = LinearLayoutManager(this,
             LinearLayoutManager.VERTICAL, false)
 
-        adapter = Dz6ListAdapter(StudentsSinglton.getStudentsExprorerList(), this)
+        adapter = Dz6ListAdapter(Dz6StudentsSinglton.getStudentsExprorerList(), this)
 
         recyclerView.adapter = adapter
 
@@ -52,7 +52,7 @@ class Dz6Activity : Activity(), Dz6ListAdapter.ClickListener {
             override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
                 timer = Handler()
                 timer?.postDelayed({
-                    (adapter.updateList(StudentsSinglton.search(s.toString()) as MutableList<Student>))
+                    (adapter.updateList(Dz6StudentsSinglton.search(s.toString()) as MutableList<Dz6Student>))
                 }, 500)
             }
 
@@ -62,8 +62,8 @@ class Dz6Activity : Activity(), Dz6ListAdapter.ClickListener {
         })
     }
 
-    override fun onStudentClick(item: Student) {
-        val intent = Intent(this, Dz6ProfilActivity::class.java)
+    override fun onStudentClick(item: Dz6Student) {
+        val intent = Intent(this, Dz6StudentDetailsActivity::class.java)
         intent.putExtra(ID_KEY_SHOW, item.id)
         startActivity(intent)
         Toast.makeText(this, " You are viewing information about " + item.name, Toast.LENGTH_SHORT).show()
@@ -71,7 +71,7 @@ class Dz6Activity : Activity(), Dz6ListAdapter.ClickListener {
 
     fun startAddActivity() {
         addImageView.setOnClickListener {
-            val intent = Intent(this, Dz6EditProfileActivity::class.java)
+            val intent = Intent(this, Dz6StudentEditActivity::class.java)
             Toast.makeText(this, "You have entered the window for creating a new student", Toast.LENGTH_SHORT).show()
             startActivity(intent)
         }
@@ -79,6 +79,6 @@ class Dz6Activity : Activity(), Dz6ListAdapter.ClickListener {
 
     override fun onResume() {
         super.onResume()
-        adapter.updateList(StudentsSinglton.getStudentsList())
+        adapter.updateList(Dz6StudentsSinglton.getStudentsList())
     }
 }
