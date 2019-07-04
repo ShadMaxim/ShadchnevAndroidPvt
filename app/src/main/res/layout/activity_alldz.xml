@@ -43,6 +43,11 @@
                 style="@style/AllDzStyle"
                 android:text="@string/dz3"/>
 
+        <Button
+                android:id="@+id/dz6Button"
+                style="@style/AllDzStyle"
+                android:text="@string/dz6"/>
+
     </LinearLayout>
 
 </LinearLayout>
