@@ -15,32 +15,19 @@ class Dz6StudentDetailsActivity : Activity() {
         const val ID_KEY_EDIT = "ID_KEY_EDIT"
     }
 
-    lateinit var student: Dz6Student
+    var student: Dz6Student? = null
+    var studentsSinglton = Dz6StudentsSinglton
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_dz6_profil_student)
 
-        var studentsSinglton = Dz6StudentsSinglton
         val id = intent.getLongExtra(ID_KEY_SHOW, -1)
-
         student = studentsSinglton.findStudentById(id)
 
-        showStudent(student)
-
-        deleteProfileButton.setOnClickListener {
-            studentsSinglton.deleteStudentOfList(student)
-            Toast.makeText(this, "Profile deleted successfully", Toast.LENGTH_SHORT).show()
-            this.finish()
-        }
-
-        editProfileButton.setOnClickListener {
-            val intent = Intent(this, Dz6StudentEditActivity::class.java)
-            intent.putExtra(ID_KEY_EDIT, id/*studentsSinglton.getId(student)*/)
-            Toast.makeText(this, "You can edit the current profile", Toast.LENGTH_SHORT).show()
-            startActivity(intent)
-            this.finish()
-        }
+        showStudent(student!!)
+        deleteStudent()
+        editStudent(id)
     }
 
     fun showStudent(student: Dz6Student) {
@@ -48,5 +35,23 @@ class Dz6StudentDetailsActivity : Activity() {
         nameProfilStudentTextView.text = student.name
         ageProfilStudentTextView.text = student.age.toString()
         urlProfilStudentTextView.text = student.url
+    }
+
+    fun deleteStudent() {
+        deleteProfileButton.setOnClickListener {
+            studentsSinglton.deleteStudentOfList(student!!)
+            Toast.makeText(this, "Profile deleted successfully", Toast.LENGTH_SHORT).show()
+            this.finish()
+        }
+    }
+
+    fun editStudent(id: Long) {
+        editProfileButton.setOnClickListener {
+            val intent = Intent(this, Dz6StudentEditActivity::class.java)
+            intent.putExtra(ID_KEY_EDIT, id)
+            Toast.makeText(this, "You can edit the current profile", Toast.LENGTH_SHORT).show()
+            startActivity(intent)
+            this.finish()
+        }
     }
 }

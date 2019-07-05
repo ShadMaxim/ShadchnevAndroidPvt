@@ -4,7 +4,7 @@ object Dz6StudentsSinglton {
 
     private var studentsList: MutableList<Dz6Student> = mutableListOf()
 
-    fun getStudentsExprorerList(): MutableList<Dz6Student> {
+    fun getStudentsExplorerList(): MutableList<Dz6Student> {
         createStudentsList()
         return studentsList
     }

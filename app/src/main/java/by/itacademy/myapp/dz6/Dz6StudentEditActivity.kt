@@ -18,10 +18,7 @@ class Dz6StudentEditActivity : Activity() {
         const val ID_KEY_EDIT = "ID_KEY_EDIT"
     }
 
-    private lateinit var student: Dz6Student
-    lateinit var name: String
-    lateinit var url: String
-    var age: Int = 0
+    private var student: Dz6Student? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -44,14 +41,18 @@ class Dz6StudentEditActivity : Activity() {
     }
 
     private fun showDataStudent() {
-        nameEditProfileEditText.setText(student.name)
-        ageEditProfileEditText.setText(student.age.toString())
-        urlEditProfileEditText.setText(student.url)
+        nameEditProfileEditText.setText(student!!.name)
+        ageEditProfileEditText.setText(student!!.age.toString())
+        urlEditProfileEditText.setText(student!!.url)
     }
 
     private fun savedProfile() {
         saveEditProfileButton.setOnClickListener {
-            var studentDataEdited: Dz6Student
+
+            val studentDataEdited: Dz6Student
+            val name: String
+            val url: String
+            val age: Int
 
             try {
                 name = nameEditProfileEditText.text.toString()
@@ -68,8 +69,8 @@ class Dz6StudentEditActivity : Activity() {
                     Toast.makeText(this, "ERROR( NAME ): Not valid Name, must be filled", Toast.LENGTH_SHORT).show()
                     this.finish()
                 } else {
-                    studentDataEdited = Dz6Student(student.id, url, name, age)
-                    editStudent(student, studentDataEdited)
+                    studentDataEdited = Dz6Student(student!!.id, url, name, age)
+                    editStudent(student!!, studentDataEdited)
 
                     Toast.makeText(this, "profile successfully edited", Toast.LENGTH_SHORT).show()
                     this.finish()
@@ -84,13 +85,16 @@ class Dz6StudentEditActivity : Activity() {
     fun saveNewProfile() {
         saveEditProfileButton.setOnClickListener {
 
+            val name: String
+            val url: String
+            val age: Int
+
             try {
 
                 name = nameEditProfileEditText.text.toString()
                 url = urlEditProfileEditText.text.toString()
                 age = ageEditProfileEditText.text.toString().toInt()
 
-                /*if (!pattern.matcher(url).matches() && age == null && name.isEmpty())*/
                 if (!pattern.matcher(url).matches()) {
                     Toast.makeText(this, "ERROR( URL ): Not valid URL", Toast.LENGTH_SHORT).show()
                     this.finish()

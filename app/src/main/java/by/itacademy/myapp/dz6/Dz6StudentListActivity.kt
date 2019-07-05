@@ -28,38 +28,9 @@ class Dz6StudentListActivity : Activity(), Dz6ListAdapter.ClickListener {
         setContentView(R.layout.activity_dz6_recycler)
 
         startAddActivity()
-
-        val recyclerView = findViewById<RecyclerView>(R.id.recyclerView)
-        recyclerView.setHasFixedSize(true)
-
-        val decor = DividerItemDecoration(this, DividerItemDecoration.VERTICAL)
-        recyclerView.addItemDecoration(decor)
-
-        recyclerView.layoutManager = LinearLayoutManager(this,
-            LinearLayoutManager.VERTICAL, false)
-
-        adapter = Dz6ListAdapter(Dz6StudentsSinglton.getStudentsExprorerList(), this)
-
-        recyclerView.adapter = adapter
-
-        searchStudentDz6.addTextChangedListener(object : TextWatcher {
-
-            var timer: Handler? = null
-
-            override fun afterTextChanged(s: Editable?) {
-            }
-
-            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
-                timer = Handler()
-                timer?.postDelayed({
-                    (adapter.updateList(Dz6StudentsSinglton.search(s.toString()) as MutableList<Dz6Student>))
-                }, 500)
-            }
-
-            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
-                timer?.removeCallbacks(null)
-            }
-        })
+        explourerRecycler()
+        startDecor()
+        searchStudent()
     }
 
     override fun onStudentClick(item: Dz6Student) {
@@ -75,6 +46,44 @@ class Dz6StudentListActivity : Activity(), Dz6ListAdapter.ClickListener {
             Toast.makeText(this, "You have entered the window for creating a new student", Toast.LENGTH_SHORT).show()
             startActivity(intent)
         }
+    }
+
+    fun searchStudent() {
+        searchStudentDz6.addTextChangedListener(object : TextWatcher {
+
+            var timer: Handler? = null
+
+            override fun afterTextChanged(s: Editable?) {
+            }
+
+            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
+            }
+
+            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
+                timer = Handler()
+                timer?.postDelayed({
+                    (adapter.updateList(Dz6StudentsSinglton.search(s.toString()) as MutableList<Dz6Student>))
+                }, 500)
+            }
+        })
+    }
+
+    fun startDecor() {
+        val decor = DividerItemDecoration(this, DividerItemDecoration.VERTICAL)
+        recyclerView.addItemDecoration(decor)
+    }
+
+    @SuppressLint("WrongConstant")
+    fun explourerRecycler() {
+        val recyclerView = findViewById<RecyclerView>(R.id.recyclerView)
+        recyclerView.setHasFixedSize(true)
+
+        recyclerView.layoutManager = LinearLayoutManager(this,
+            LinearLayoutManager.VERTICAL, false)
+
+        adapter = Dz6ListAdapter(Dz6StudentsSinglton.getStudentsExplorerList(), this)
+
+        recyclerView.adapter = adapter
     }
 
     override fun onResume() {
