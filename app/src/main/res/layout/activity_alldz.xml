@@ -42,9 +42,9 @@
                 android:id="@+id/dz3Button"
                 style="@style/AllDzStyle"
                 android:text="@string/dz3"/>
-
-        <Button
-                 android:id="@+id/dz4Button"
+       
+         <Button
+                android:id="@+id/dz4Button"
                 style="@style/AllDzStyle"
                 android:text="@string/dz4"/>
       
@@ -56,7 +56,13 @@
         <Button
                 android:id="@+id/dz5_2Button"
                 style="@style/AllDzStyle"
-                android:text="@string/dz5_2"/>             
+                android:text="@string/dz5_2"/> 
+      
+        <Button
+                android:id="@+id/dz6Button"
+                style="@style/AllDzStyle"
+                android:text="@string/dz6"/>
+
 
     </LinearLayout>
 

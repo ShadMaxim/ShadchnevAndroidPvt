@@ -4,5 +4,4 @@
     <dimen name="dz4linePaintBigSize">10dp</dimen>
     <dimen name="dz4linePaintLitleSize">2dp</dimen>
     <dimen name="dz4linePaintMediumSize">4dp</dimen>
-
 </resources>
