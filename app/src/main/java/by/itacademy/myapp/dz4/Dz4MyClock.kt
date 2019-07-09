@@ -4,10 +4,10 @@ import android.content.Context
 import android.graphics.Canvas
 import android.graphics.Paint
 import android.os.Build
-import android.support.annotation.RequiresApi
-import android.support.v4.content.ContextCompat
 import android.util.AttributeSet
 import android.view.View
+import androidx.annotation.RequiresApi
+import androidx.core.content.ContextCompat
 import by.itacademy.myapp.R
 import java.util.Calendar
 import kotlin.math.min
@@ -31,7 +31,7 @@ class Dz4MyClock : View {
     private var stopY = 0f
     private var stopX = 0f
 
-    private val textNumberArr = arrayOf("3","6","9","12")
+    private val textNumberArr = arrayOf("3", "6", "9", "12")
 
     constructor(context: Context?) : super(context)
     constructor(context: Context?, attrs: AttributeSet?) : super(context, attrs)
@@ -63,15 +63,15 @@ class Dz4MyClock : View {
     override fun onSizeChanged(weight: Int, height: Int, oldWeight: Int, oldHeight: Int) {
         super.onSizeChanged(weight, height, oldWeight, oldHeight)
 
-        centerX = weight/2f
-        centerY = height/2f
+        centerX = weight / 2f
+        centerY = height / 2f
 
-        radius = min(centerX, centerY)/1.5f
+        radius = min(centerX, centerY) / 1.5f
 
-        startY = centerY-radius
+        startY = centerY - radius
         startX = centerX
-        stopX =  centerX
-        stopY =  centerY-radius
+        stopX = centerX
+        stopY = centerY - radius
     }
 
     override fun onDraw(canvas: Canvas?) {
@@ -89,58 +89,56 @@ class Dz4MyClock : View {
         invalidate()
     }
 
-    private fun drawClockHands(canvas: Canvas, calendar: Calendar){
+    private fun drawClockHands(canvas: Canvas, calendar: Calendar) {
 
         var minutes = calendar.get(Calendar.MINUTE)
         var hour = calendar.get(Calendar.HOUR)
         var seconds = calendar.get(Calendar.SECOND)
 
         canvas.save()
-        canvas.rotate(seconds*6f, centerX, centerY)
-        canvas.drawLine(centerX, centerY+50, centerX, centerY-200, linePaintLitle)
+        canvas.rotate(seconds * 6f, centerX, centerY)
+        canvas.drawLine(centerX, centerY + 50, centerX, centerY - 200, linePaintLitle)
         canvas.restore()
 
         canvas.save()
-        canvas.rotate(hour*30f+(minutes/2), centerX, centerY)
-        canvas.drawLine(centerX, centerY+30, centerX, centerY-150, linePaintMedium)
+        canvas.rotate(hour * 30f + (minutes / 2), centerX, centerY)
+        canvas.drawLine(centerX, centerY + 30, centerX, centerY - 150, linePaintMedium)
         canvas.restore()
 
         canvas.save()
-        canvas.rotate(minutes*6f, centerX, centerY)
-        canvas.drawLine(centerX, centerY+50, centerX, centerY-200, linePaintMedium)
+        canvas.rotate(minutes * 6f, centerX, centerY)
+        canvas.drawLine(centerX, centerY + 50, centerX, centerY - 200, linePaintMedium)
         canvas.restore()
-
     }
 
-    private fun drawNumberClock(canvas: Canvas){
-        canvas.drawText(textNumberArr[2], (centerX-radius-50), centerY+15, numberPaint)
-        canvas.drawText(textNumberArr[0], (centerX+radius+20), centerY+15, numberPaint)
-        canvas.drawText(textNumberArr[3], (centerX-30), centerY-radius-20, numberPaint)
-        canvas.drawText(textNumberArr[1], (centerX-15), centerY+radius+50, numberPaint)
+    private fun drawNumberClock(canvas: Canvas) {
+        canvas.drawText(textNumberArr[2], (centerX - radius - 50), centerY + 15, numberPaint)
+        canvas.drawText(textNumberArr[0], (centerX + radius + 20), centerY + 15, numberPaint)
+        canvas.drawText(textNumberArr[3], (centerX - 30), centerY - radius - 20, numberPaint)
+        canvas.drawText(textNumberArr[1], (centerX - 15), centerY + radius + 50, numberPaint)
     }
 
-    private fun drawLinesInCircle(canvas: Canvas){
+    private fun drawLinesInCircle(canvas: Canvas) {
         canvas.save()
 
-        for(i in 0..60){
-            if (i%15 == 0){
-                canvas.drawLine(startX, startY, stopX, stopY+12, linePaintBig)
-
-            }else if(i%5 == 0){
-                canvas.drawLine(startX, startY, stopX, stopY+10, linePaintMedium)
-            }else{
-                canvas.drawLine(startX, startY, stopX, stopY+5, linePaintLitle)
+        for (i in 0..60) {
+            if (i % 15 == 0) {
+                canvas.drawLine(startX, startY, stopX, stopY + 12, linePaintBig)
+            } else if (i % 5 == 0) {
+                canvas.drawLine(startX, startY, stopX, stopY + 10, linePaintMedium)
+            } else {
+                canvas.drawLine(startX, startY, stopX, stopY + 5, linePaintLitle)
             }
             canvas.rotate(6f, centerX, centerY)
         }
         canvas.restore()
     }
 
-    private fun drawMyCircles(canvas: Canvas){
-        canvas.drawCircle(centerX, centerY, (radius+70), circlePaintBig)
-        canvas.drawCircle(centerX, centerY, radius+65, circlePaintLitle)
+    private fun drawMyCircles(canvas: Canvas) {
+        canvas.drawCircle(centerX, centerY, (radius + 70), circlePaintBig)
+        canvas.drawCircle(centerX, centerY, radius + 65, circlePaintLitle)
 
-        canvas.drawCircle(centerX, centerY, (radius+5), circlePaintBig)
+        canvas.drawCircle(centerX, centerY, (radius + 5), circlePaintBig)
         canvas.drawCircle(centerX, centerY, radius, circlePaintLitle)
     }
 }
