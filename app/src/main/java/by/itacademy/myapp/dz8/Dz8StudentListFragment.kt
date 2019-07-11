@@ -19,12 +19,13 @@ import by.itacademy.myapp.dz6.Dz6Student
 import by.itacademy.myapp.dz6.Dz6StudentsSinglton
 import kotlinx.android.synthetic.main.activity_dz8_recycler.view.*
 
-class Dz8StudentListFragment : Fragment(), Dz6ListAdapter.ClickListener {
+class Dz8StudentListFragment : Fragment(),
+    Dz6ListAdapter.ClickListener {
 
     private lateinit var adapter: Dz6ListAdapter
     private lateinit var prefManager: SharedPrefManager
-    private var dz8SearchText: String = ""
-    private lateinit var dz8Search: EditText
+    private var searchText: String = ""
+    private lateinit var dz8SearchEditText: EditText
     private var listener: Listener? = null
 
     override fun onAttach(context: Context) {
@@ -44,11 +45,11 @@ class Dz8StudentListFragment : Fragment(), Dz6ListAdapter.ClickListener {
 
         dz8RecyclerView.layoutManager = LinearLayoutManager(context)
         dz8RecyclerView.isNestedScrollingEnabled = false
-        adapter = Dz6ListAdapter(Dz6StudentsSinglton.getStudentsExplorerList(), this)
+        adapter = Dz6ListAdapter(Dz8StudentListFragment().reload(), this)
         dz8RecyclerView.adapter = adapter
 
-        dz8Search = view.searchStudentDz8
-        dz8Search.addTextChangedListener(object : TextWatcher {
+        dz8SearchEditText = view.searchStudentDz8
+        dz8SearchEditText.addTextChangedListener(object : TextWatcher {
 
             var timer: Handler? = null
             override fun beforeTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {}
@@ -56,8 +57,8 @@ class Dz8StudentListFragment : Fragment(), Dz6ListAdapter.ClickListener {
             override fun onTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {
                 timer = Handler()
                 timer?.postDelayed({
-                    dz8SearchText = p0.toString()
-                    adapter.updateList(Dz6StudentsSinglton.search(dz8SearchText) as MutableList<Dz6Student>)
+                    searchText = p0.toString()
+                    adapter.updateList(Dz6StudentsSinglton.search(searchText) as MutableList<Dz6Student>)
                 }, 500)
             }
 
@@ -71,38 +72,42 @@ class Dz8StudentListFragment : Fragment(), Dz6ListAdapter.ClickListener {
         return view
     }
 
-    override fun onDetach() {
-        super.onDetach()
-        listener = null
-    }
-
     override fun onResume() {
         super.onResume()
         prefManager = SharedPrefManager(requireContext())
-        val saveSearch = prefManager.readUserText()
-        if (saveSearch != dz8SearchText) {
-            dz8SearchText = saveSearch
-            dz8Search.setText(dz8SearchText)
-            updateRecyclerList()
-        }
+        dz8SearchEditText.setText(prefManager.readUserText())
+        updateRecyclerList()
     }
 
     override fun onPause() {
         super.onPause()
         updateRecyclerList()
-        prefManager.saveSharedPrefs(dz8Search.text.toString())
+        prefManager.saveSharedPrefs(dz8SearchEditText.text.toString())
     }
 
     override fun onStudentClick(item: Dz6Student) {
         listener?.onStudentClick(item.id)
     }
 
+    fun updateRecyclerList() {
+        adapter.updateList(Dz6StudentsSinglton.search(searchText) as MutableList<Dz6Student>)
+    }
+
+    override fun onDetach() {
+        super.onDetach()
+        listener = null
+    }
+
+    fun reload(): MutableList<Dz6Student> {
+        if (Dz6StudentsSinglton.getStudentsList().isEmpty()) {
+            return Dz6StudentsSinglton.getStudentsExplorerList()
+        } else {
+            return Dz6StudentsSinglton.getStudentsList()
+        }
+    }
+
     interface Listener {
         fun onStudentClick(id: Long)
         fun onAddButtonClick()
-    }
-
-    fun updateRecyclerList() {
-        adapter.updateList(Dz6StudentsSinglton.search(dz8SearchText) as MutableList<Dz6Student>)
     }
 }

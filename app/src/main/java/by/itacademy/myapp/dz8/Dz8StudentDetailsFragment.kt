@@ -17,7 +17,7 @@ import by.itacademy.myapp.util.picassoLoader
 class Dz8StudentDetailsFragment : Fragment() {
 
     private var listener: Listener? = null
-    private var listenerChangeStorage: MyListenerChangeBox? = null
+    private var mylistener: MyListenerChangeBox? = null
     private var student: Dz6Student? = null
 
     companion object {
@@ -37,7 +37,7 @@ class Dz8StudentDetailsFragment : Fragment() {
         if (context is Listener)
             listener = context
         if (context is MyListenerChangeBox)
-            listenerChangeStorage = context
+            mylistener = context
     }
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
@@ -63,7 +63,7 @@ class Dz8StudentDetailsFragment : Fragment() {
 
                 view.findViewById<Button>(R.id.dz8DeleteProfileButton).setOnClickListener {
                     Dz6StudentsSinglton.deleteStudentOfList(student!!)
-                    listenerChangeStorage?.onChangeBox()
+                    mylistener?.onChangeBox()
                 }
 
                 view.findViewById<Button>(R.id.dz8EditProfileButton).setOnClickListener {
@@ -77,12 +77,7 @@ class Dz8StudentDetailsFragment : Fragment() {
     override fun onDetach() {
         super.onDetach()
         listener = null
-        listenerChangeStorage = null
-    }
-
-    override fun onResume() {
-        super.onResume()
-        // listenerChangeStorage?.onChangeBox()
+        mylistener = null
     }
 
     interface Listener {

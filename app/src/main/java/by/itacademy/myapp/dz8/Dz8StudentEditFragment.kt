@@ -18,12 +18,11 @@ import kotlinx.android.synthetic.main.activity_dz8_edit_profile.view.*
 class Dz8StudentEditFragment : Fragment() {
 
     private val pattern = Patterns.WEB_URL
-    private var listenerChangeStorage: MyListenerChangeBox? = null
+    private var myListener: MyListenerChangeBox? = null
     private var student: Dz6Student? = null
 
     companion object {
         private const val ID_STUDENT = "ID_STUDENT"
-        private const val ID_STUDENT_NEW = "NEW_STUDENT"
 
         fun getInstance(idStudent: Long = 0): Dz8StudentEditFragment {
             val fragment = Dz8StudentEditFragment()
@@ -37,7 +36,7 @@ class Dz8StudentEditFragment : Fragment() {
     override fun onAttach(context: Context) {
         super.onAttach(context)
         if (context is MyListenerChangeBox)
-            listenerChangeStorage = context
+            myListener = context
     }
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
@@ -83,7 +82,7 @@ class Dz8StudentEditFragment : Fragment() {
 
                         Toast.makeText(context, "profile successfully edited", Toast.LENGTH_SHORT).show()
 
-                        listenerChangeStorage?.onChangeBox()
+                        myListener?.onChangeBox()
                     }
                 } catch (e: Exception) {
                     Toast.makeText(context, "ERROR", Toast.LENGTH_SHORT).show()
@@ -115,7 +114,7 @@ class Dz8StudentEditFragment : Fragment() {
 
                         Toast.makeText(context, "New profile successfully created", Toast.LENGTH_SHORT).show()
 
-                        listenerChangeStorage?.onChangeBox()
+                        myListener?.onChangeBox()
                     }
                 } catch (e: Exception) {
                     Toast.makeText(context, "ERROR", Toast.LENGTH_SHORT).show()
@@ -127,6 +126,6 @@ class Dz8StudentEditFragment : Fragment() {
 
     override fun onDetach() {
         super.onDetach()
-        listenerChangeStorage = null
+        myListener = null
     }
 }
