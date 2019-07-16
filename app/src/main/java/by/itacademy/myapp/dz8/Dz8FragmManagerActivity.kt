@@ -65,11 +65,18 @@ class Dz8FragmManagerActivity : FragmentActivity(),
     }
 
     fun getLandOrPortret(): Int {
-
         return if (isLandOrientation) {
             R.id.dz8ContainerSecond
         } else {
             R.id.dz8ContainerHead
         }
     }
+
+
+
+
+
+
+
+
 }
