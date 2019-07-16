@@ -31,25 +31,24 @@
                 android:name="com.google.android.geo.API_KEY"
                 android:value="@string/google_maps_key"/>
 
-        <!--<activity
-                android:name=".dz9.MapsActivity"
-                android:label="@string/title_activity_maps">
-        </activity>-->
+
 
         <activity android:name=".dz0.Dz0Activity"/>
         <activity android:name=".dz1.Dz1Activity"/>
         <activity android:name=".dz2.Dz2Activity"/>
         <activity android:name=".dz2.Dz2LoginActivity"/>
         <activity android:name=".dz3.Dz3Activity"/>
-        <activity android:name=".dz6.Dz6StudentEditActivity"/>
-        <activity android:name=".dz6.Dz6StudentDetailsActivity"/>
-        <activity android:name=".dz6.Dz6StudentListActivity"/>
         <activity android:name=".dz4.Dz4Activity"/>
         <activity android:name=".dz5.Dz5DiagramActivity"/>
         <activity android:name=".dz5.Dz5ActivityOwl"/>
-        <activity android:name=".dz9.MapsActivity"
-                  android:label="@string/title_activity_maps">
+        <activity android:name=".dz6.Dz6StudentEditActivity"/>
+        <activity android:name=".dz6.Dz6StudentDetailsActivity"/>
+        <activity android:name=".dz6.Dz6StudentListActivity"/>
+        <activity android:name=".AllDzActivity"/>
 
+        <activity
+            android:name=".dz9.MapsActivity"
+            android:label="@string/title_activity_maps">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
@@ -57,5 +56,5 @@
             </intent-filter>
         </activity>
     </application>
-
 </manifest>
+
