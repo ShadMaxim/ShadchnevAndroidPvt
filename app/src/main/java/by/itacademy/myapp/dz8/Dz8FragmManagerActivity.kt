@@ -72,8 +72,4 @@ class Dz8FragmManagerActivity : FragmentActivity(),
             R.id.dz8ContainerHead
         }
     }
-
-
-
-
 }
