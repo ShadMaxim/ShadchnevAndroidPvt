@@ -18,7 +18,7 @@ import kotlinx.android.synthetic.main.activity_dz8_edit_profile.view.*
 class Dz8StudentEditFragment : Fragment() {
 
     private val pattern = Patterns.WEB_URL
-    private var myListener: MyListenerChangeBox? = null
+    private var myListener: MyListener? = null
     private var student: Dz6Student? = null
 
     companion object {
@@ -35,7 +35,7 @@ class Dz8StudentEditFragment : Fragment() {
 
     override fun onAttach(context: Context) {
         super.onAttach(context)
-        if (context is MyListenerChangeBox)
+        if (context is MyListener)
             myListener = context
     }
 
@@ -82,7 +82,7 @@ class Dz8StudentEditFragment : Fragment() {
 
                         Toast.makeText(context, "profile successfully edited", Toast.LENGTH_SHORT).show()
 
-                        myListener?.onChangeBox()
+                        myListener?.onRealization()
                     }
                 } catch (e: Exception) {
                     Toast.makeText(context, "ERROR", Toast.LENGTH_SHORT).show()
@@ -114,7 +114,7 @@ class Dz8StudentEditFragment : Fragment() {
 
                         Toast.makeText(context, "New profile successfully created", Toast.LENGTH_SHORT).show()
 
-                        myListener?.onChangeBox()
+                        myListener?.onRealization()
                     }
                 } catch (e: Exception) {
                     Toast.makeText(context, "ERROR", Toast.LENGTH_SHORT).show()

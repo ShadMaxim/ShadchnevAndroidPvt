@@ -8,8 +8,7 @@ import by.itacademy.myapp.R
 
 class Dz8FragmManagerActivity : FragmentActivity(),
     Dz8StudentListFragment.Listener,
-    Dz8StudentDetailsFragment.Listener,
-    MyListenerChangeBox {
+    MyListener {
 
     private var isLandOrientation = false
     private var container: Int = 0
@@ -37,13 +36,6 @@ class Dz8FragmManagerActivity : FragmentActivity(),
         createTransaction(getLandOrPortret(), Dz8StudentEditFragment.getInstance())
     }
 
-    override fun onEditStudentClick(id: Long) {
-        if (isLandOrientation) {
-            supportFragmentManager.popBackStack()
-        }
-        createTransaction(getLandOrPortret(), Dz8StudentEditFragment.getInstance(id))
-    }
-
     private fun createTransaction(idContainer: Int, nameFragment: Fragment) {
         val transaction = supportFragmentManager.beginTransaction()
         transaction.replace(idContainer, nameFragment)
@@ -51,7 +43,7 @@ class Dz8FragmManagerActivity : FragmentActivity(),
         transaction.commit()
     }
 
-    override fun onChangeBox() {
+    override fun onRealization() {
 
         supportFragmentManager.popBackStack()
         if (isLandOrientation) {
@@ -59,6 +51,17 @@ class Dz8FragmManagerActivity : FragmentActivity(),
         } else {
             createTransaction(R.id.dz8ContainerHead, Dz8StudentListFragment())
         }
+    }
+
+    override fun onEdit(id: Long) {
+        if (isLandOrientation) {
+            supportFragmentManager.popBackStack()
+        }
+        createTransaction(getLandOrPortret(), Dz8StudentEditFragment.getInstance(id))
+    }
+
+    override fun onIfNullToBack() {
+        supportFragmentManager.popBackStack()
     }
 
     fun getLandOrPortret(): Int {
@@ -69,4 +72,8 @@ class Dz8FragmManagerActivity : FragmentActivity(),
             R.id.dz8ContainerHead
         }
     }
+
+
+
+
 }

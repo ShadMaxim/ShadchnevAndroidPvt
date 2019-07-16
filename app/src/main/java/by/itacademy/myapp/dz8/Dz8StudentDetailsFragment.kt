@@ -16,8 +16,7 @@ import by.itacademy.myapp.util.picassoLoader
 
 class Dz8StudentDetailsFragment : Fragment() {
 
-    private var listener: Listener? = null
-    private var mylistener: MyListenerChangeBox? = null
+    private var mylistener: MyListener? = null
     private var student: Dz6Student? = null
 
     companion object {
@@ -34,9 +33,7 @@ class Dz8StudentDetailsFragment : Fragment() {
 
     override fun onAttach(context: Context) {
         super.onAttach(context)
-        if (context is Listener)
-            listener = context
-        if (context is MyListenerChangeBox)
+        if (context is MyListener)
             mylistener = context
     }
 
@@ -54,7 +51,8 @@ class Dz8StudentDetailsFragment : Fragment() {
             Toast.makeText(context, text, Toast.LENGTH_LONG).show()
 
             if (student == null)
-                activity?.supportFragmentManager?.popBackStack()
+                mylistener?.onIfNullToBack()
+                //activity?.supportFragmentManager?.popBackStack()
             else {
                 picassoLoader(student!!.url, view.findViewById(R.id.dz8AvatarProfileImageView))
                 view.findViewById<TextView>(R.id.dz8NameProfilStudentTextView).text = student!!.name
@@ -63,11 +61,11 @@ class Dz8StudentDetailsFragment : Fragment() {
 
                 view.findViewById<Button>(R.id.dz8DeleteProfileButton).setOnClickListener {
                     Dz6StudentsSinglton.deleteStudentOfList(student!!)
-                    mylistener?.onChangeBox()
+                    mylistener?.onRealization()
                 }
 
                 view.findViewById<Button>(R.id.dz8EditProfileButton).setOnClickListener {
-                    listener?.onEditStudentClick(student!!.id)
+                    mylistener?.onEdit(student!!.id)
                 }
             }
         }
@@ -76,11 +74,6 @@ class Dz8StudentDetailsFragment : Fragment() {
 
     override fun onDetach() {
         super.onDetach()
-        listener = null
         mylistener = null
-    }
-
-    interface Listener {
-        fun onEditStudentClick(id: Long)
     }
 }
