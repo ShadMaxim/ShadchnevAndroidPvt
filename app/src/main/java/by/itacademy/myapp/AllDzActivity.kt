@@ -9,10 +9,11 @@ import by.itacademy.myapp.dz1.Dz1Activity
 import by.itacademy.myapp.dz2.Dz2Activity
 import by.itacademy.myapp.dz2.Dz2LoginActivity
 import by.itacademy.myapp.dz3.Dz3Activity
-import by.itacademy.myapp.dz6.Dz6StudentListActivity
 import by.itacademy.myapp.dz4.Dz4Activity
 import by.itacademy.myapp.dz5.Dz5ActivityOwl
 import by.itacademy.myapp.dz5.Dz5DiagramActivity
+import by.itacademy.myapp.dz6.Dz6StudentListActivity
+import by.itacademy.myapp.dz8.Dz8FragmManagerActivity
 
 import kotlinx.android.synthetic.main.activity_alldz.*
 
@@ -36,38 +37,42 @@ class AllDzActivity : Activity() {
                 R.id.dz1Button -> {
                     intent = Intent(this, Dz1Activity::class.java)
                 }
-                R.id.dz2Button -> {
+                R.id.dz2part1Button -> {
                     intent = Intent(this, Dz2Activity::class.java)
                 }
-                R.id.dz2_2Button -> {
+                R.id.dz2part2Button -> {
                     intent = Intent(this, Dz2LoginActivity::class.java)
                 }
                 R.id.dz3Button -> {
                     intent = Intent(this, Dz3Activity::class.java)
-                }              
-                R.id.dz4Button ->{
+                }
+                R.id.dz4Button -> {
                     intent = Intent(this, Dz4Activity::class.java)
                 }
-                R.id.dz5_1Button ->{
+                R.id.dz5part1Button -> {
                     intent = Intent(this, Dz5ActivityOwl::class.java)
-                }                
-                R.id.dz5_2Button ->{
+                }
+                R.id.dz5part2Button -> {
                     intent = Intent(this, Dz5DiagramActivity::class.java)
-                }  
+                }
                 R.id.dz6Button -> {
                     intent = Intent(this, Dz6StudentListActivity::class.java)
+                }
+                R.id.dz8button -> {
+                    intent = Intent(this, Dz8FragmManagerActivity::class.java)
                 }
             }
             startActivity(intent)
         }
         dz0Button.setOnClickListener(onClickListener)
         dz1Button.setOnClickListener(onClickListener)
-        dz2Button.setOnClickListener(onClickListener)
-        dz2_2Button.setOnClickListener(onClickListener)
-        dz3Button.setOnClickListener(onClickListener)     
+        dz2part1Button.setOnClickListener(onClickListener)
+        dz2part2Button.setOnClickListener(onClickListener)
+        dz3Button.setOnClickListener(onClickListener)
         dz4Button.setOnClickListener(onClickListener)
-        dz5_1Button.setOnClickListener(onClickListener)
-        dz5_2Button.setOnClickListener(onClickListener)     
+        dz5part1Button.setOnClickListener(onClickListener)
+        dz5part2Button.setOnClickListener(onClickListener)
         dz6Button.setOnClickListener(onClickListener)
+        dz8button.setOnClickListener(onClickListener)
     }
 }

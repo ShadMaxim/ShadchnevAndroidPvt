@@ -22,8 +22,9 @@
         <activity android:name=".dz6.Dz6StudentListActivity"/>
         <activity android:name=".dz4.Dz4Activity"/>
         <activity android:name=".dz5.Dz5DiagramActivity"/>
-        <activity android:name=".dz5.Dz5ActivityOwl"/>
-      
+        <activity android:name=".dz5.Dz5ActivityOwl"/>        
+        <activity android:name=".dz8.Dz8FragmManagerActivity"/>
+
         <activity android:name=".AllDzActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
