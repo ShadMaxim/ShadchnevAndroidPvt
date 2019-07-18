@@ -28,4 +28,6 @@
     <string name="dz6Search">Search</string>
     <string name="dz6">dz6</string>
     <string name="title_activity_maps">Map</string>
+    <string name="sorry2">SORRY</string>
+    <string name="dz9_list_of_available_cars">List of available cars</string>
 </resources>

@@ -31,7 +31,9 @@
                 android:name="com.google.android.geo.API_KEY"
                 android:value="@string/google_maps_key"/>
 
-
+        <!--<activity
+            android:name=".dz9.MapsActivity"
+            android:label="@string/title_activity_maps"/>-->
 
         <activity android:name=".dz0.Dz0Activity"/>
         <activity android:name=".dz1.Dz1Activity"/>
@@ -46,9 +48,7 @@
         <activity android:name=".dz6.Dz6StudentListActivity"/>
         <activity android:name=".AllDzActivity"/>
 
-        <activity
-            android:name=".dz9.MapsActivity"
-            android:label="@string/title_activity_maps">
+        <activity android:name=".dz9.Dz9Activity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 

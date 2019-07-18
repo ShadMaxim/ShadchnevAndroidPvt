@@ -1,16 +1,14 @@
 package by.itacademy.myapp.dz9
 
-fun providerCarRepository(): CarRepository {
+fun provideCarRepository(): CarRepository {
 
     return CarRepositoryRemote(
-        NetProvaider.gprovidertApi(
-
-            NetProvaider.gprovidertRetrofit(
+        NetProvider.provideApi(
+            NetProvider.provideRetrofit(
                 "http://kiparo.ru/",
-                NetProvaider.gprovidertOkHttp(),
-                NetProvaider.providerGson()
+                NetProvider.provideOkHttp(),
+                NetProvider.provideGson()
             )
-
         )
     )
 }

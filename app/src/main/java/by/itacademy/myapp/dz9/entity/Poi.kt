@@ -2,16 +2,17 @@ package by.itacademy.myapp.dz9.entity
 
 import com.google.gson.annotations.SerializedName
 
-class Poi(
+data class Poi(
+
     @SerializedName("id")
     val id: String,
 
     @SerializedName("coordinate")
     val coordinate: Coordinate?,
 
-    @SerializedName("fleeType")
+    @SerializedName("fleetType")
     val fleeType: FleeType?,
 
-    @SerializedName("healibg")
-    val healibg: Double?
+    @SerializedName("heading")
+    val heading: Double?
 )
