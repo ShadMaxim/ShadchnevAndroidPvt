@@ -26,9 +26,13 @@
     <string name="dz6_edit_profile">Edit profile</string>
     <string name="dz6_delete_profile">Delete profile</string>
     <string name="dz6Search">Search</string>
-    <string name="dz6">dz6</string>
-    <string name="title_activity_maps">Map</string>
-    <string name="sorry2">SORRY</string>
+    <string name="dz6">dz6</string>    
+    <string name="dz8">dz8</string>
+    <string name="dz8_save">SAVE</string>
+    <string name="dz8_age">Age:</string>
+    <string name="dz8_name">Name:</string>
+    <string name="dz8_url">Url:</string>
+    <string name="title_activity_maps">Map</string>    
     <string name="dz9_list_of_available_cars">List of available cars</string>
     <string name="dz9">dz9</string>
 </resources>
