@@ -30,4 +30,5 @@
     <string name="title_activity_maps">Map</string>
     <string name="sorry2">SORRY</string>
     <string name="dz9_list_of_available_cars">List of available cars</string>
+    <string name="dz9">dz9</string>
 </resources>

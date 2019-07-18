@@ -56,13 +56,24 @@
         <Button
                 android:id="@+id/dz5_2Button"
                 style="@style/AllDzStyle"
-                android:text="@string/dz5_2"/> 
-      
-        <Button
-                android:id="@+id/dz6Button"
-                style="@style/AllDzStyle"
-                android:text="@string/dz6"/>
+                android:text="@string/dz5_2"/>
 
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/dz6Button"
+            style="@style/AllDzStyle"
+            android:text="@string/dz6"/>
+
+        <Button
+            android:id="@+id/dz9Button"
+            style="@style/AllDzStyle"
+            android:text="@string/dz9"/>
 
     </LinearLayout>
 
