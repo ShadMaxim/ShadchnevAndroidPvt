@@ -1,5 +1,6 @@
 package by.itacademy.myapp.dz9
 
+import android.graphics.Bitmap
 import android.os.Bundle
 import android.os.PersistableBundle
 import android.widget.LinearLayout
@@ -30,7 +31,10 @@ class Dz9Activity : FragmentActivity(), CarRepositoryResult, OnMapReadyCallback,
     private lateinit var googleMap: GoogleMap
     private lateinit var mapView: MapView
     private lateinit var bottomSheetBehavior: BottomSheetBehavior<LinearLayout>
+    private lateinit var arrowBitmapTaxi: Bitmap
+    private lateinit var arrowBitmapPool: Bitmap
     private var back = false
+    private var mapLoaded = false
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -40,7 +44,7 @@ class Dz9Activity : FragmentActivity(), CarRepositoryResult, OnMapReadyCallback,
         bottomSheetBehavior.state = BottomSheetBehavior.STATE_COLLAPSED
 
         if (savedInstanceState == null) {
-            createTransaction(R.id.dz9container, Dz9Fragment())
+            replaceFragment(R.id.dz9container, Dz9Fragment())
         }
 
         mapView = findViewById(R.id.dz9Map)
@@ -57,23 +61,26 @@ class Dz9Activity : FragmentActivity(), CarRepositoryResult, OnMapReadyCallback,
     override fun onSuccessfully(list: List<Poi>) {
         listPoi.addAll(list)
 
-        val builder = LatLngBounds.builder()
+        if (mapLoaded) {
+            val builder = LatLngBounds.builder()
 
-        this.listPoi.forEach {
-            val coord = LatLng(
-                it.coordinate?.latitude!!,
-                it.coordinate.longitude)
+            this.listPoi.forEach {
+                val coord = LatLng(
+                    it.coordinate?.latitude!!,
+                    it.coordinate.longitude
+                )
 
-            addMark(it, addLatLng(it))
-            builder.include(coord)
+                addMark(it, createLatLng(it))
+                builder.include(coord)
+            }
+
+            val bounds = builder.build()
+            val paddForMaps = 200
+            googleMap.moveCamera(
+                CameraUpdateFactory
+                    .newLatLngBounds(bounds, paddForMaps)
+            )
         }
-
-        val bounds = builder.build()
-        val paddForMaps = 100
-        googleMap.moveCamera(
-            CameraUpdateFactory
-                .newLatLngBounds(bounds, paddForMaps)
-        )
     }
 
     override fun onError(throwable: Throwable) {
@@ -83,45 +90,49 @@ class Dz9Activity : FragmentActivity(), CarRepositoryResult, OnMapReadyCallback,
     override fun onMapReady(googleMap: GoogleMap) {
         this.googleMap = googleMap
         googleMap.mapType = GoogleMap.MAP_TYPE_HYBRID
+        mapLoaded = true
     }
 
     override fun onCarTouch(item: Poi) {
+        if (mapLoaded) {
 
-        val zoomerCamera = 18f
-        googleMap.clear()
-        googleMap.animateCamera(
-            CameraUpdateFactory.newLatLngZoom(
-                LatLng(
-                    item.coordinate?.latitude!!,
-                    item.coordinate.longitude
-                ), zoomerCamera
+            val zoomerCamera = 18f
+            googleMap.clear()
+            googleMap.animateCamera(
+                CameraUpdateFactory.newLatLngZoom(
+                    LatLng(
+                        item.coordinate?.latitude!!,
+                        item.coordinate.longitude
+                    ), zoomerCamera
+                )
             )
-        )
 
-        addMark(item, addLatLng(item))
-        bottomSheetBehavior.state = BottomSheetBehavior.STATE_COLLAPSED
-        back = true
+            addMark(item, createLatLng(item))
+            bottomSheetBehavior.state = BottomSheetBehavior.STATE_COLLAPSED
+            back = true
+        }
     }
 
     private fun addMark(poi: Poi, latLng: LatLng) {
 
-        val arrowBitmapTaxi = AppCompatResources
+        arrowBitmapTaxi = AppCompatResources
             .getDrawable(this, R.drawable.ic_near_me_black_24dp)!!.toBitmap()
-        val arrowBitmapPool = AppCompatResources
+        arrowBitmapPool = AppCompatResources
             .getDrawable(this, R.drawable.ic_send_black_24dp)!!.toBitmap()
 
         googleMap.addMarker(
 
             if (poi.fleeType == FleeType.TAXI) {
-            poi.heading?.toFloat()?.let { it1 ->
-                MarkerOptions()
-                    .position(latLng)
-                    .anchor(0.5f, 0.4f)
-                    .rotation(it1)
-                    .flat(true)
-                    .icon(BitmapDescriptorFactory.fromBitmap(arrowBitmapTaxi))
-                    .title(poi.fleeType.toString())
-            } } else {
+                poi.heading?.toFloat()?.let { it1 ->
+                    MarkerOptions()
+                        .position(latLng)
+                        .anchor(0.5f, 0.4f)
+                        .rotation(it1)
+                        .flat(true)
+                        .icon(BitmapDescriptorFactory.fromBitmap(arrowBitmapTaxi))
+                        .title(poi.fleeType.toString())
+                }
+            } else {
                 poi.heading?.toFloat()?.let { it1 ->
                     MarkerOptions()
                         .position(latLng)
@@ -135,14 +146,14 @@ class Dz9Activity : FragmentActivity(), CarRepositoryResult, OnMapReadyCallback,
         )
     }
 
-    private fun createTransaction(idContainer: Int, nameFragment: Fragment) {
+    private fun replaceFragment(idContainer: Int, nameFragment: Fragment) {
         val transaction = supportFragmentManager.beginTransaction()
         val fragment = nameFragment
         transaction.replace(idContainer, fragment)
         transaction.commit()
     }
 
-    private fun addLatLng(item: Poi): LatLng {
+    private fun createLatLng(item: Poi): LatLng {
         val coordinate = LatLng(
             item.coordinate?.latitude!!,
             item.coordinate.longitude
@@ -154,7 +165,7 @@ class Dz9Activity : FragmentActivity(), CarRepositoryResult, OnMapReadyCallback,
         if (back) {
             onSuccessfully(listPoi)
         } else {
-        super.onBackPressed()
+            super.onBackPressed()
         }
         bottomSheetBehavior.state = BottomSheetBehavior.STATE_COLLAPSED
     }
