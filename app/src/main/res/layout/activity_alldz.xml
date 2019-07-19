@@ -76,7 +76,7 @@
             android:text="@string/dz8"/>
       
         <Button
-            android:id="@+id/dz9button"
+            android:id="@+id/dz9Button"
             style="@style/AllDzStyle"
             android:text="@string/dz9"/>
 

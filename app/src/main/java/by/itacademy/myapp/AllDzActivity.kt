@@ -61,14 +61,14 @@ class AllDzActivity : Activity() {
                 R.id.dz9Button -> {
                     intent = Intent(this, Dz9Activity::class.java)
                 }
-                R.id.dz8button -> {
+                R.id.dz8Button -> {
                     intent = Intent(this, Dz8FragmManagerActivity::class.java)
                 }
             }
             startActivity(intent)
         }
         dz0Button.setOnClickListener(onClickListener)
-        dz1Button.setOnClickListener(onClickListener)     
+        dz1Button.setOnClickListener(onClickListener)
         dz2part1Button.setOnClickListener(onClickListener)
         dz2part2Button.setOnClickListener(onClickListener)
         dz3Button.setOnClickListener(onClickListener)
@@ -76,7 +76,7 @@ class AllDzActivity : Activity() {
         dz5part1Button.setOnClickListener(onClickListener)
         dz5part2Button.setOnClickListener(onClickListener)
         dz6Button.setOnClickListener(onClickListener)
-        dz8button.setOnClickListener(onClickListener)
+        dz8Button.setOnClickListener(onClickListener)
         dz9Button.setOnClickListener(onClickListener)
     }
 }
