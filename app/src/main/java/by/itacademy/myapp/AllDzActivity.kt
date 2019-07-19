@@ -14,7 +14,7 @@ import by.itacademy.myapp.dz5.Dz5ActivityOwl
 import by.itacademy.myapp.dz5.Dz5DiagramActivity
 import by.itacademy.myapp.dz6.Dz6StudentListActivity
 import by.itacademy.myapp.dz8.Dz8FragmManagerActivity
-
+import by.itacademy.myapp.dz9.Dz9Activity
 import kotlinx.android.synthetic.main.activity_alldz.*
 
 class AllDzActivity : Activity() {
@@ -58,6 +58,9 @@ class AllDzActivity : Activity() {
                 R.id.dz6Button -> {
                     intent = Intent(this, Dz6StudentListActivity::class.java)
                 }
+                R.id.dz9Button -> {
+                    intent = Intent(this, Dz9Activity::class.java)
+                }
                 R.id.dz8button -> {
                     intent = Intent(this, Dz8FragmManagerActivity::class.java)
                 }
@@ -65,7 +68,7 @@ class AllDzActivity : Activity() {
             startActivity(intent)
         }
         dz0Button.setOnClickListener(onClickListener)
-        dz1Button.setOnClickListener(onClickListener)
+        dz1Button.setOnClickListener(onClickListener)     
         dz2part1Button.setOnClickListener(onClickListener)
         dz2part2Button.setOnClickListener(onClickListener)
         dz3Button.setOnClickListener(onClickListener)
@@ -74,5 +77,6 @@ class AllDzActivity : Activity() {
         dz5part2Button.setOnClickListener(onClickListener)
         dz6Button.setOnClickListener(onClickListener)
         dz8button.setOnClickListener(onClickListener)
+        dz9Button.setOnClickListener(onClickListener)
     }
 }
