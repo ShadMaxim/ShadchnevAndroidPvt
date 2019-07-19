@@ -52,7 +52,6 @@ class Dz8StudentDetailsFragment : Fragment() {
 
             if (student == null)
                 mylistener?.onIfNullToBack()
-                //activity?.supportFragmentManager?.popBackStack()
             else {
                 picassoLoader(student!!.url, view.findViewById(R.id.dz8AvatarProfileImageView))
                 view.findViewById<TextView>(R.id.dz8NameProfilStudentTextView).text = student!!.name

@@ -12,27 +12,26 @@ interface ImageLoaderCallback : Callback {
     override fun onError(e: Exception)
 }
 
-fun picassoLoader(uri:String, imageView: ImageView){
+fun picassoLoader(uri: String, imageView: ImageView) {
     Picasso.get()
         .load(uri)
         .into(imageView)
 }
-fun picassoLoader(uri:String, adressImageForError: Drawable, imageView: ImageView){
+fun picassoLoader(uri: String, adressImageForError: Drawable, imageView: ImageView) {
     Picasso.get()
         .load(uri)
         .error(adressImageForError)
         .into(imageView)
 }
 
-fun picassoLoaderCircle(uri: String, imageView: ImageView){
+fun picassoLoaderCircle(uri: String, imageView: ImageView) {
     Picasso.get()
         .load(uri)
         .transform(CropCircleTransformation())
         .into(imageView)
 }
-fun picassoLoader(uri:String, imageView: ImageView, callback: ImageLoaderCallback){
+fun picassoLoader(uri: String, imageView: ImageView, callback: ImageLoaderCallback) {
     Picasso.get()
         .load(uri)
         .into(imageView, callback)
 }
-
