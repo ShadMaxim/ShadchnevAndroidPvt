@@ -31,8 +31,9 @@
         <activity android:name=".dz6.Dz6StudentListActivity"/>
         <activity android:name=".dz8.Dz8FragmManagerActivity"/>
         <activity android:name=".dz9.Dz9Activity"/>          
-        
-        <activity android:name=".AllDzActivity">
+        <activity android:name=".AllDzActivity"/>
+
+        <activity android:name=".dz11.mvp.Dz11ManagerActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 

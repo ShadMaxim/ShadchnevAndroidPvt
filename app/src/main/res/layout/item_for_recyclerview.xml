@@ -19,7 +19,7 @@
 
         <TextView
                 android:text="Name:"
-                android:textSize="20sp"
+                android:textSize="15sp"
                 android:textColor="@color/numberColorDz3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
@@ -27,7 +27,7 @@
         <TextView
                 android:id="@+id/nameForAvatarTextView"
                 android:gravity="center"
-                android:textSize="20sp"
+                android:textSize="15sp"
                 android:maxLines="2"
                 android:ellipsize="end"
                 android:textColor="@android:color/white"
