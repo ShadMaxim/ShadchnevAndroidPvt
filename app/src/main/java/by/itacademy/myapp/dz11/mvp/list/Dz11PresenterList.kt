@@ -21,8 +21,4 @@ class Dz11PresenterList : Dz11BasePresenterList {
         view?.showNewList(list)
         return list
     }
-
-    /*fun update(text: String){
-        view!!.updateRecyclerList(text)
-    }*/
 }
