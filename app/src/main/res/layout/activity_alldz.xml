@@ -80,6 +80,23 @@
             style="@style/AllDzStyle"
             android:text="@string/dz9"/>
 
+        <Button
+            android:id="@+id/dz11path1Button"
+            style="@style/AllDzStyle"
+            android:text="@string/dz11mvp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/dz11path2Button"
+            style="@style/AllDzStyle"
+            android:text="@string/dz11mvvm"/>
+
     </LinearLayout>
 
 </LinearLayout>
