@@ -20,7 +20,7 @@ class Dz3Activity : Activity() {
         startGlide()
     }
 
-    fun startGlide(){
+    fun startGlide() {
         Glide
             .with(this)
             .load(uriPicture)
