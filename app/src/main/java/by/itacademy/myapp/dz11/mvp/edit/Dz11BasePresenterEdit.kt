@@ -7,4 +7,5 @@ interface Dz11BasePresenterEdit {
     fun getStudentById(idStudent: Long)
     fun saveEditedStudent(idStudent: Long, name: String, age: Int, url: String)
     fun saveNewStudent(name: String, age: Int, url: String)
+    fun correctDataFilling(name: String, age: Int, url: String): Boolean
 }

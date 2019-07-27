@@ -68,9 +68,12 @@ class Dz11EditFragment : Fragment(), Dz11ViewEdit {
                 val url = dz8UrlEditProfileEditText.text.toString()
                 val age = dz8AgeEditProfileEditText.text.toString().toInt()
 
-                if (correctDataFilling(name, age, url)) {
+                if (presenter.correctDataFilling(name, age, url)) {
                     presenter.saveEditedStudent(idStudent, name, age, url)
                     myListener?.onRealization()
+                } else {
+                    Toast.makeText(context, Dz11PresenterEdit.textErrorCorrectDataFiling, Toast.LENGTH_LONG)
+                        .show()
                 }
             }
         } else {
@@ -81,29 +84,17 @@ class Dz11EditFragment : Fragment(), Dz11ViewEdit {
                 val url = dz8UrlEditProfileEditText.text.toString()
                 val age = dz8AgeEditProfileEditText.text.toString().toInt()
 
-                if (correctDataFilling(name, age, url)) {
+                if (presenter.correctDataFilling(name, age, url)) {
                     presenter.saveNewStudent(name, age, url)
                     myListener?.onRealization()
+                } else {
+                    Toast.makeText(context, Dz11PresenterEdit.textErrorCorrectDataFiling, Toast.LENGTH_LONG)
+                        .show()
                 }
             }
         }
 
         return view
-    }
-
-    override fun correctDataFilling(name: String, age: Int, url: String): Boolean {
-        if (!pattern.matcher(url).matches()) {
-            Toast.makeText(context, "ERROR( URL ): Not valid URL", Toast.LENGTH_SHORT).show()
-            return false
-        } else if (age == null) {
-            Toast.makeText(context, "ERROR( AGE ): Not valid Age, must be >= 0", Toast.LENGTH_SHORT).show()
-            return false
-        } else if (name.isEmpty()) {
-            Toast.makeText(context, "ERROR( NAME ): Not valid Name, must be filled", Toast.LENGTH_SHORT).show()
-            return false
-        } else {
-            return true
-        }
     }
 
     override fun showStudent(student: Dz6Student) {

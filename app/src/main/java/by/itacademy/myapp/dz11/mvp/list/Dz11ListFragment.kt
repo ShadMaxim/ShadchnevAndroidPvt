@@ -29,7 +29,6 @@ class Dz11ListFragment : Fragment(),
     private lateinit var dz8SearchEditText: EditText
     private var listener: Listener? = null
     private lateinit var presenter: Dz11PresenterList
-    // private var list: MutableList<Dz6Student>? = null
 
     override fun onAttach(context: Context) {
         super.onAttach(context)
@@ -65,9 +64,6 @@ class Dz11ListFragment : Fragment(),
                 timer?.postDelayed({
                     searchText = p0.toString()
                     updateRecyclerList()
-                    /*list = presenter.newListForSearch(searchText)
-                    showNewList(list!!)*/
-                    // adapter.updateList(list)
                 }, 500)
             }
 
@@ -104,7 +100,6 @@ class Dz11ListFragment : Fragment(),
 
     fun updateRecyclerList() {
         var list = presenter.newListForSearch(searchText)
-        // adapter.updateList(Dz11DataStudent.search(searchText) as MutableList<Dz6Student>)
         showNewList(list)
     }
 

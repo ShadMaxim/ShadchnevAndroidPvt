@@ -11,7 +11,6 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import by.itacademy.myapp.R
-import by.itacademy.myapp.dz11.mvp.model.Dz11DataStudent
 import by.itacademy.myapp.dz6.Dz6Student
 import by.itacademy.myapp.dz8.MyListener
 import by.itacademy.myapp.util.picassoLoader
@@ -25,6 +24,7 @@ class Dz11DetailsFragment : Fragment(), Dz11ViewDetails {
     private lateinit var ageEditText: TextView
     private lateinit var nameEditText: TextView
     private lateinit var urlEditText: TextView
+    private lateinit var avatarImageView: ImageView
 
     companion object {
         private const val ID_STUDENT = "ID_STUDENT"
@@ -53,14 +53,15 @@ class Dz11DetailsFragment : Fragment(), Dz11ViewDetails {
         nameEditText = view.findViewById(R.id.dz8NameProfilStudentTextView)
         ageEditText = view.findViewById(R.id.dz8AgeProfilStudentTextView)
         urlEditText = view.findViewById(R.id.dz8UrlProfilStudentTextView)
+        avatarImageView = view.findViewById(R.id.dz8AvatarProfileImageView)
 
         presenter = Dz11PresenterDetails()
         presenter.setView(this)
 
         if (idStudent != null) {
-            presenter.getId(idStudent)
-            showStudent(Dz11DataStudent.findStudentById(idStudent), view.findViewById(R.id.dz8AvatarProfileImageView))
-            student = Dz11DataStudent.findStudentById(idStudent)
+            // presenter.getStudentById(idStudent)
+            // student = Dz11DataStudent.findStudentById(idStudent)
+            student = presenter.getStudentById(idStudent)
 
             view.findViewById<Button>(R.id.dz8DeleteProfileButton).setOnClickListener {
                 presenter.clickDelete(idStudent)
@@ -79,8 +80,8 @@ class Dz11DetailsFragment : Fragment(), Dz11ViewDetails {
         return view
     }
 
-    override fun showStudent(student: Dz6Student, imageView: ImageView) {
-        picassoLoader(student.url, imageView)
+    override fun showStudent(student: Dz6Student) {
+        picassoLoader(student.url, avatarImageView)
         nameEditText.text = student.name
         urlEditText.text = student.url
         ageEditText.text = student.age.toString()

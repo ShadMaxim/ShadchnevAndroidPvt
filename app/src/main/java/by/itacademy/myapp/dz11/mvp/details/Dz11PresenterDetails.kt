@@ -2,7 +2,6 @@ package by.itacademy.myapp.dz11.mvp.details
 
 import by.itacademy.myapp.dz11.mvp.model.Dz11DataStudent
 import by.itacademy.myapp.dz6.Dz6Student
-
 class Dz11PresenterDetails : Dz11BasePresenterDetails {
 
     private var view: Dz11ViewDetails? = null
@@ -12,8 +11,10 @@ class Dz11PresenterDetails : Dz11BasePresenterDetails {
         this.view = view
     }
 
-    override fun getId(idStudent: Long) {
+    override fun getStudentById(idStudent: Long): Dz6Student {
         student = Dz11DataStudent.findStudentById(idStudent)
+        view?.showStudent(student)
+        return student
     }
 
     override fun clickDelete(idStudent: Long) {

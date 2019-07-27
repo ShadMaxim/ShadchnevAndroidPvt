@@ -2,7 +2,6 @@ package by.itacademy.myapp.dz11.mvvm
 
 import android.graphics.Bitmap
 import android.os.Bundle
-import android.os.Handler
 import android.os.PersistableBundle
 import android.util.DisplayMetrics
 import android.widget.LinearLayout
@@ -14,6 +13,7 @@ import androidx.fragment.app.FragmentActivity
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import by.itacademy.myapp.R
+import by.itacademy.myapp.dz9.CarRepositoryResult
 import by.itacademy.myapp.dz9.entity.FleeType
 import by.itacademy.myapp.dz9.entity.Poi
 import com.google.android.gms.maps.CameraUpdateFactory
@@ -30,6 +30,7 @@ import com.google.android.material.bottomsheet.BottomSheetBehavior
 class Dz11Activity : FragmentActivity(), OnMapReadyCallback, GoogleMap.OnMarkerClickListener, GoogleMap.OnMapClickListener {
 
     private var listPoi: MutableList<Poi> = mutableListOf()
+
     private lateinit var googleMap: GoogleMap
     private lateinit var mapView: MapView
     private lateinit var bottomSheetBehavior: BottomSheetBehavior<LinearLayout>
@@ -37,6 +38,7 @@ class Dz11Activity : FragmentActivity(), OnMapReadyCallback, GoogleMap.OnMarkerC
     private lateinit var arrowBitmapPool: Bitmap
     private var back = false
     private var mapLoaded = false
+    var listener: CarRepositoryResult? = null
 
     private lateinit var viewModel: Dz11ViewModel
     private lateinit var observerState: Observer<Dz11State>
@@ -66,7 +68,6 @@ class Dz11Activity : FragmentActivity(), OnMapReadyCallback, GoogleMap.OnMarkerC
         }
 
         viewModel = ViewModelProviders.of(this).get(Dz11ViewModel::class.java)
-        viewModel.drawMap()
 
         bottomSheetBehavior = BottomSheetBehavior.from(findViewById(R.id.dz9container))
         bottomSheetBehavior.state = BottomSheetBehavior.STATE_COLLAPSED
@@ -80,10 +81,9 @@ class Dz11Activity : FragmentActivity(), OnMapReadyCallback, GoogleMap.OnMarkerC
         mapView.getMapAsync(this)
     }
 
-    private fun onSuccessfully(list: List<Poi>) {
+    /*override*/ fun onSuccessfully(list: List<Poi>) {
         listPoi.addAll(list)
 
-        Handler().postDelayed({
         if (mapLoaded) {
 
             val builder = LatLngBounds.builder()
@@ -111,15 +111,15 @@ class Dz11Activity : FragmentActivity(), OnMapReadyCallback, GoogleMap.OnMarkerC
                         paddingForMaps
                     )
             )
-        } }, 600)
+        }
     }
 
-    private fun onError(throwable: Throwable) {
+    /*override*/ fun onError(throwable: Throwable) {
         Toast.makeText(this, " << ERROR:$throwable >> ", Toast.LENGTH_LONG).show()
     }
 
     private fun onErrorCarTouch() {
-        Toast.makeText(this, " << ERROR: List cars not find >> ", Toast.LENGTH_LONG).show()
+        Toast.makeText(this, " << ERROR: List cars not found >> ", Toast.LENGTH_LONG).show()
     }
 
     override fun onMapReady(googleMap: GoogleMap) {

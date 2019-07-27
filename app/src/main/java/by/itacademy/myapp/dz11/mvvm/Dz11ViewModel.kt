@@ -16,7 +16,7 @@ class Dz11ViewModel : ViewModel(), CarRepositoryResult {
     private val carRepository: CarRepository = provideCarRepository()
     private lateinit var poiList: List<Poi>
 
-    fun drawMap() {
+    init {
         val params = CoordParams(
             Coordinate(3333.0, 342.0),
             Coordinate(3242.0, 3453.0)
