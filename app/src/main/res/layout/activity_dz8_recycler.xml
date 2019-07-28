@@ -15,7 +15,7 @@
         android:textColor="@android:color/white"
         android:textColorHint="@android:color/white"
         android:textCursorDrawable="@null"
-        android:textSize="20sp"
+        android:textSize="15sp"
         android:hint="@string/dz6Search"
         android:inputType="text"
         android:layout_width="match_parent"

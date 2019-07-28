@@ -35,4 +35,7 @@
     <string name="title_activity_maps">Map</string>    
     <string name="dz9_list_of_available_cars">List of available cars</string>
     <string name="dz9">dz9</string>
+    <string name="dz11EmptyText">Enter data please</string>
+    <string name="dz11mvp">dz11mvp</string>
+    <string name="dz11mvvm">dz11mvvm</string>
 </resources>

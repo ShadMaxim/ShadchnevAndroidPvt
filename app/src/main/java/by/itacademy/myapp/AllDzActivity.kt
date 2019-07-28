@@ -6,6 +6,8 @@ import android.os.Bundle
 import android.view.View
 import by.itacademy.myapp.dz0.Dz0Activity
 import by.itacademy.myapp.dz1.Dz1Activity
+import by.itacademy.myapp.dz11.mvp.Dz11ManagerActivity
+import by.itacademy.myapp.dz11.mvvm.Dz11Activity
 import by.itacademy.myapp.dz2.Dz2Activity
 import by.itacademy.myapp.dz2.Dz2LoginActivity
 import by.itacademy.myapp.dz3.Dz3Activity
@@ -64,6 +66,12 @@ class AllDzActivity : Activity() {
                 R.id.dz8Button -> {
                     intent = Intent(this, Dz8FragmManagerActivity::class.java)
                 }
+                R.id.dz11path1Button -> {
+                    intent = Intent(this, Dz11ManagerActivity::class.java)
+                }
+                R.id.dz11path2Button -> {
+                    intent = Intent(this, Dz11Activity::class.java)
+                }
             }
             startActivity(intent)
         }
@@ -78,5 +86,7 @@ class AllDzActivity : Activity() {
         dz6Button.setOnClickListener(onClickListener)
         dz8Button.setOnClickListener(onClickListener)
         dz9Button.setOnClickListener(onClickListener)
+        dz11path1Button.setOnClickListener(onClickListener)
+        dz11path2Button.setOnClickListener(onClickListener)
     }
 }
