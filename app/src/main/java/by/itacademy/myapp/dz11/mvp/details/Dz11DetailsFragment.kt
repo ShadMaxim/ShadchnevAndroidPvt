@@ -18,13 +18,14 @@ import by.itacademy.myapp.util.picassoLoader
 class Dz11DetailsFragment : Fragment(), Dz11ViewDetails {
 
     private var mylistener: MyListener? = null
-    private var student: Dz6Student? = null
     private lateinit var presenter: Dz11PresenterDetails
 
     private lateinit var ageEditText: TextView
     private lateinit var nameEditText: TextView
     private lateinit var urlEditText: TextView
     private lateinit var avatarImageView: ImageView
+
+    private var nameStudent: String = ""
 
     companion object {
         private const val ID_STUDENT = "ID_STUDENT"
@@ -59,19 +60,17 @@ class Dz11DetailsFragment : Fragment(), Dz11ViewDetails {
         presenter.setView(this)
 
         if (idStudent != null) {
-            // presenter.getStudentById(idStudent)
-            // student = Dz11DataStudent.findStudentById(idStudent)
-            student = presenter.getStudentById(idStudent)
+            presenter.getStudentById(idStudent)
 
             view.findViewById<Button>(R.id.dz8DeleteProfileButton).setOnClickListener {
                 presenter.clickDelete(idStudent)
-                Toast.makeText(context, student!!.name + " successfully deleted ", Toast.LENGTH_LONG).show()
+                Toast.makeText(context, nameStudent + " successfully deleted ", Toast.LENGTH_LONG).show()
                 mylistener?.onRealization()
             }
 
             view.findViewById<Button>(R.id.dz8EditProfileButton).setOnClickListener {
-                Toast.makeText(context, " Change student " + student!!.name + " data ", Toast.LENGTH_LONG).show()
-                mylistener?.onEdit(student!!.id)
+                Toast.makeText(context, " Change student " + nameStudent + " data ", Toast.LENGTH_LONG).show()
+                mylistener?.onEdit(idStudent)
             }
         } else {
             Toast.makeText(context, "ERROR( Student ): Not valid student", Toast.LENGTH_LONG).show()
@@ -85,6 +84,7 @@ class Dz11DetailsFragment : Fragment(), Dz11ViewDetails {
         nameEditText.text = student.name
         urlEditText.text = student.url
         ageEditText.text = student.age.toString()
+        nameStudent = student.name
     }
 
     override fun onDetach() {

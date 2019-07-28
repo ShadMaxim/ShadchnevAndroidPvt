@@ -19,7 +19,6 @@ class Dz11EditFragment : Fragment(), Dz11ViewEdit {
 
     private val pattern = Patterns.WEB_URL
     private var myListener: MyListener? = null
-    // private var student: Dz6Student? = null
     private lateinit var presenter: Dz11PresenterEdit
 
     private lateinit var ageEditText: EditText
@@ -70,6 +69,7 @@ class Dz11EditFragment : Fragment(), Dz11ViewEdit {
 
                 if (presenter.correctDataFilling(name, age, url)) {
                     presenter.saveEditedStudent(idStudent, name, age, url)
+                    Toast.makeText(context, name + " successfully edited ", Toast.LENGTH_LONG).show()
                     myListener?.onRealization()
                 } else {
                     Toast.makeText(context, Dz11PresenterEdit.textErrorCorrectDataFiling, Toast.LENGTH_LONG)
@@ -86,6 +86,7 @@ class Dz11EditFragment : Fragment(), Dz11ViewEdit {
 
                 if (presenter.correctDataFilling(name, age, url)) {
                     presenter.saveNewStudent(name, age, url)
+                    Toast.makeText(context, name + " created successfully", Toast.LENGTH_LONG).show()
                     myListener?.onRealization()
                 } else {
                     Toast.makeText(context, Dz11PresenterEdit.textErrorCorrectDataFiling, Toast.LENGTH_LONG)

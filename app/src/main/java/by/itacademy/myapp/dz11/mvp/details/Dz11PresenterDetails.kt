@@ -11,10 +11,9 @@ class Dz11PresenterDetails : Dz11BasePresenterDetails {
         this.view = view
     }
 
-    override fun getStudentById(idStudent: Long): Dz6Student {
+    override fun getStudentById(idStudent: Long) {
         student = Dz11DataStudent.findStudentById(idStudent)
         view?.showStudent(student)
-        return student
     }
 
     override fun clickDelete(idStudent: Long) {
