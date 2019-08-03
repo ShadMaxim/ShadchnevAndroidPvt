@@ -1,4 +1,4 @@
-package by.itacademy.myapp.dz12.students
+package by.itacademy.myapp.dz12.student
 
 interface Dz12MyListener {
     fun onRealization()

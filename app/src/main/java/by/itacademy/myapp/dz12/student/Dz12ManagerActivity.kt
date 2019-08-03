@@ -1,4 +1,4 @@
-package by.itacademy.myapp.dz12.students
+package by.itacademy.myapp.dz12.student
 
 import android.content.res.Configuration
 import android.os.Bundle
@@ -22,14 +22,14 @@ class Dz12ManagerActivity : FragmentActivity(),
     private var isLandOrientation = false
     private var container: Int = 0
 
-    var observable3: Observable<Long> = Observable.interval(1, TimeUnit.SECONDS)
+    // var observable3: Observable<Long> = Observable.interval(1, TimeUnit.SECONDS)
     var disposable: Disposable? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_dz8_for_fragments)
 
-        disposable = observable3
+       /* disposable = observable3
             .filter { it % 2 == 0.toLong() }
             .subscribeOn(Schedulers.io())
             .observeOn(AndroidSchedulers.mainThread())
@@ -39,7 +39,7 @@ class Dz12ManagerActivity : FragmentActivity(),
             }, {
                 // textView.text = it.toString()
             })
-
+*/
         isLandOrientation = (resources.configuration.orientation == Configuration.ORIENTATION_LANDSCAPE)
         container = getLandOrPortrait()
 
