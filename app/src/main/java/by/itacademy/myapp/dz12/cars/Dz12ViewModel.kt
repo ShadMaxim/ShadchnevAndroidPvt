@@ -41,4 +41,8 @@ class Dz12ViewModel : ViewModel() {
     fun onCarTouch(item: Poi) {
         carItem.value = item
     }
+
+    override fun onCleared() {
+        super.onCleared()
+    }
 }
