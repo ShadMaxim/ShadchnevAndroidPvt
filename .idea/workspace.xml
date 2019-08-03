@@ -184,14 +184,7 @@
     <last-search-timestamp>1563542861494</last-search-timestamp>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9b6475d1-c9b0-4a68-a994-41f1766d955d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/AllDzActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/AllDzActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz12/student/list/Dz12ListFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz12/student/list/Dz12ListFragment.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz12/student/list/Dz12PresenterList.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz12/student/list/Dz12PresenterList.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz12/student/model/datasingleton/Dz12StudentsSinglton.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz12/student/model/datasingleton/Dz12StudentsSinglton.kt" afterDir="false" />
-    </list>
+    <list default="true" id="9b6475d1-c9b0-4a68-a994-41f1766d955d" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/build/classes/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -256,11 +249,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz12/student/list/Dz12ListFragment.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1249">
-              <caret line="67" column="59" selection-start-line="67" selection-start-column="59" selection-end-line="67" selection-end-column="59" />
+            <state relative-caret-position="96">
+              <caret line="129" column="41" selection-start-line="129" selection-start-column="41" selection-end-line="129" selection-end-column="41" />
               <folding>
                 <element signature="e#46#963#0" expanded="true" />
               </folding>
@@ -268,11 +261,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz12/student/list/Dz12PresenterList.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="311">
-              <caret line="90" column="32" selection-start-line="90" selection-start-column="32" selection-end-line="90" selection-end-column="32" />
+            <state relative-caret-position="191">
+              <caret line="84" column="42" selection-start-line="84" selection-start-column="42" selection-end-line="84" selection-end-column="42" />
               <folding>
                 <element signature="e#46#489#0" expanded="true" />
               </folding>
@@ -283,8 +276,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz12/student/model/datasingleton/Dz12StudentsSinglton.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="19" selection-start-line="19" selection-end-line="19" />
+            <state relative-caret-position="40">
+              <caret line="2" column="27" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -455,30 +448,6 @@
               <item name="myapp" type="462c0819:PsiDirectoryNode" />
               <item name="dz12" type="462c0819:PsiDirectoryNode" />
               <item name="student" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GitAndroid" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GitAndroid" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="myapp" type="462c0819:PsiDirectoryNode" />
-              <item name="dz12" type="462c0819:PsiDirectoryNode" />
-              <item name="student" type="462c0819:PsiDirectoryNode" />
-              <item name="list" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GitAndroid" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GitAndroid" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="myapp" type="462c0819:PsiDirectoryNode" />
-              <item name="dz12" type="462c0819:PsiDirectoryNode" />
-              <item name="student" type="462c0819:PsiDirectoryNode" />
-              <item name="pageload" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="GitAndroid" type="b2602c69:ProjectViewProjectNode" />
@@ -1146,7 +1115,14 @@
       <option name="project" value="LOCAL" />
       <updated>1564828715040</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="add pagination">
+      <created>1564851953475</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1564851953475</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TodoView">
@@ -1160,10 +1136,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
-      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.17430703" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.17430703" />
       <window_info id="Structure" order="2" side_tool="true" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Designer" order="4" />
@@ -1175,12 +1150,12 @@
       <window_info anchor="bottom" id="Android Profiler" order="1" sideWeight="0.49856734" weight="0.3252688" />
       <window_info anchor="bottom" id="Build" order="2" sideWeight="0.7228145" weight="0.38961038" />
       <window_info anchor="bottom" id="Find" order="3" sideWeight="0.4989339" weight="0.32575756" />
-      <window_info active="true" anchor="bottom" id="Run" order="4" sideWeight="0.8512793" visible="true" weight="0.11363637" />
+      <window_info anchor="bottom" id="Run" order="4" sideWeight="0.8512793" weight="0.11363637" />
       <window_info anchor="bottom" id="TODO" order="5" sideWeight="0.497851" weight="0.32359308" />
       <window_info anchor="bottom" id="Debug" order="6" sideWeight="0.6790831" weight="0.26209676" />
       <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.2858166" weight="0.5" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.2771855" side_tool="true" weight="0.59632033" />
-      <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.4738806" weight="0.33225107" />
+      <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.4738806" visible="true" weight="0.33225107" />
       <window_info anchor="right" id="Capture Analysis" order="0" />
       <window_info anchor="right" id="Gradle" order="1" weight="0.31661892" />
       <window_info anchor="right" id="Theme Preview" order="2" />
@@ -1241,7 +1216,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="corrected comments" />
     <MESSAGE value="котлин скрипт добавил" />
     <MESSAGE value="исправил все замечания" />
     <MESSAGE value="ключи" />
@@ -1266,7 +1240,8 @@
     <MESSAGE value="1" />
     <MESSAGE value="2" />
     <MESSAGE value="3" />
-    <option name="LAST_COMMIT_MESSAGE" value="3" />
+    <MESSAGE value="add pagination" />
+    <option name="LAST_COMMIT_MESSAGE" value="add pagination" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz9/CarRepository.kt">
@@ -1587,29 +1562,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz12/student/list/Dz12PresenterList.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="90" column="32" selection-start-line="90" selection-start-column="32" selection-end-line="90" selection-end-column="32" />
-          <folding>
-            <element signature="e#46#489#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz12/student/model/datasingleton/Dz12StudentsSinglton.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        <state relative-caret-position="40">
+          <caret line="2" column="27" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="27" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz12/student/list/Dz12ListFragment.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1249">
-          <caret line="67" column="59" selection-start-line="67" selection-start-column="59" selection-end-line="67" selection-end-column="59" />
+        <state relative-caret-position="96">
+          <caret line="129" column="41" selection-start-line="129" selection-start-column="41" selection-end-line="129" selection-end-column="41" />
           <folding>
             <element signature="e#46#963#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz12/student/list/Dz12PresenterList.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="84" column="42" selection-start-line="84" selection-start-column="42" selection-end-line="84" selection-end-column="42" />
+          <folding>
+            <element signature="e#46#489#0" expanded="true" />
           </folding>
         </state>
       </provider>
