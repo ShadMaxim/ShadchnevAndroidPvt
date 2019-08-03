@@ -183,179 +183,7 @@
     <last-search-timestamp>1563542861494</last-search-timestamp>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9b6475d1-c9b0-4a68-a994-41f1766d955d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/app.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myapplication/myapplication.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/proguard-rules.pro" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/androidTest/java/by/itacademy/myapp/ExampleInstrumentedTest.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/debug/res/values/google_maps_api.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/AllDzActivity.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz0/Dz0Activity.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz1/Dz1Activity.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz11/mvp/Dz11ManagerActivity.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz11/mvp/details/Dz11BasePresenterDetails.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz11/mvp/details/Dz11DetailsFragment.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz11/mvp/details/Dz11PresenterDetails.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz11/mvp/details/Dz11ViewDetails.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz11/mvp/edit/Dz11BasePresenterEdit.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz11/mvp/edit/Dz11EditFragment.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz11/mvp/edit/Dz11PresenterEdit.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz11/mvp/edit/Dz11ViewEdit.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz11/mvp/list/Dz11BasePresenterList.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz11/mvp/list/Dz11ListFragment.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz11/mvp/list/Dz11PresenterList.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz11/mvp/list/Dz11ViewList.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz11/mvp/model/Dz11DataStudent.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz11/mvvm/Dz11Activity.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz11/mvvm/Dz11Fragment.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz11/mvvm/Dz11State.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz11/mvvm/Dz11ViewModel.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz2/Dz2Activity.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz2/Dz2LoginActivity.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz3/Dz3Activity.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz4/Dz4Activity.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz4/Dz4MyClock.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz5/Dz5ActivityOwl.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz5/Dz5DiagramActivity.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz5/Dz5DiagramView.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz6/Dz6ListAdapter.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz6/Dz6ListViewHolder.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz6/Dz6Student.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz6/Dz6StudentDetailsActivity.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz6/Dz6StudentEditActivity.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz6/Dz6StudentListActivity.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz6/Dz6StudentsSinglton.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz8/Dz8FragmManagerActivity.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz8/Dz8StudentDetailsFragment.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz8/Dz8StudentEditFragment.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz8/Dz8StudentListFragment.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz8/MyListener.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz8/SharedPrefManager.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz9/Api.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz9/CarRepository.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz9/CarRepositoryRemote.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz9/Dz9Activity.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz9/Dz9Adapter.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz9/Dz9Fragment.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz9/Dz9ViewHolder.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz9/NetProvider.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz9/RepositoryProvider.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz9/entity/CarResponse.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz9/entity/CoordParams.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz9/entity/Coordinate.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz9/entity/FleeType.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz9/entity/Poi.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/util/ImageLoader.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-v21/selector_sova.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/fon_kapli_19288.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/ic_login_name.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/ic_login_password.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/login_bg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/login_logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/sova_anmation_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/sova_anmation_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/sova_anmation_3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/alldz_button_selector.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/animation_list_sova_doun.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/animation_list_sova_up.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/border_dz3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_close_black_24dp.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_control_point_black_24dp.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_near_me_black_24dp.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_notifications_white_24dp.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_send_black_24dp.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_youtube_searched_for_black_24dp.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/load_button_selector.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/selector_sova.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/font/monda_bold.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/font/monda_regular.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout-land/activity_dz8_for_fragments.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout-v21/activity_dz5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_alldz.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_dz1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_dz2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_dz2login.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_dz3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_dz4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_dz5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_dz5_diagram.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_dz6_edit_profile.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_dz6_profil_student.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_dz6_recycler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_dz8_edit_profile.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_dz8_for_fragments.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_dz8_profil_student.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_dz8_recycler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_dz9_bottom_sheet.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_dzo.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_dz9.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_for_recyclerview.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_for_recyclerview_dz9.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values-v16/styles.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values-v3/styles.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/dimen.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/release/res/values/google_maps_api.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/test/java/by/itacademy/myapp/ExampleUnitTest.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myapplication/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myapplication/proguard-rules.pro" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myapplication/src/androidTest/java/com/example/myapplication/ExampleInstrumentedTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myapplication/src/main/AndroidManifest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myapplication/src/main/java/com/example/myapplication/MainActivity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myapplication/src/main/res/drawable-v24/ic_launcher_foreground.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myapplication/src/main/res/drawable/ic_launcher_background.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myapplication/src/main/res/layout/activity_main.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myapplication/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myapplication/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myapplication/src/main/res/mipmap-hdpi/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myapplication/src/main/res/mipmap-hdpi/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myapplication/src/main/res/mipmap-mdpi/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myapplication/src/main/res/mipmap-mdpi/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myapplication/src/main/res/mipmap-xhdpi/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myapplication/src/main/res/mipmap-xhdpi/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myapplication/src/main/res/mipmap-xxhdpi/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myapplication/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myapplication/src/main/res/mipmap-xxxhdpi/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myapplication/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myapplication/src/main/res/values/colors.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myapplication/src/main/res/values/strings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myapplication/src/main/res/values/styles.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myapplication/src/test/java/com/example/myapplication/ExampleUnitTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/hooks/pre-commit" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" />
-    </list>
+    <list default="true" id="9b6475d1-c9b0-4a68-a994-41f1766d955d" name="Default Changelist" comment="2" />
     <ignored path="$PROJECT_DIR$/build/classes/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -408,7 +236,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
           <provider editor-type-id="android-manifest" />
           <provider selected="true" editor-type-id="text-editor">
@@ -416,6 +244,12 @@
               <caret line="27" column="54" selection-start-line="27" selection-start-column="54" selection-end-line="27" selection-end-column="54" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_dz1.xml">
+          <provider selected="true" editor-type-id="android-designer2" />
+          <provider editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -1153,7 +987,14 @@
       <option name="project" value="LOCAL" />
       <updated>1564825608514</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="1">
+      <created>1564827699147</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1564827699147</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TodoView">
@@ -1179,14 +1020,14 @@
       <window_info id="Build Variants" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Logcat" order="0" sideWeight="0.8467049" weight="0.6287879" />
       <window_info anchor="bottom" id="Android Profiler" order="1" sideWeight="0.49856734" weight="0.3252688" />
-      <window_info anchor="bottom" id="Build" order="2" sideWeight="0.7238806" visible="true" weight="0.3939394" />
+      <window_info anchor="bottom" id="Build" order="2" sideWeight="0.7238806" weight="0.3939394" />
       <window_info anchor="bottom" id="Find" order="3" sideWeight="0.4989339" weight="0.32575756" />
       <window_info anchor="bottom" id="Run" order="4" sideWeight="0.85181236" weight="0.32900432" />
       <window_info anchor="bottom" id="TODO" order="5" sideWeight="0.497851" weight="0.32359308" />
       <window_info anchor="bottom" id="Debug" order="6" sideWeight="0.6790831" weight="0.26209676" />
       <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.2858166" weight="0.5" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.14818764" side_tool="true" weight="0.43506494" />
-      <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.7915778" weight="0.33225107" />
+      <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.7915778" visible="true" weight="0.33225107" />
       <window_info anchor="right" id="Capture Analysis" order="0" />
       <window_info anchor="right" id="Gradle" order="1" weight="0.31661892" />
       <window_info anchor="right" id="Theme Preview" order="2" />
@@ -1270,10 +1111,10 @@
     <MESSAGE value="dz со студентами готова" />
     <MESSAGE value="begin dz cars" />
     <MESSAGE value="1" />
-    <option name="LAST_COMMIT_MESSAGE" value="1" />
+    <MESSAGE value="2" />
+    <option name="LAST_COMMIT_MESSAGE" value="2" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz12/student/model/provider/Dz12NetProvider.kt" />
     <entry file="file://$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz12/student/model/datasingleton/Dz12StudentData.kt" />
     <entry file="file://$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz12/student/list/Dz12ListFragment.kt" />
     <entry file="file://$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz12/student/list/Dz12ViewList.kt" />
@@ -1457,6 +1298,10 @@
         </state>
       </provider>
       <provider editor-type-id="android-manifest" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_dz1.xml">
+      <provider selected="true" editor-type-id="android-designer2" />
+      <provider editor-type-id="text-editor" />
     </entry>
   </component>
 </project>
