@@ -183,7 +183,7 @@
     <last-search-timestamp>1563542861494</last-search-timestamp>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9b6475d1-c9b0-4a68-a994-41f1766d955d" name="Default Changelist" comment="2" />
+    <list default="true" id="9b6475d1-c9b0-4a68-a994-41f1766d955d" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/build/classes/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -402,17 +402,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="myapp" type="462c0819:PsiDirectoryNode" />
-              <item name="dz4" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GitAndroid" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GitAndroid" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="myapp" type="462c0819:PsiDirectoryNode" />
-              <item name="dz8" type="462c0819:PsiDirectoryNode" />
+              <item name="dz12" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -994,7 +984,14 @@
       <option name="project" value="LOCAL" />
       <updated>1564827699147</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="2">
+      <created>1564828245325</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1564828245325</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TodoView">
@@ -1010,7 +1007,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
       <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.17430703" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.17430703" />
       <window_info id="Structure" order="2" side_tool="true" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Designer" order="4" />
@@ -1026,8 +1023,8 @@
       <window_info anchor="bottom" id="TODO" order="5" sideWeight="0.497851" weight="0.32359308" />
       <window_info anchor="bottom" id="Debug" order="6" sideWeight="0.6790831" weight="0.26209676" />
       <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.2858166" weight="0.5" />
-      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.14818764" side_tool="true" weight="0.43506494" />
-      <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.7915778" visible="true" weight="0.33225107" />
+      <window_info active="true" anchor="bottom" id="Event Log" order="8" sideWeight="0.5261194" side_tool="true" visible="true" weight="0.33225107" />
+      <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.4738806" visible="true" weight="0.33225107" />
       <window_info anchor="right" id="Capture Analysis" order="0" />
       <window_info anchor="right" id="Gradle" order="1" weight="0.31661892" />
       <window_info anchor="right" id="Theme Preview" order="2" />
