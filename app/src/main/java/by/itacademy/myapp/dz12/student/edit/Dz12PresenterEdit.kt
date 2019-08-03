@@ -89,7 +89,7 @@ class Dz12PresenterEdit : Dz12BasePresenterEdit {
         } else if (name.isEmpty()) {
             textErrorCorrectDataFiling = "ERROR( NAME ): Not valid Name, must be filled"
         } else {
-            if (idStudent != Dz12EditFragment.NEW_STUDENT && idStudent != null) {
+            if (idStudent != Dz12EditFragment.NEW_STUDENT) {
 
                 update(idStudent, name, imageUrl, age)
             } else {
