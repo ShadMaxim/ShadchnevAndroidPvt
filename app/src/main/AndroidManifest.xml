@@ -34,7 +34,7 @@
         <activity android:name=".dz11.mvvm.Dz11Activity"/>
         <activity android:name=".dz11.mvp.Dz11ManagerActivity"/>
 
-        <activity android:name=".dz12.student.Dz12ManagerActivity">
+        <activity android:name=".dz12.cars.Dz12Activity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 

@@ -239,13 +239,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz12/student/Dz12ManagerActivity.kt">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz12/cars/Dz12ViewModel.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="40">
-              <caret line="2" selection-start-line="2" selection-end-line="2" />
-              <folding>
-                <element signature="e#41#407#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="80">
+              <caret line="13" column="6" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -254,50 +251,46 @@
         <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
           <provider editor-type-id="android-manifest" />
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="531">
-              <caret line="34" column="64" selection-start-line="34" selection-start-column="64" selection-end-line="34" selection-end-column="64" />
+            <state relative-caret-position="711">
+              <caret line="43" selection-start-line="43" selection-end-line="43" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/AllDzActivity.kt">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz12/cars/Dz12State.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="40" column="40" lean-forward="true" selection-start-line="40" selection-start-column="40" selection-end-line="40" selection-end-column="40" />
+            <state relative-caret-position="80">
+              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz12/student/edit/Dz12PresenterEdit.kt">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz12/cars/Dz12Fragment.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="516">
-              <caret line="91" column="47" lean-forward="true" selection-start-line="91" selection-start-column="47" selection-end-line="95" />
+            <state relative-caret-position="80">
+              <caret line="16" column="6" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz12/student/list/Dz12PresenterList.kt">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz12/cars/Dz12Activity.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-760">
-              <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
+            <state relative-caret-position="80">
+              <caret line="28" column="11" selection-start-line="28" selection-start-column="11" selection-end-line="28" selection-end-column="11" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz12/student/details/Dz12PresenterDetails.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="12" column="43" selection-start-line="12" selection-start-column="43" selection-end-line="12" selection-end-column="43" />
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz12/cars/provider/dz12RepositoryProvider.kt">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz12/student/model/provider/Dz12NetProvider.kt">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz12/cars/provider/Dz12NetProvider.kt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="80">
               <caret line="11" column="7" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
@@ -306,19 +299,28 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz12/student/model/provider/Dz12ProviderStudentRepository.kt">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz12/cars/provider/Dz12CarRepositoryRemote.kt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="80">
-              <caret line="4" column="14" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
+              <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz12/student/list/Dz12ListFragment.kt">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz12/cars/provider/Dz12CarRepository.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1120">
-              <caret line="23" column="6" selection-start-line="23" selection-start-column="6" selection-end-line="23" selection-end-column="6" />
+            <state relative-caret-position="80">
+              <caret line="7" column="10" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz12/cars/provider/Dz12Api.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="80">
+              <caret line="7" column="10" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -484,7 +486,19 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="myapp" type="462c0819:PsiDirectoryNode" />
               <item name="dz12" type="462c0819:PsiDirectoryNode" />
-              <item name="student" type="462c0819:PsiDirectoryNode" />
+              <item name="cars" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="GitAndroid" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GitAndroid" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="myapp" type="462c0819:PsiDirectoryNode" />
+              <item name="dz12" type="462c0819:PsiDirectoryNode" />
+              <item name="cars" type="462c0819:PsiDirectoryNode" />
+              <item name="provider" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="GitAndroid" type="b2602c69:ProjectViewProjectNode" />
@@ -1351,15 +1365,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz12/cars/Dz12State.kt" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz12/cars/Dz12ViewModel.kt" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz12/cars/provider/Dz12Api.kt" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz12/cars/provider/Dz12CarRepository.kt" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz12/cars/provider/Dz12CarRepositoryRemote.kt" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz12/cars/provider/Dz12NetProvider.kt" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz12/cars/provider/dz12RepositoryProvider.kt" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz12/cars/Dz12Activity.kt" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz12/cars/Dz12Fragment.kt" />
     <entry file="file://$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz12/1.kt" />
     <entry file="file://$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz9/Dz9Fragment.kt">
       <provider selected="true" editor-type-id="text-editor">
@@ -1513,7 +1518,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz12/student/list/Dz12PresenterList.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-760">
+        <state relative-caret-position="-644">
           <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
         </state>
       </provider>
@@ -1521,16 +1526,19 @@
     <entry file="file://$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz12/student/edit/Dz12PresenterEdit.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="516">
-          <caret line="91" column="47" lean-forward="true" selection-start-line="91" selection-start-column="47" selection-end-line="95" />
+          <caret line="91" column="47" selection-start-line="91" selection-start-column="47" selection-end-line="95" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/AllDzActivity.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
-          <caret line="40" column="40" lean-forward="true" selection-start-line="40" selection-start-column="40" selection-end-line="40" selection-end-column="40" />
+          <caret line="40" column="40" selection-start-line="40" selection-start-column="40" selection-end-line="40" selection-end-column="40" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/Dz12ManagerActivity.java">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz12/student/Dz12ManagerActivity.kt">
       <provider selected="true" editor-type-id="text-editor">
@@ -1542,13 +1550,69 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/Dz12ManagerActivity.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz12/cars/provider/Dz12Api.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="7" column="10" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz12/cars/provider/Dz12CarRepository.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="7" column="10" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz12/cars/provider/Dz12CarRepositoryRemote.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz12/cars/provider/Dz12NetProvider.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="11" column="7" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz12/cars/provider/dz12RepositoryProvider.kt">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz12/cars/Dz12Fragment.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="16" column="6" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz12/cars/Dz12State.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz12/cars/Dz12ViewModel.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="13" column="6" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz12/cars/Dz12Activity.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="28" column="11" selection-start-line="28" selection-start-column="11" selection-end-line="28" selection-end-column="11" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="531">
-          <caret line="34" column="64" selection-start-line="34" selection-start-column="64" selection-end-line="34" selection-end-column="64" />
+        <state relative-caret-position="711">
+          <caret line="43" selection-start-line="43" selection-end-line="43" />
         </state>
       </provider>
       <provider editor-type-id="android-manifest" />
