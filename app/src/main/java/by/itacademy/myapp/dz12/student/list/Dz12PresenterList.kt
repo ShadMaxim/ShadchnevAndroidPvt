@@ -17,6 +17,7 @@ class Dz12PresenterList : Dz12BasePresenterList {
     var disposable: Disposable? = null
     var charInFilter = ""
     var observable: Observable<Long> = Observable.interval(1, TimeUnit.SECONDS)
+    private val NUMBER_PAGE = 6
 
     override fun setView(view: Dz12ViewList) {
         this.view = view
@@ -36,8 +37,10 @@ class Dz12PresenterList : Dz12BasePresenterList {
     override fun loadList(text: String) {
         charInFilter = text
 
+        listOfStudents.clear()
+
         disposable = repository
-            .search(100, 0, text)
+            .search(NUMBER_PAGE, 0, text)
             .subscribeOn(Schedulers.io())
             .observeOn(AndroidSchedulers.mainThread())
             .subscribe({ data ->
@@ -77,5 +80,28 @@ class Dz12PresenterList : Dz12BasePresenterList {
 
     override fun goToAddButton() {
         view?.addButtonClick()
+    }
+
+    fun loadMore(page: Int, text: String) {
+
+        disposable = repository
+            .search(NUMBER_PAGE, NUMBER_PAGE*page, text)
+            .subscribeOn(Schedulers.io())
+            .observeOn(AndroidSchedulers.mainThread())
+            .subscribe({ data ->
+
+                listOfStudents.addAll(data)
+                Dz12StudentsSinglton.createStudentsList(listOfStudents)
+
+                val list = Dz12StudentsSinglton.search(text) as MutableList<Dz12StudentData>
+                view?.showNewList(list)
+                view?.showToastGetOk(" list load successfully ")
+
+                disposable?.dispose()
+            }, { throwable ->
+
+                view?.showToastGetError(throwable.toString())
+                disposable?.dispose()
+            })
     }
 }

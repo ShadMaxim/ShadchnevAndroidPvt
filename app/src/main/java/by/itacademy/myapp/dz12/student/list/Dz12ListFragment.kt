@@ -18,6 +18,7 @@ import by.itacademy.myapp.R
 import by.itacademy.myapp.dz12.student.adapter.Dz12ListAdapter
 import by.itacademy.myapp.dz12.student.model.datasingleton.Dz12StudentData
 import by.itacademy.myapp.dz12.student.model.datasingleton.Dz12StudentsSinglton
+import by.itacademy.myapp.dz12.student.pageload.AutoLoadRecyclerListener
 import by.itacademy.myapp.dz8.SharedPrefManager
 import kotlinx.android.synthetic.main.activity_dz8_recycler.view.*
 
@@ -30,6 +31,7 @@ class Dz12ListFragment : Fragment(),
     private lateinit var dz8SearchEditText: EditText
     private var listener: Listener? = null
     private lateinit var presenter: Dz12PresenterList
+    private lateinit var scrollListener: AutoLoadRecyclerListener
 
     override fun onAttach(context: Context) {
         super.onAttach(context)
@@ -58,6 +60,13 @@ class Dz12ListFragment : Fragment(),
         adapter = Dz12ListAdapter(reload(), this)
         dz8RecyclerView.adapter = adapter
 
+        scrollListener = object : AutoLoadRecyclerListener(manager) {
+            override fun onLoadMore(page: Int, totalItemsCount: Int, view: RecyclerView) {
+                presenter.loadMore(page, searchText)
+            }
+        }
+        dz8RecyclerView.addOnScrollListener(scrollListener)
+
         dz8SearchEditText = view.searchStudentDz8
         dz8SearchEditText.addTextChangedListener(object : TextWatcher {
 
@@ -68,6 +77,7 @@ class Dz12ListFragment : Fragment(),
                 timer = Handler()
                 timer?.postDelayed({
                     searchText = p0.toString()
+                    scrollListener.resetPages()
                     presenter.loadList(searchText)
                 }, 500)
             }
