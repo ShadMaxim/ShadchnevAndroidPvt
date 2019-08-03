@@ -1,0 +1,1462 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AndroidConfiguredLogFilters">
+    <filters>
+      <filter>
+        <option name="logLevel" value="verbose" />
+        <option name="logMessagePattern" value="" />
+        <option name="logTagPattern" value="AAA" />
+        <option name="name" value="AAA" />
+        <option name="packageNamePattern" value="" />
+        <option name="pid" value="" />
+      </filter>
+    </filters>
+  </component>
+  <component name="AndroidLayouts">
+    <shared>
+      <config />
+    </shared>
+  </component>
+  <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_LOG_LEVEL" value="error" />
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="No Filters" />
+  </component>
+  <component name="AvailableLibraryUpdateStorage">
+    <library-updates>
+      <library-update>
+        <group-id>com.squareup.okhttp3</group-id>
+        <name>okhttp</name>
+        <version>4.0.1</version>
+        <repository>JCenter</repository>
+      </library-update>
+      <library-update>
+        <group-id>androidx.cardview</group-id>
+        <name>cardview</name>
+        <version>1.0.0</version>
+        <repository>Google</repository>
+      </library-update>
+      <library-update>
+        <group-id>androidx.test</group-id>
+        <name>runner</name>
+        <version>1.3.0-alpha01</version>
+        <repository>Google</repository>
+      </library-update>
+      <library-update>
+        <group-id>androidx.core</group-id>
+        <name>core-ktx</name>
+        <version>1.2.0-alpha02</version>
+        <repository>Google</repository>
+      </library-update>
+      <library-update>
+        <group-id>org.jetbrains.kotlin</group-id>
+        <name>kotlin-stdlib-jdk7</name>
+        <version>1.3.41</version>
+        <repository>JCenter</repository>
+      </library-update>
+      <library-update>
+        <group-id>androidx.lifecycle</group-id>
+        <name>lifecycle-livedata</name>
+        <version>2.2.0-alpha02</version>
+        <repository>Google</repository>
+      </library-update>
+      <library-update>
+        <group-id>com.squareup.retrofit2</group-id>
+        <name>converter-gson</name>
+        <version>2.6.0</version>
+        <repository>JCenter</repository>
+      </library-update>
+      <library-update>
+        <group-id>androidx.lifecycle</group-id>
+        <name>lifecycle-reactivestreams</name>
+        <version>2.2.0-alpha02</version>
+        <repository>Google</repository>
+      </library-update>
+      <library-update>
+        <group-id>androidx.arch.core</group-id>
+        <name>core-testing</name>
+        <version>2.1.0-rc01</version>
+        <repository>Google</repository>
+      </library-update>
+      <library-update>
+        <group-id>com.squareup.okhttp3</group-id>
+        <name>logging-interceptor</name>
+        <version>4.0.1</version>
+        <repository>JCenter</repository>
+      </library-update>
+      <library-update>
+        <group-id>androidx.lifecycle</group-id>
+        <name>lifecycle-runtime</name>
+        <version>2.2.0-alpha02</version>
+        <repository>Google</repository>
+      </library-update>
+      <library-update>
+        <group-id>com.squareup.retrofit2</group-id>
+        <name>adapter-rxjava2</name>
+        <version>2.6.0</version>
+        <repository>JCenter</repository>
+      </library-update>
+      <library-update>
+        <group-id>com.squareup.retrofit2</group-id>
+        <name>retrofit</name>
+        <version>2.6.0</version>
+        <repository>JCenter</repository>
+      </library-update>
+      <library-update>
+        <group-id>androidx.test.espresso</group-id>
+        <name>espresso-core</name>
+        <version>3.3.0-alpha01</version>
+        <repository>Google</repository>
+      </library-update>
+      <library-update>
+        <group-id>androidx.recyclerview</group-id>
+        <name>recyclerview</name>
+        <version>1.1.0-beta01</version>
+        <repository>Google</repository>
+      </library-update>
+      <library-update>
+        <group-id>androidx.lifecycle</group-id>
+        <name>lifecycle-viewmodel</name>
+        <version>2.2.0-alpha02</version>
+        <repository>Google</repository>
+      </library-update>
+      <library-update>
+        <group-id>androidx.lifecycle</group-id>
+        <name>lifecycle-compiler</name>
+        <version>2.2.0-alpha02</version>
+        <repository>Google</repository>
+      </library-update>
+      <library-update>
+        <group-id>com.google.android.gms</group-id>
+        <name>play-services-maps</name>
+        <version>17.0.0</version>
+        <repository>Google</repository>
+      </library-update>
+      <library-update>
+        <group-id>androidx.lifecycle</group-id>
+        <name>lifecycle-extensions</name>
+        <version>2.2.0-alpha02</version>
+        <repository>Google</repository>
+      </library-update>
+      <library-update>
+        <group-id>com.google.code.gson</group-id>
+        <name>gson</name>
+        <version>2.8.5</version>
+        <repository>JCenter</repository>
+      </library-update>
+      <library-update>
+        <group-id>com.google.android.material</group-id>
+        <name>material</name>
+        <version>1.1.0-alpha08</version>
+        <repository>Google</repository>
+      </library-update>
+      <library-update>
+        <group-id>com.squareup.picasso</group-id>
+        <name>picasso</name>
+        <version>2.71828</version>
+        <repository>JCenter</repository>
+      </library-update>
+      <library-update>
+        <group-id>com.github.bumptech.glide</group-id>
+        <name>glide</name>
+        <version>4.9.0</version>
+        <repository>JCenter</repository>
+      </library-update>
+      <library-update>
+        <group-id>androidx.constraintlayout</group-id>
+        <name>constraintlayout</name>
+        <version>2.0.0-beta2</version>
+        <repository>Google</repository>
+      </library-update>
+      <library-update>
+        <group-id>junit</group-id>
+        <name>junit</name>
+        <version>4.13-beta-3</version>
+        <repository>JCenter</repository>
+      </library-update>
+      <library-update>
+        <group-id>androidx.appcompat</group-id>
+        <name>appcompat</name>
+        <version>1.1.0-rc01</version>
+        <repository>Google</repository>
+      </library-update>
+    </library-updates>
+    <last-search-timestamp>1563542861494</last-search-timestamp>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="9b6475d1-c9b0-4a68-a994-41f1766d955d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/app.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myapplication/myapplication.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/proguard-rules.pro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/androidTest/java/by/itacademy/myapp/ExampleInstrumentedTest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/debug/res/values/google_maps_api.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/AllDzActivity.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz0/Dz0Activity.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz1/Dz1Activity.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz11/mvp/Dz11ManagerActivity.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz11/mvp/details/Dz11BasePresenterDetails.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz11/mvp/details/Dz11DetailsFragment.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz11/mvp/details/Dz11PresenterDetails.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz11/mvp/details/Dz11ViewDetails.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz11/mvp/edit/Dz11BasePresenterEdit.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz11/mvp/edit/Dz11EditFragment.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz11/mvp/edit/Dz11PresenterEdit.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz11/mvp/edit/Dz11ViewEdit.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz11/mvp/list/Dz11BasePresenterList.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz11/mvp/list/Dz11ListFragment.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz11/mvp/list/Dz11PresenterList.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz11/mvp/list/Dz11ViewList.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz11/mvp/model/Dz11DataStudent.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz11/mvvm/Dz11Activity.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz11/mvvm/Dz11Fragment.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz11/mvvm/Dz11State.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz11/mvvm/Dz11ViewModel.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz2/Dz2Activity.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz2/Dz2LoginActivity.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz3/Dz3Activity.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz4/Dz4Activity.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz4/Dz4MyClock.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz5/Dz5ActivityOwl.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz5/Dz5DiagramActivity.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz5/Dz5DiagramView.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz6/Dz6ListAdapter.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz6/Dz6ListViewHolder.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz6/Dz6Student.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz6/Dz6StudentDetailsActivity.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz6/Dz6StudentEditActivity.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz6/Dz6StudentListActivity.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz6/Dz6StudentsSinglton.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz8/Dz8FragmManagerActivity.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz8/Dz8StudentDetailsFragment.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz8/Dz8StudentEditFragment.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz8/Dz8StudentListFragment.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz8/MyListener.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz8/SharedPrefManager.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz9/Api.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz9/CarRepository.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz9/CarRepositoryRemote.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz9/Dz9Activity.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz9/Dz9Adapter.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz9/Dz9Fragment.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz9/Dz9ViewHolder.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz9/NetProvider.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz9/RepositoryProvider.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz9/entity/CarResponse.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz9/entity/CoordParams.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz9/entity/Coordinate.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz9/entity/FleeType.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz9/entity/Poi.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/util/ImageLoader.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-v21/selector_sova.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/fon_kapli_19288.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/ic_login_name.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/ic_login_password.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/login_bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/login_logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/sova_anmation_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/sova_anmation_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/sova_anmation_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/alldz_button_selector.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/animation_list_sova_doun.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/animation_list_sova_up.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/border_dz3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_close_black_24dp.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_control_point_black_24dp.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_near_me_black_24dp.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_notifications_white_24dp.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_send_black_24dp.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_youtube_searched_for_black_24dp.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/load_button_selector.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/selector_sova.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/font/monda_bold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/font/monda_regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout-land/activity_dz8_for_fragments.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout-v21/activity_dz5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_alldz.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_dz1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_dz2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_dz2login.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_dz3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_dz4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_dz5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_dz5_diagram.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_dz6_edit_profile.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_dz6_profil_student.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_dz6_recycler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_dz8_edit_profile.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_dz8_for_fragments.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_dz8_profil_student.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_dz8_recycler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_dz9_bottom_sheet.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_dzo.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_dz9.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_for_recyclerview.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_for_recyclerview_dz9.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values-v16/styles.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values-v3/styles.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/dimen.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/release/res/values/google_maps_api.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/test/java/by/itacademy/myapp/ExampleUnitTest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myapplication/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myapplication/proguard-rules.pro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myapplication/src/androidTest/java/com/example/myapplication/ExampleInstrumentedTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myapplication/src/main/AndroidManifest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myapplication/src/main/java/com/example/myapplication/MainActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myapplication/src/main/res/drawable-v24/ic_launcher_foreground.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myapplication/src/main/res/drawable/ic_launcher_background.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myapplication/src/main/res/layout/activity_main.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myapplication/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myapplication/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myapplication/src/main/res/mipmap-hdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myapplication/src/main/res/mipmap-hdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myapplication/src/main/res/mipmap-mdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myapplication/src/main/res/mipmap-mdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myapplication/src/main/res/mipmap-xhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myapplication/src/main/res/mipmap-xhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myapplication/src/main/res/mipmap-xxhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myapplication/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myapplication/src/main/res/mipmap-xxxhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myapplication/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myapplication/src/main/res/values/colors.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myapplication/src/main/res/values/strings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myapplication/src/main/res/values/styles.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myapplication/src/test/java/com/example/myapplication/ExampleUnitTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/hooks/pre-commit" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/build/classes/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$/app">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="GitAndroid" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="GitAndroid" type="f1a62948:ProjectNode" />
+                <item name=":app" type="2d1252cf:ModuleNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="GitAndroid" type="f1a62948:ProjectNode" />
+                <item name=":app" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="GitAndroid" type="f1a62948:ProjectNode" />
+                <item name=":app" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="android" type="c8890929:TasksNode$1" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+          <provider editor-type-id="android-manifest" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="540">
+              <caret line="27" column="54" selection-start-line="27" selection-start-column="54" selection-end-line="27" selection-end-column="54" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Kotlin Object" />
+        <option value="Kotlin Interface" />
+        <option value="resourceFile" />
+        <option value="Kotlin Class" />
+        <option value="layoutResourceFile_vertical" />
+        <option value="Class" />
+        <option value="Kotlin File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>marker</find>
+      <find>`</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="dz12" />
+      </map>
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz12/Dz12ManagerActivity.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz12/edit/Dz12PresenterEdit.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz12/list/Dz12BasePresenterList.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz3/Dz3Activity.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz12/model/provider/Dz12StudentRepositoryRemote.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz12/list/Dz12ViewList.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz12/list/Dz12ListFragment.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz12/student/Dz12MyListener.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz12/student/model/provider/Dz12StudentRepositoryRemote.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz12/student/model/provider/Dz12StudentRepository.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz12/student/model/provider/Dz12StudentApi.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz12/student/model/provider/Dz12ProviderStudentRepository.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz12/student/model/provider/Dz12NetProvider.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz12/student/model/datasingleton/Dz12StudentData.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz12/student/list/Dz12BasePresenterList.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz12/student/list/Dz12ListFragment.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz12/student/list/Dz12ViewList.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz12/student/edit/Dz12ViewEdit.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz12/student/edit/Dz12EditFragment.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz12/student/edit/Dz12BasePresenterEdit.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz12/student/details/Dz12ViewDetails.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz12/student/details/Dz12PresenterDetails.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz12/student/details/Dz12DetailsFragment.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz12/student/adapter/Dz12ListViewHolder.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz12/student/adapter/Dz12ListAdapter.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz12/cars/Dz11Activity.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz12/cars/Dz11Fragment.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz12/cars/Dz11State.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz12/cars/Dz11ViewModel.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz12/student/model/datasingleton/Dz12StudentsSinglton.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz12/student/list/Dz12PresenterList.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz12/student/edit/Dz12PresenterEdit.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz12/student/Dz12ManagerActivity.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz12/student/details/Dz12BasePresenterDetails.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz12/cars/provider/Api.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz12/cars/provider/CarRepository.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz12/cars/provider/CarRepositoryRemote.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz12/cars/provider/NetProvider.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz12/cars/provider/RepositoryProvider.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz12/cars/provider/Dz12RepositoryProvider.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz9/CarRepositoryRemote.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz12/cars/provider/Dz12Api.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz9/Api.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz12/cars/provider/Dz12NetProvider.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz12/cars/Dz12Fragment.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz12/cars/Dz12ViewModel.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz12/cars/provider/Dz12CarRepository.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz12/cars/provider/Dz12CarRepositoryRemote.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz12/cars/provider/dz12RepositoryProvider.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz12/cars/Dz12Activity.kt" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="208" />
+    <option name="y" value="104" />
+    <option name="width" value="1400" />
+    <option name="height" value="820" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="GitAndroid" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GitAndroid" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="GitAndroid" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GitAndroid" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="GitAndroid" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GitAndroid" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="GitAndroid" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GitAndroid" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="GitAndroid" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GitAndroid" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="GitAndroid" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GitAndroid" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="myapp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="GitAndroid" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GitAndroid" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="myapp" type="462c0819:PsiDirectoryNode" />
+              <item name="dz4" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="GitAndroid" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GitAndroid" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="myapp" type="462c0819:PsiDirectoryNode" />
+              <item name="dz8" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
+    <property name="device.picker.selection" value="Nexus_9_API_25" />
+    <property name="last_opened_file_path" value="D:/temp" />
+    <property name="not.eligible.for.single.variant.sync" value="true" />
+    <property name="project.structure.last.edited" value="SDK Location" />
+    <property name="project.structure.proportion" value="0.17" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
+    <property name="sync.plugin.last.upgrade.timestamp" value="1563373309175" />
+  </component>
+  <component name="PsdUISettings">
+    <option name="MODULE_TAB" value="Properties" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="by.itacademy.myapp.dz12" />
+      <recent name="by.itacademy.myapp.dz11.mvvm" />
+      <recent name="by.itacademy.myapp.dz11.mvp" />
+      <recent name="by.itacademy.myapp.dz11.mvp.list" />
+      <recent name="by.itacademy.myapp.dz11.mvp.edit" />
+    </key>
+    <key name="CopyKotlinDeclarationDialog.RECENTS_KEY">
+      <recent name="by.itacademy.myapp.dz12" />
+      <recent name="by.itacademy.myapp.dz12.adapter" />
+      <recent name="by.itacademy.myapp.dz12.entity" />
+      <recent name="by.itacademy.myapp.dz11.mvp.model" />
+      <recent name="by.itacademy.myapp.dz11.mvp.view" />
+    </key>
+    <key name="android.template.packageName">
+      <recent name="by.itacademy.myapp.dz9" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Development\GitAndroid\app\src\main\java\by\itacademy\myapp\dz12\test" />
+      <recent name="D:\Development\GitAndroid\app\src\main\java\by\itacademy\myapp\dz12\provider_and_api" />
+      <recent name="D:\Development\GitAndroid\app\src\main\java\by\itacademy\myapp\dz11\mvvm" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Development\GitAndroid\app\src\main\java\by\itacademy\myapp\dz11\mvp\view" />
+    </key>
+    <key name="android.template.parentActivityClass">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Android App.app">
+    <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Dz12FragmManagerActivity" type="AndroidRunConfigurationType" factoryName="Android App" temporary="true">
+      <module name="app" />
+      <option name="DEPLOY" value="true" />
+      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
+      <option name="DEPLOY_AS_INSTANT" value="false" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="specific_activity" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Hybrid>
+      <Java />
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Sample Java Methods" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="by.itacademy.myapp.dz12.Dz12FragmManagerActivity" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MapsActivity" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false" temporary="true">
+      <module name="app" />
+      <option name="DEPLOY" value="true" />
+      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
+      <option name="DEPLOY_AS_INSTANT" value="false" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="specific_activity" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Hybrid>
+      <Java />
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Sample Java Methods" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="by.itacademy.myapp.dz9.MapsActivity" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Unnamed" type="AndroidRunConfigurationType" factoryName="Android App" nameIsGenerated="true">
+      <option name="DEPLOY" value="true" />
+      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
+      <option name="DEPLOY_AS_INSTANT" value="false" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Hybrid>
+      <Java />
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Sample Java Methods" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
+      <module name="app" />
+      <option name="DEPLOY" value="true" />
+      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
+      <option name="DEPLOY_AS_INSTANT" value="false" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Hybrid>
+      <Java />
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Sample Java Methods" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="myapplication" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
+      <module name="myapplication" />
+      <option name="DEPLOY" value="true" />
+      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
+      <option name="DEPLOY_AS_INSTANT" value="false" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Hybrid>
+      <Java />
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Sample Java Methods" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GitAndroid:app [signingReport]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/app" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="signingReport" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.GitAndroid:app [signingReport]" />
+        <item itemvalue="Android App.MapsActivity" />
+        <item itemvalue="Android App.Dz12FragmManagerActivity" />
+        <item itemvalue="Gradle.GitAndroid:app [signingReport]" />
+        <item itemvalue="Android App.MapsActivity" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\user\AppData\Roaming\Subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9b6475d1-c9b0-4a68-a994-41f1766d955d" name="Default Changelist" comment="" />
+      <created>1563192162115</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1563192162115</updated>
+    </task>
+    <task id="LOCAL-00001" summary="corrected comments">
+      <created>1563282566742</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1563282566742</updated>
+    </task>
+    <task id="LOCAL-00002" summary="1">
+      <created>1563286781210</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1563286781210</updated>
+    </task>
+    <task id="LOCAL-00003" summary="1">
+      <created>1563288959717</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1563288959717</updated>
+    </task>
+    <task id="LOCAL-00004" summary="1">
+      <created>1563289130177</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1563289130177</updated>
+    </task>
+    <task id="LOCAL-00005" summary="1">
+      <created>1563292679290</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1563292679290</updated>
+    </task>
+    <task id="LOCAL-00006" summary="исправил все замечания">
+      <created>1563292775744</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1563292775744</updated>
+    </task>
+    <task id="LOCAL-00007" summary="ключи">
+      <created>1563307435974</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1563307435974</updated>
+    </task>
+    <task id="LOCAL-00008" summary="dz9 ready">
+      <created>1563471852121</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1563471852121</updated>
+    </task>
+    <task id="LOCAL-00009" summary="поправил манифест, и меню">
+      <created>1563472554916</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1563472554916</updated>
+    </task>
+    <task id="LOCAL-00010" summary="исправил замечания">
+      <created>1563481596608</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1563481596608</updated>
+    </task>
+    <task id="LOCAL-00011" summary="поправил меню">
+      <created>1563539383205</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1563539383205</updated>
+    </task>
+    <task id="LOCAL-00012" summary="поправил синтаксис">
+      <created>1563542716386</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1563542716386</updated>
+    </task>
+    <task id="LOCAL-00013" summary="создал структуру, написал начальный mvp, требуется переработать синглтон - убрать от туда методы ...">
+      <created>1563662096164</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1563662096164</updated>
+    </task>
+    <task id="LOCAL-00014" summary="доделал mvp">
+      <created>1563705414614</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1563705414614</updated>
+    </task>
+    <task id="LOCAL-00015" summary="поправил mvvm">
+      <created>1563836133445</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1563836133446</updated>
+    </task>
+    <task id="LOCAL-00016" summary="изменил в манифесте, и в меню">
+      <created>1563836710700</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1563836710700</updated>
+    </task>
+    <task id="LOCAL-00017" summary="создал проект подключит к backendless, пока только get">
+      <created>1564133808843</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1564133808843</updated>
+    </task>
+    <task id="LOCAL-00018" summary="исправил замечания по dz11">
+      <created>1564228529862</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1564228529862</updated>
+    </task>
+    <task id="LOCAL-00019" summary="подключил приложение к серверу">
+      <created>1564255763854</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1564255763854</updated>
+    </task>
+    <task id="LOCAL-00020" summary="поправил ошибки">
+      <created>1564257874716</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1564257874716</updated>
+    </task>
+    <task id="LOCAL-00021" summary="поправил ошибки">
+      <created>1564307089861</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1564307089861</updated>
+    </task>
+    <task id="LOCAL-00022" summary="исправил замечания">
+      <created>1564317268532</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1564317268532</updated>
+    </task>
+    <task id="LOCAL-00023" summary="add mvp">
+      <created>1564342947896</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1564342947896</updated>
+    </task>
+    <task id="LOCAL-00024" summary="отредактировал Details, Edit">
+      <created>1564517676107</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1564517676107</updated>
+    </task>
+    <task id="LOCAL-00025" summary="dz со студентами готова">
+      <created>1564681101583</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1564681101583</updated>
+    </task>
+    <task id="LOCAL-00026" summary="begin dz cars">
+      <created>1564685715963</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1564685715963</updated>
+    </task>
+    <task id="LOCAL-00027" summary="begin dz cars">
+      <created>1564824722802</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1564824722802</updated>
+    </task>
+    <task id="LOCAL-00028" summary="1">
+      <created>1564825608514</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1564825608514</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
+    <servers />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <layout>
+      <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.17430703" />
+      <window_info id="Structure" order="2" side_tool="true" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Designer" order="4" />
+      <window_info id="Resources Explorer" order="5" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info id="Favorites" order="7" side_tool="true" />
+      <window_info id="Build Variants" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Logcat" order="0" sideWeight="0.8467049" weight="0.6287879" />
+      <window_info anchor="bottom" id="Android Profiler" order="1" sideWeight="0.49856734" weight="0.3252688" />
+      <window_info anchor="bottom" id="Build" order="2" sideWeight="0.7238806" visible="true" weight="0.3939394" />
+      <window_info anchor="bottom" id="Find" order="3" sideWeight="0.4989339" weight="0.32575756" />
+      <window_info anchor="bottom" id="Run" order="4" sideWeight="0.85181236" weight="0.32900432" />
+      <window_info anchor="bottom" id="TODO" order="5" sideWeight="0.497851" weight="0.32359308" />
+      <window_info anchor="bottom" id="Debug" order="6" sideWeight="0.6790831" weight="0.26209676" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.2858166" weight="0.5" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.14818764" side_tool="true" weight="0.43506494" />
+      <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.7915778" weight="0.33225107" />
+      <window_info anchor="right" id="Capture Analysis" order="0" />
+      <window_info anchor="right" id="Gradle" order="1" weight="0.31661892" />
+      <window_info anchor="right" id="Theme Preview" order="2" />
+      <window_info anchor="right" id="Preview" order="3" weight="0.27292112" />
+      <window_info anchor="right" id="Palette&#9;" order="4" />
+      <window_info anchor="right" id="Device File Explorer" order="5" side_tool="true" weight="0.32879657" />
+      <window_info anchor="right" id="Assistant" order="6" weight="0.32879657" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="corrected comments" />
+    <MESSAGE value="котлин скрипт добавил" />
+    <MESSAGE value="исправил все замечания" />
+    <MESSAGE value="ключи" />
+    <MESSAGE value="dz9 ready" />
+    <MESSAGE value="поправил манифест, и меню" />
+    <MESSAGE value="поправил меню" />
+    <MESSAGE value="поправил синтаксис" />
+    <MESSAGE value="создал структуру" />
+    <MESSAGE value="создал структуру, написал начальный mvp, требуется переработать синглтон - убрать от туда методы ..." />
+    <MESSAGE value="доделал mvp" />
+    <MESSAGE value="поправил mvvm" />
+    <MESSAGE value="изменил в манифесте, и в меню" />
+    <MESSAGE value="создал проект подключит к backendless, пока только get" />
+    <MESSAGE value="исправил замечания по dz11" />
+    <MESSAGE value="подключил приложение к серверу" />
+    <MESSAGE value="поправил ошибки" />
+    <MESSAGE value="исправил замечания" />
+    <MESSAGE value="add mvp" />
+    <MESSAGE value="отредактировал Details, Edit" />
+    <MESSAGE value="dz со студентами готова" />
+    <MESSAGE value="begin dz cars" />
+    <MESSAGE value="1" />
+    <option name="LAST_COMMIT_MESSAGE" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz12/student/model/provider/Dz12NetProvider.kt" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz12/student/model/datasingleton/Dz12StudentData.kt" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz12/student/list/Dz12ListFragment.kt" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz12/student/list/Dz12ViewList.kt" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz12/student/list/Dz12BasePresenterList.kt" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz12/student/edit/Dz12ViewEdit.kt" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz12/student/edit/Dz12EditFragment.kt" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz12/student/edit/Dz12BasePresenterEdit.kt" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz12/student/details/Dz12ViewDetails.kt" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz12/student/details/Dz12DetailsFragment.kt" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz12/student/adapter/Dz12ListViewHolder.kt" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz12/student/adapter/Dz12ListAdapter.kt" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_dz12.xml" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz12/student/model/datasingleton/Dz12StudentsSinglton.kt" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz12/student/edit/Dz12PresenterEdit.kt" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz12/student/Dz12ManagerActivity.kt" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz12/student/details/Dz12BasePresenterDetails.kt" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz9/entity/Coordinate.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="4" column="11" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz9/entity/CoordParams.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="2" column="11" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz9/entity/FleeType.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="4" column="11" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz9/entity/Poi.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="4" column="11" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz9/entity/CarResponse.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="4" column="11" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz12/student/model/provider/Dz12StudentRepositoryRemote.kt" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz9/RepositoryProvider.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="2" column="28" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz12/student/details/Dz12PresenterDetails.kt" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz9/Api.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz9/CarRepository.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#32#121#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz9/CarRepositoryRemote.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+          <folding>
+            <element signature="e#32#203#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz9/Dz9Activity.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="26" column="6" selection-start-line="26" selection-start-column="6" selection-end-line="26" selection-end-column="6" />
+          <folding>
+            <element signature="e#32#1073#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz9/Dz9ViewHolder.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz9/NetProvider.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz9/Dz9Adapter.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="17" column="21" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz12/cars/Dz12State.kt" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz12/cars/Dz12ViewModel.kt" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz12/cars/provider/Dz12Api.kt" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz12/cars/provider/Dz12CarRepository.kt" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz12/cars/provider/Dz12CarRepositoryRemote.kt" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz12/cars/provider/Dz12NetProvider.kt" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz12/cars/provider/dz12RepositoryProvider.kt" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz12/student/list/Dz12PresenterList.kt" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz12/cars/Dz12Activity.kt" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz12/cars/Dz12Fragment.kt" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz12/1.kt" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz9/Dz9Fragment.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="16" column="6" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz3/Dz3Activity.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="27" column="29" selection-start-line="27" selection-start-column="29" selection-end-line="27" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz0/Dz0Activity.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+          <folding>
+            <element signature="e#32#239#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/by/itacademy/myapp/dz11/mvvm/Dz11Activity.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="29" column="6" selection-start-line="29" selection-start-column="6" selection-end-line="29" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/app.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-780" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-195" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="19" column="17" lean-forward="true" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="27" column="54" selection-start-line="27" selection-start-column="54" selection-end-line="27" selection-end-column="54" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-manifest" />
+    </entry>
+  </component>
+</project>
