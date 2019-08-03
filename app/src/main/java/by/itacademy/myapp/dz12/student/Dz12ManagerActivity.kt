@@ -2,18 +2,12 @@ package by.itacademy.myapp.dz12.student
 
 import android.content.res.Configuration
 import android.os.Bundle
-import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentActivity
 import by.itacademy.myapp.R
 import by.itacademy.myapp.dz12.student.details.Dz12DetailsFragment
 import by.itacademy.myapp.dz12.student.edit.Dz12EditFragment
 import by.itacademy.myapp.dz12.student.list.Dz12ListFragment
-import io.reactivex.Observable
-import io.reactivex.android.schedulers.AndroidSchedulers
-import io.reactivex.disposables.Disposable
-import io.reactivex.schedulers.Schedulers
-import java.util.concurrent.TimeUnit
 
 class Dz12ManagerActivity : FragmentActivity(),
     Dz12ListFragment.Listener,
@@ -22,24 +16,10 @@ class Dz12ManagerActivity : FragmentActivity(),
     private var isLandOrientation = false
     private var container: Int = 0
 
-    // var observable3: Observable<Long> = Observable.interval(1, TimeUnit.SECONDS)
-    var disposable: Disposable? = null
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_dz8_for_fragments)
 
-       /* disposable = observable3
-            .filter { it % 2 == 0.toLong() }
-            .subscribeOn(Schedulers.io())
-            .observeOn(AndroidSchedulers.mainThread())
-            .subscribe({
-                // textView.text = it.toString()
-                Toast.makeText(applicationContext, it.toString(), Toast.LENGTH_SHORT).show()
-            }, {
-                // textView.text = it.toString()
-            })
-*/
         isLandOrientation = (resources.configuration.orientation == Configuration.ORIENTATION_LANDSCAPE)
         container = getLandOrPortrait()
 
