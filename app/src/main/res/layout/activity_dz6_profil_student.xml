@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:background="@color/dz6_backgroundColor"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <ImageView
+            android:id="@+id/avatarProfileImageView"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:layout_width="300dp"
+            android:layout_height="300dp"/>
+
+    <View
+            android:background="@color/dz6_buttonColor"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"/>
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:background="@android:color/black"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/dataProfileTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            <TextView
+                    android:text="Name:"
+                    android:textSize="30sp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="0dp"
+                    android:textColor="@color/numberColorDz3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            <TextView
+                    android:text="Age:"
+                    android:textSize="30sp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="40dp"
+                    android:textColor="@color/numberColorDz3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            <TextView
+                    android:text="Url:"
+                    android:textSize="30sp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="40dp"
+                    android:textColor="@color/numberColorDz3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:background="@android:color/white"
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="20dp"
+                android:layout_width="2dp"
+                android:layout_height="190dp">
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginRight="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <TextView
+                    android:id="@+id/nameProfilStudentTextView"
+                    android:hint="Name:"
+                    android:textSize="30sp"
+                    android:textColorHint="@android:color/white"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="0dp"
+                    android:inputType="text"
+                    android:background="@android:color/black"
+                    android:textColor="@android:color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            <TextView
+                    android:id="@+id/ageProfilStudentTextView"
+                    android:hint="Age:"
+                    android:textSize="30sp"
+                    android:textColorHint="@android:color/white"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="40dp"
+                    android:maxLines="2"
+                    android:background="@android:color/black"
+                    android:textColor="@android:color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            <TextView
+                    android:id="@+id/urlProfilStudentTextView"
+                    android:hint="Url:"
+                    android:textSize="30sp"
+                    android:textColorHint="@android:color/white"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="40dp"
+                    android:background="@android:color/black"
+                    android:textColor="@android:color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+        <View
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        <LinearLayout
+                android:padding="20dp"
+                android:orientation="horizontal"
+                android:layout_marginBottom="50dp"
+                android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <Button
+                    android:id="@+id/deleteProfileButton"
+                    android:layout_weight="1"
+                    android:background="@color/dz6_buttonColor"
+                    android:text="@string/dz6_delete_profile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            <Button
+                    android:id="@+id/editProfileButton"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="1dp"
+                    android:background="@color/dz6_buttonColor"
+                    android:text="@string/dz6_edit_profile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

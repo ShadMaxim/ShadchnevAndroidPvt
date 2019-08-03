@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:background="@android:color/black"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="@string/dz8_name"
+            android:textSize="20sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="50dp"
+            android:textColor="@color/numberColorDz3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="@string/dz8_age"
+            android:textSize="20sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="40dp"
+            android:textColor="@color/numberColorDz3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="@string/dz8_url"
+            android:textSize="20sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="40dp"
+            android:textColor="@color/numberColorDz3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="@android:color/white"
+        android:layout_marginTop="53dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="2dp"
+        android:layout_height="155dp">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/dz8NameEditProfileEditText"
+            android:hint="@string/dz8_name"
+            android:textSize="20sp"
+            android:textColorHint="@android:color/white"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="50dp"
+            android:inputType="text"
+            android:background="@color/loginEditText"
+            android:textColor="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/dz8AgeEditProfileEditText"
+            android:hint="@string/dz8_age"
+            android:textSize="20sp"
+            android:textColorHint="@android:color/white"
+            android:inputType="number"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="40dp"
+            android:maxLines="2"
+            android:background="@color/loginEditText"
+            android:textColor="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/dz8UrlEditProfileEditText"
+            android:hint="@string/dz8_url"
+            android:textSize="20sp"
+            android:textColorHint="@android:color/white"
+            android:inputType="textUri"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="40dp"
+            android:background="@color/loginEditText"
+            android:textColor="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <View
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/dz8SaveEditProfileButton"
+            android:text="@string/dz8_save"
+            android:background="@color/numberColorDz3"
+            android:textColor="@android:color/white"
+            android:layout_gravity="end"
+            android:layout_marginBottom="50dp"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+</LinearLayout>
