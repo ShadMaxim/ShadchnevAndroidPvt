@@ -3,6 +3,7 @@ package by.itacademy.myapp.dz12.student.model.provider
 import by.itacademy.myapp.dz12.student.model.datasingleton.Dz12StudentData
 import io.reactivex.Completable
 import io.reactivex.Observable
+import io.reactivex.Single
 
 class Dz12StudentRepositoryRemote(private var api: Dz12StudentApi) : Dz12StudentRepository {
 
@@ -10,17 +11,17 @@ class Dz12StudentRepositoryRemote(private var api: Dz12StudentApi) : Dz12Student
         return api.getStudent(pageSize, offset)
     }
 
-    override fun getById(id: String): Observable<Dz12StudentData> {
+    override fun getById(id: String): Single<Dz12StudentData> {
         return api.getStudentById(id)
     }
 
-    override fun create(student: Dz12StudentData): Observable<Dz12StudentData> {
+    override fun create(student: Dz12StudentData): Single<Dz12StudentData> {
         return api.createStudent(
             studentData = student
         )
     }
 
-    override fun update(student: Dz12StudentData): Observable<Dz12StudentData> {
+    override fun update(student: Dz12StudentData): Single<Dz12StudentData> {
         return api.updateStudent(
             studentData = student
         )

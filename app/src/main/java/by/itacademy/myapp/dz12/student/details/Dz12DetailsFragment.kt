@@ -5,9 +5,9 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
-import android.widget.ImageView
 import android.widget.TextView
+import android.widget.ImageView
+import android.widget.Button
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import by.itacademy.myapp.R
@@ -47,6 +47,7 @@ class Dz12DetailsFragment : Fragment(), Dz12ViewDetails {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         val view = inflater.inflate(R.layout.activity_dz8_profil_student, container, false)
+
         val idStudent = arguments?.getString(ID_STUDENT)
 
         nameEditText = view.findViewById(R.id.dz8NameProfilStudentTextView)
@@ -106,10 +107,6 @@ class Dz12DetailsFragment : Fragment(), Dz12ViewDetails {
     override fun onDetach() {
         super.onDetach()
         mylistener = null
-    }
-
-    override fun onDestroyView() {
-        super.onDestroyView()
         presenter!!.detachView()
     }
 }

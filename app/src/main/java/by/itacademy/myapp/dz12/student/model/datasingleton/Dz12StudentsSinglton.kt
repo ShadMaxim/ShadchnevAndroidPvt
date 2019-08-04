@@ -1,3 +1,4 @@
+/*
 package by.itacademy.myapp.dz12.student.model.datasingleton
 
 object Dz12StudentsSinglton {
@@ -41,4 +42,4 @@ object Dz12StudentsSinglton {
 
     fun search(name: String): List<Dz12StudentData> =
         studentsList.filter { it.name.toUpperCase().contains(name.toUpperCase()) }
-}
+}*/

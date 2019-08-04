@@ -96,6 +96,10 @@ class Dz12EditFragment : Fragment(), Dz12ViewEdit {
         Toast.makeText(context, text, Toast.LENGTH_SHORT).show()
     }
 
+    override fun showErrorLoadById(text: String) {
+        Toast.makeText(context, text, Toast.LENGTH_SHORT).show()
+    }
+
     override fun updatePage() {
         myListener?.onRealization()
     }
@@ -103,10 +107,6 @@ class Dz12EditFragment : Fragment(), Dz12ViewEdit {
     override fun onDetach() {
         super.onDetach()
         myListener = null
-    }
-
-    override fun onDestroyView() {
-        super.onDestroyView()
         presenter.detachView()
     }
 }

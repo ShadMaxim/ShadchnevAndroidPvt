@@ -10,5 +10,6 @@ interface Dz12ViewEdit {
     fun showToastCreateError(text: String)
     fun showToastCreateOk(text: String)
     fun showToastErrorFilling(text: String)
+    fun showErrorLoadById(text: String)
     fun updatePage()
 }

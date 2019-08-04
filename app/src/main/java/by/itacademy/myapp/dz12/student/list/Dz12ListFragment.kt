@@ -17,7 +17,6 @@ import androidx.recyclerview.widget.RecyclerView
 import by.itacademy.myapp.R
 import by.itacademy.myapp.dz12.student.adapter.Dz12ListAdapter
 import by.itacademy.myapp.dz12.student.model.datasingleton.Dz12StudentData
-import by.itacademy.myapp.dz12.student.model.datasingleton.Dz12StudentsSinglton
 import by.itacademy.myapp.dz12.student.pageload.AutoLoadRecyclerListener
 import by.itacademy.myapp.dz8.SharedPrefManager
 import kotlinx.android.synthetic.main.activity_dz8_recycler.view.*
@@ -32,6 +31,7 @@ class Dz12ListFragment : Fragment(),
     private var listener: Listener? = null
     private lateinit var presenter: Dz12PresenterList
     private lateinit var scrollListener: AutoLoadRecyclerListener
+    private var emptyList: MutableList<Dz12StudentData> = mutableListOf()
 
     override fun onAttach(context: Context) {
         super.onAttach(context)
@@ -45,7 +45,7 @@ class Dz12ListFragment : Fragment(),
         presenter = Dz12PresenterList()
         presenter.setView(this)
 
-        presenter.timerToast()
+        // presenter.timerToast()
         presenter.loadList(searchText)
 
         val dz8RecyclerView = view.findViewById<RecyclerView>(R.id.dz8RecyclerView)
@@ -57,7 +57,7 @@ class Dz12ListFragment : Fragment(),
         val manager = LinearLayoutManager(context)
         dz8RecyclerView.layoutManager = manager
         dz8RecyclerView.isNestedScrollingEnabled = false
-        adapter = Dz12ListAdapter(reload(), this)
+        adapter = Dz12ListAdapter(load(), this)
         dz8RecyclerView.adapter = adapter
 
         scrollListener = object : AutoLoadRecyclerListener(manager) {
@@ -142,22 +142,15 @@ class Dz12ListFragment : Fragment(),
     override fun onDetach() {
         super.onDetach()
         listener = null
+        presenter.detachView()
     }
 
-    private fun reload(): MutableList<Dz12StudentData> {
-        if (Dz12StudentsSinglton.getStudentsList().isEmpty()) {
-            return Dz12StudentsSinglton.getStudentsExplorerList()
-        } else {
-            return Dz12StudentsSinglton.getStudentsList()
-        }
+    private fun load(): MutableList<Dz12StudentData> {
+        return emptyList
     }
+
     interface Listener {
         fun onStudentClick(id: String)
         fun onAddButtonClick()
-    }
-
-    override fun onDestroyView() {
-        super.onDestroyView()
-        presenter.detachView()
     }
 }
