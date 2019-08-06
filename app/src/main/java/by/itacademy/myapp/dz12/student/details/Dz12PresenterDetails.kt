@@ -1,6 +1,6 @@
 package by.itacademy.myapp.dz12.student.details
 
-import by.itacademy.myapp.dz12.student.model.datasingleton.Dz12StudentData
+import by.itacademy.myapp.dz12.student.model.data.Dz12StudentData
 import by.itacademy.myapp.dz12.student.model.provider.provideStudentRepository
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.disposables.Disposable
@@ -33,7 +33,7 @@ class Dz12PresenterDetails : Dz12BasePresenterDetails {
             })
     }
 
-    override fun deleteOfServerAndSingleton(idStudent: String) {
+    override fun delete(idStudent: String) {
 
         disposable = repository
             .delete(idStudent)

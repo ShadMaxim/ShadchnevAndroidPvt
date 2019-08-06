@@ -1,4 +1,4 @@
-package by.itacademy.myapp.dz12.student.model.datasingleton
+package by.itacademy.myapp.dz12.student.model.data
 
 import com.google.gson.annotations.SerializedName
 

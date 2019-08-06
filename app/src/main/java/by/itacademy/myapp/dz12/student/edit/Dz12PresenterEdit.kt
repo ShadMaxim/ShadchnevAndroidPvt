@@ -2,7 +2,7 @@ package by.itacademy.myapp.dz12.student.edit
 
 import android.util.Patterns
 import java.util.regex.Pattern
-import by.itacademy.myapp.dz12.student.model.datasingleton.Dz12StudentData
+import by.itacademy.myapp.dz12.student.model.data.Dz12StudentData
 import by.itacademy.myapp.dz12.student.model.provider.provideStudentRepository
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.disposables.Disposable

@@ -1,6 +1,6 @@
 package by.itacademy.myapp.dz12.student.edit
 
-import by.itacademy.myapp.dz12.student.model.datasingleton.Dz12StudentData
+import by.itacademy.myapp.dz12.student.model.data.Dz12StudentData
 
 interface Dz12ViewEdit {
 

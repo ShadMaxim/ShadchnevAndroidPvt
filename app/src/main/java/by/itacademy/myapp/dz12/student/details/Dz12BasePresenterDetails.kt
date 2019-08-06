@@ -4,7 +4,7 @@ interface Dz12BasePresenterDetails {
 
     fun setView(view: Dz12ViewDetails)
     fun getStudentById(idStudent: String)
-    fun deleteOfServerAndSingleton(idStudent: String)
+    fun delete(idStudent: String)
     fun detachView()
     fun goEdit(idStudent: String)
     fun goBackStack()

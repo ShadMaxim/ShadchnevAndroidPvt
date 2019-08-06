@@ -5,7 +5,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import by.itacademy.myapp.R
-import by.itacademy.myapp.dz12.student.model.datasingleton.Dz12StudentData
+import by.itacademy.myapp.dz12.student.model.data.Dz12StudentData
 import by.itacademy.myapp.util.picassoLoaderCircle
 
 class Dz12ListViewHolder(view: View) : RecyclerView.ViewHolder(view) {

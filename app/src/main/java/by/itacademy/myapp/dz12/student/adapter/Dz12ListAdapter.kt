@@ -4,7 +4,7 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import by.itacademy.myapp.R
-import by.itacademy.myapp.dz12.student.model.datasingleton.Dz12StudentData
+import by.itacademy.myapp.dz12.student.model.data.Dz12StudentData
 
 class Dz12ListAdapter
     (private var items: MutableList<Dz12StudentData>, private val listener: ClickListener)

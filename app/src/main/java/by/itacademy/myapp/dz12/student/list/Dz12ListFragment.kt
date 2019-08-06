@@ -16,7 +16,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import by.itacademy.myapp.R
 import by.itacademy.myapp.dz12.student.adapter.Dz12ListAdapter
-import by.itacademy.myapp.dz12.student.model.datasingleton.Dz12StudentData
+import by.itacademy.myapp.dz12.student.model.data.Dz12StudentData
 import by.itacademy.myapp.dz12.student.pageload.AutoLoadRecyclerListener
 import by.itacademy.myapp.dz8.SharedPrefManager
 import kotlinx.android.synthetic.main.activity_dz8_recycler.view.*

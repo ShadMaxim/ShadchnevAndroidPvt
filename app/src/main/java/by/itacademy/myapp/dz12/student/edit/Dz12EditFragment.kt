@@ -10,7 +10,7 @@ import android.widget.Toast
 import androidx.fragment.app.Fragment
 import by.itacademy.myapp.R
 import by.itacademy.myapp.dz12.student.Dz12MyListener
-import by.itacademy.myapp.dz12.student.model.datasingleton.Dz12StudentData
+import by.itacademy.myapp.dz12.student.model.data.Dz12StudentData
 import kotlinx.android.synthetic.main.activity_dz8_edit_profile.*
 import kotlinx.android.synthetic.main.activity_dz8_edit_profile.view.*
 
