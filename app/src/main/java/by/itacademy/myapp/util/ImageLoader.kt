@@ -38,7 +38,7 @@ fun picassoLoader(uri: String, imageView: ImageView, callback: ImageLoaderCallba
         .into(imageView, callback)
 }
 
-fun glideLoaderCircle(url: String, imageView: ImageView, context: Context){
+fun glideLoaderCircle(url: String, imageView: ImageView, context: Context) {
     Glide
         .with(context)
         .load(url)
