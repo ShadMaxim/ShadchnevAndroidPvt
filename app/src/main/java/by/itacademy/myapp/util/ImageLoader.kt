@@ -1,7 +1,9 @@
 package by.itacademy.myapp.util
 
+import android.content.Context
 import android.graphics.drawable.Drawable
 import android.widget.ImageView
+import com.bumptech.glide.Glide
 import com.squareup.picasso.Callback
 import com.squareup.picasso.Picasso
 import java.lang.Exception
@@ -34,4 +36,12 @@ fun picassoLoader(uri: String, imageView: ImageView, callback: ImageLoaderCallba
     Picasso.get()
         .load(uri)
         .into(imageView, callback)
+}
+
+fun glideLoaderCircle(url: String, imageView: ImageView, context: Context){
+    Glide
+        .with(context)
+        .load(url)
+        .circleCrop()
+        .into(imageView)
 }
