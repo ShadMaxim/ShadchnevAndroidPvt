@@ -1,6 +1,7 @@
 apply plugin: 'com.android.application'
 
 apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
 
 apply plugin: 'kotlin-android-extensions'
 
@@ -42,6 +43,11 @@ dependencies {
     def lifecycleAlpfaVersion = "2.2.0-alpha02"
     implementation "androidx.lifecycle:lifecycle-viewmodel:$lifecycleAlpfaVersion"
     implementation "androidx.lifecycle:lifecycle-runtime:$lifecycleAlpfaVersion"
+
+    def room_version = "2.1.0"
+    implementation "androidx.room:room-runtime:$room_version"
+    kapt "androidx.room:room-compiler:$room_version"
+    implementation "android.arch.persistence.room:rxjava2:1.1.1"
 
     def lifecycle_version = "2.0.0"
     implementation "androidx.lifecycle:lifecycle-extensions:$lifecycle_version"
