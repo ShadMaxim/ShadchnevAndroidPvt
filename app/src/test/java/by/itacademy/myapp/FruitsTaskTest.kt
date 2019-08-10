@@ -13,12 +13,12 @@ class FruitsTaskTest {
     private val testShop0 = listOf("orange")
     private val testShop1 = listOf("orange", "apple", "apple", "banana", "orange", "banana")
     private val testShop2 = listOf("orange", "banana", "apple", "apple", "orange", "banana")
-    private val testShop3 = listOf("orange", "apple", "apple", "banana","orange", "apple", "banana")
+    private val testShop3 = listOf("orange", "apple", "apple", "banana", "orange", "apple", "banana")
 
     private val testClass = FruitsTask()
 
     @Test
-    fun correctTask(){
+    fun correctTask() {
         assertEquals(1, testClass.checkWin(testCode2, testShop1))
         assertEquals(0, testClass.checkWin(testCode2, testShop2))
 

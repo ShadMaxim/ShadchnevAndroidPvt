@@ -12,7 +12,6 @@ class FruitsTask {
         var counter = 0
 
         if (sizeShoppingCart < sizeCodeList) {
-
         } else {
             while (number < sizeShoppingCart && numberOfList < codeList.size) {
                 if (shoppingList[number] == codeList[numberOfList][0] || codeList[numberOfList][0] == "anything") {
