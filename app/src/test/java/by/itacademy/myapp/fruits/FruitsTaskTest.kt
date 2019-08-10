@@ -1,6 +1,5 @@
-package by.itacademy.myapp
+package by.itacademy.myapp.fruits
 
-import by.itacademy.myapp.fruits.FruitsTask
 import org.junit.Assert.assertEquals
 import org.junit.Test
 
