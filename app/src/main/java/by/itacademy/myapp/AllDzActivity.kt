@@ -72,8 +72,10 @@ class AllDzActivity : Activity() {
                     intent = Intent(this, Dz11Activity::class.java)
                 }
             }
+
             startActivity(intent)
         }
+
         dz0Button.setOnClickListener(onClickListener)
         dz1Button.setOnClickListener(onClickListener)
         dz2part1Button.setOnClickListener(onClickListener)
