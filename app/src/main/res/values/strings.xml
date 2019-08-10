@@ -38,4 +38,6 @@
     <string name="dz11EmptyText">Enter data please</string>
     <string name="dz11mvp">dz11mvp</string>
     <string name="dz11mvvm">dz11mvvm</string>
+    <string name="dz12student">dz12Student</string>
+    <string name="dz12cars">dz12Cars</string>
 </resources>

@@ -8,6 +8,8 @@ import by.itacademy.myapp.dz0.Dz0Activity
 import by.itacademy.myapp.dz1.Dz1Activity
 import by.itacademy.myapp.dz11.mvp.Dz11ManagerActivity
 import by.itacademy.myapp.dz11.mvvm.Dz11Activity
+import by.itacademy.myapp.dz12.cars.Dz12Activity
+import by.itacademy.myapp.dz12.student.Dz12ManagerActivity
 import by.itacademy.myapp.dz2.Dz2Activity
 import by.itacademy.myapp.dz2.Dz2LoginActivity
 import by.itacademy.myapp.dz3.Dz3Activity
@@ -71,6 +73,12 @@ class AllDzActivity : Activity() {
                 R.id.dz11path2Button -> {
                     intent = Intent(this, Dz11Activity::class.java)
                 }
+                R.id.dz12path1Button -> {
+                    intent = Intent(this, Dz12ManagerActivity::class.java)
+                }
+                R.id.dz12path2Button -> {
+                    intent = Intent(this, Dz12Activity::class.java)
+                }
             }
 
             startActivity(intent)
@@ -89,5 +97,7 @@ class AllDzActivity : Activity() {
         dz9Button.setOnClickListener(onClickListener)
         dz11path1Button.setOnClickListener(onClickListener)
         dz11path2Button.setOnClickListener(onClickListener)
+        dz12path1Button.setOnClickListener(onClickListener)
+        dz12path2Button.setOnClickListener(onClickListener)
     }
 }

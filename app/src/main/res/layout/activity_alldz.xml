@@ -97,6 +97,16 @@
             style="@style/AllDzStyle"
             android:text="@string/dz11mvvm"/>
 
+        <Button
+            android:id="@+id/dz12path1Button"
+            style="@style/AllDzStyle"
+            android:text="@string/dz12student"/>
+
+        <Button
+            android:id="@+id/dz12path2Button"
+            style="@style/AllDzStyle"
+            android:text="@string/dz12cars"/>
+
     </LinearLayout>
 
 </LinearLayout>
