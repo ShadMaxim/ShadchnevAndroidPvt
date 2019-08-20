@@ -1,6 +1,5 @@
 package by.itacademy.myapp.dz12.cars.provider
 
-import android.util.Log
 import by.itacademy.myapp.app.App
 import by.itacademy.myapp.dz9.entity.CarResponse
 import by.itacademy.myapp.dz9.entity.CoordParams
@@ -19,10 +18,10 @@ class Dz12CarRepositoryRemote(private val api: Dz12Api) : Dz12CarRepository {
                 params.coord2.longitude
 
             ).doOnSuccess {
+
                 poiDao.insert(it.poiList)
-                Log.e("doOnSuccess poiDao = ", poiDao.get().toString())
-                Log.e("doOnSuccess it = ", it.toString())
             }.onErrorResumeNext {
+
                 Single.just(CarResponse(poiDao.get()))
             }
     }
