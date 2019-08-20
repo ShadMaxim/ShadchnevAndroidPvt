@@ -21,7 +21,6 @@ import by.itacademy.myapp.dz12.student.adapter.Dz12ListAdapter
 import by.itacademy.myapp.dz12.student.model.data.Dz12StudentData
 import by.itacademy.myapp.dz12.student.pageload.AutoLoadRecyclerListener
 import by.itacademy.myapp.dz8.SharedPrefManager
-import kotlinx.android.synthetic.main.activity_dz8_recycler.view.*
 import kotlinx.android.synthetic.main.fragment_dz12_recycler.view.*
 
 class Dz12ListFragment : Fragment(),
@@ -30,9 +29,9 @@ class Dz12ListFragment : Fragment(),
     private lateinit var adapter: Dz12ListAdapter
     private lateinit var prefManager: SharedPrefManager
     private var searchText: String = ""
-    private lateinit var dz8SearchEditText: EditText
+    private lateinit var dz12SearchEditText: EditText
     private var listener: Listener? = null
-    private lateinit var presenter: Dz12PresenterList
+    private var presenter: Dz12PresenterList? = null
     private lateinit var scrollListener: AutoLoadRecyclerListener
     private var emptyList: MutableList<Dz12StudentData> = mutableListOf()
 
@@ -49,10 +48,13 @@ class Dz12ListFragment : Fragment(),
         val view = inflater.inflate(R.layout.fragment_dz12_recycler, container, false)
 
         presenter = Dz12PresenterList()
-        presenter.setView(this)
+        presenter?.setView(this)
+
+        progressBar = view.findViewById(R.id.dz12ListProgressBar)
+        frameLayout = view.findViewById(R.id.dz12ListFrameLayout)
 
         // presenter.timerToast()
-        presenter.loadList(searchText)
+        presenter?.loadList(searchText)
 
         val dz12RecyclerView = view.findViewById<RecyclerView>(R.id.dz12RecyclerView)
         dz12RecyclerView.setHasFixedSize(true)
@@ -68,13 +70,13 @@ class Dz12ListFragment : Fragment(),
 
         scrollListener = object : AutoLoadRecyclerListener(manager) {
             override fun onLoadMore(page: Int, totalItemsCount: Int, view: RecyclerView) {
-                presenter.loadMore(page, searchText)
+                presenter?.loadMore(page, searchText)
             }
         }
         dz12RecyclerView.addOnScrollListener(scrollListener)
 
-        dz8SearchEditText = view.searchStudentDz8
-        dz8SearchEditText.addTextChangedListener(object : TextWatcher {
+        dz12SearchEditText = view.searchStudentDz12
+        dz12SearchEditText.addTextChangedListener(object : TextWatcher {
 
             var timer: Handler? = null
             override fun beforeTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {}
@@ -84,7 +86,7 @@ class Dz12ListFragment : Fragment(),
                 timer?.postDelayed({
                     searchText = p0.toString()
                     scrollListener.resetPages()
-                    presenter.loadList(searchText)
+                    presenter?.loadList(searchText)
                 }, 500)
             }
 
@@ -93,7 +95,7 @@ class Dz12ListFragment : Fragment(),
         })
 
         view.dz12AddImageView.setOnClickListener {
-            presenter.goToAddButton()
+            presenter?.goToAddButton()
         }
         return view
     }
@@ -105,13 +107,13 @@ class Dz12ListFragment : Fragment(),
     override fun onResume() {
         super.onResume()
         prefManager = SharedPrefManager(requireContext())
-        dz8SearchEditText.setText(prefManager.readUserText())
-        presenter.reloadRecycler()
+        dz12SearchEditText.setText(prefManager.readUserText())
+        presenter?.reloadRecycler()
     }
 
     override fun onPause() {
         super.onPause()
-        prefManager.saveSharedPrefs(dz8SearchEditText.text.toString())
+        prefManager.saveSharedPrefs(dz12SearchEditText.text.toString())
     }
 
     override fun onStudentClick(item: Dz12StudentData) {
@@ -120,8 +122,8 @@ class Dz12ListFragment : Fragment(),
     }
 
     fun updateRecyclerList() {
-        var list = presenter.newListForSearch(searchText)
-        showNewList(list)
+        var list = presenter?.newListForSearch(searchText)
+        showNewList(list!!)
     }
 
     override fun showProgressBar() {
@@ -158,7 +160,7 @@ class Dz12ListFragment : Fragment(),
     override fun onDetach() {
         super.onDetach()
         listener = null
-        presenter.detachView()
+        presenter?.detachView()
     }
 
     private fun load(): MutableList<Dz12StudentData> {

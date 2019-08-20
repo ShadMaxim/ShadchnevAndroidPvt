@@ -14,9 +14,8 @@ abstract class AutoLoadRecyclerListener(layoutManager: LinearLayoutManager) : Re
 
     override fun onScrolled(view: RecyclerView, dx: Int, dy: Int) {
 
-        var lastVisibleItemPosition = 0
         var totalItemCount = mLayoutManager.itemCount
-        lastVisibleItemPosition = (mLayoutManager as LinearLayoutManager).findLastVisibleItemPosition()
+        var lastVisibleItemPosition = (mLayoutManager as LinearLayoutManager).findLastVisibleItemPosition()
 
         if (totalItemCount < previousTotalItemCount) {
             this.currentPage = this.startingPageIndex

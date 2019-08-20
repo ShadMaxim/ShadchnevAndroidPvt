@@ -70,7 +70,7 @@ class Dz12EditFragment : Fragment(), Dz12ViewEdit {
 
             val name = dz12NameEditProfileEditText.text.toString()
             val url = dz12UrlEditProfileEditText.text.toString()
-            val age = dz12AgeEditProfileEditText.text.toString().toInt()
+            val age = dz12AgeEditProfileEditText.text.toString()
 
             presenter.goToSaveOrEdit(idStudent!!, name, url, age)
         }
@@ -80,7 +80,7 @@ class Dz12EditFragment : Fragment(), Dz12ViewEdit {
 
     override fun showStudent(student: Dz12StudentData) {
         nameEditText.setText(student.name)
-        ageEditText.setText(student.age.toString())
+        ageEditText.setText(student.age)
         urlEditText.setText(student.imageUrl)
     }
 

@@ -5,5 +5,5 @@ interface Dz12BasePresenterEdit {
     fun setView(view: Dz12ViewEdit)
     fun detachView()
     fun getStudentById(idStudent: String)
-    fun goToSaveOrEdit(idStudent: String, name: String, imageUrl: String, age: Int)
+    fun goToSaveOrEdit(idStudent: String, name: String, imageUrl: String, age: String)
 }

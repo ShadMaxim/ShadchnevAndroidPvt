@@ -14,5 +14,5 @@ data class Dz12StudentData(
     val imageUrl: String,
 
     @SerializedName("age")
-    val age: Int
+    val age: String
 )

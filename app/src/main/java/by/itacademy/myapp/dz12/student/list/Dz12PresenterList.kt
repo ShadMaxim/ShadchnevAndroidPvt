@@ -13,7 +13,6 @@ class Dz12PresenterList : Dz12BasePresenterList {
     private val repository = provideStudentRepository()
     var disposable: Disposable? = null
     var charInFilter = ""
-    // var observable: Observable<Long> = Observable.interval(1, TimeUnit.SECONDS)
     private val number_page = 10
 
     override fun setView(view: Dz12ViewList) {
@@ -23,7 +22,6 @@ class Dz12PresenterList : Dz12BasePresenterList {
 
     override fun detachView() {
         this.view = null
-        disposable?.dispose()
     }
 
     override fun newListForSearch(text: String): MutableList<Dz12StudentData> {
@@ -43,15 +41,18 @@ class Dz12PresenterList : Dz12BasePresenterList {
             .observeOn(AndroidSchedulers.mainThread())
             .subscribe({ data ->
 
+                listOfStudents.clear()
                 listOfStudents.addAll(data)
                 val list = listOfStudents
 
                 view?.showNewList(list)
                 view?.notShowProgressBar()
                 view?.showToastGetOk(" list load successfully ")
+                disposable?.dispose()
             }, { throwable ->
 
                 view?.showToastGetError(throwable.toString())
+                disposable?.dispose()
             })
     }
 
@@ -60,21 +61,6 @@ class Dz12PresenterList : Dz12BasePresenterList {
         view?.showNewList(list)
         view?.showProgressBar()
     }
-
-    /*override fun timerToast() {
-
-        disposable = observable
-            .filter { it % 2 == 0.toLong() }
-            .subscribeOn(Schedulers.io())
-            .observeOn(AndroidSchedulers.mainThread())
-            .subscribe({
-
-                view?.showTimer(it)
-            }, {
-
-                view?.showTimerError(it.toString())
-            })
-    }*/
 
     override fun goToAddButton() {
         view?.addButtonClick()
@@ -94,9 +80,11 @@ class Dz12PresenterList : Dz12BasePresenterList {
                 view?.showNewList(list)
                 view?.notShowProgressBar()
                 view?.showToastGetOk(" list load successfully ")
+                disposable?.dispose()
             }, { throwable ->
 
                 view?.showToastGetError(throwable.toString())
+                disposable?.dispose()
             })
     }
 }
