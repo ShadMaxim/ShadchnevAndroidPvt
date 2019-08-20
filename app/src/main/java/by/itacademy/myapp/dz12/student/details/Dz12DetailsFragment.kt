@@ -7,6 +7,8 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import android.widget.ImageView
+import android.widget.ProgressBar
+import android.widget.LinearLayout
 import android.widget.Button
 import android.widget.Toast
 import androidx.fragment.app.Fragment
@@ -24,6 +26,9 @@ class Dz12DetailsFragment : Fragment(), Dz12ViewDetails {
     private lateinit var nameEditText: TextView
     private lateinit var urlEditText: TextView
     private lateinit var avatarImageView: ImageView
+
+    private lateinit var progressBar: ProgressBar
+    private lateinit var linearLayout: LinearLayout
 
     private var nameStudent: String = ""
 
@@ -46,14 +51,17 @@ class Dz12DetailsFragment : Fragment(), Dz12ViewDetails {
     }
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        val view = inflater.inflate(R.layout.activity_dz8_profil_student, container, false)
+        val view = inflater.inflate(R.layout.fragment_dz12_details_student, container, false)
 
         val idStudent = arguments?.getString(ID_STUDENT)
 
-        nameEditText = view.findViewById(R.id.dz8NameProfilStudentTextView)
-        ageEditText = view.findViewById(R.id.dz8AgeProfilStudentTextView)
-        urlEditText = view.findViewById(R.id.dz8UrlProfilStudentTextView)
-        avatarImageView = view.findViewById(R.id.dz8AvatarProfileImageView)
+        nameEditText = view.findViewById(R.id.dz12NameProfilStudentTextView)
+        ageEditText = view.findViewById(R.id.dz12AgeProfilStudentTextView)
+        urlEditText = view.findViewById(R.id.dz12UrlProfilStudentTextView)
+        avatarImageView = view.findViewById(R.id.dz12AvatarProfileImageView)
+
+        progressBar = view.findViewById(R.id.dz12DetailsProgressBar)
+        linearLayout = view.findViewById(R.id.dz12DetailsLinearLayout)
 
         presenter = Dz12PresenterDetails()
         presenter!!.setView(this)
@@ -61,11 +69,11 @@ class Dz12DetailsFragment : Fragment(), Dz12ViewDetails {
         if (idStudent != null) {
             presenter!!.getStudentById(idStudent)
 
-            view.findViewById<Button>(R.id.dz8DeleteProfileButton).setOnClickListener {
+            view.findViewById<Button>(R.id.dz12DeleteProfileButton).setOnClickListener {
                 presenter!!.delete(idStudent)
             }
 
-            view.findViewById<Button>(R.id.dz8EditProfileButton).setOnClickListener {
+            view.findViewById<Button>(R.id.dz12EditProfileButton).setOnClickListener {
                 presenter!!.goEdit(idStudent)
             }
         } else {
@@ -85,6 +93,16 @@ class Dz12DetailsFragment : Fragment(), Dz12ViewDetails {
     override fun ifNullStudent() {
         Toast.makeText(context, "ERROR( Student ): Not valid student", Toast.LENGTH_SHORT).show()
         mylistener?.onIfNullToBack()
+    }
+
+    override fun showProgressBar() {
+        progressBar.visibility = View.VISIBLE
+        linearLayout.visibility = View.GONE
+    }
+
+    override fun notShowProgressBar() {
+        progressBar.visibility = View.GONE
+        linearLayout.visibility = View.VISIBLE
     }
 
     override fun showToastOk(text: String) {

@@ -10,4 +10,7 @@ interface Dz12ViewDetails {
     fun updatePage()
     fun goToEdit(idStudent: String)
     fun ifNullStudent()
+
+    fun showProgressBar()
+    fun notShowProgressBar()
 }

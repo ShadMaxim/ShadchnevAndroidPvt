@@ -6,13 +6,15 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.EditText
+import android.widget.LinearLayout
+import android.widget.ProgressBar
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import by.itacademy.myapp.R
 import by.itacademy.myapp.dz12.student.Dz12MyListener
 import by.itacademy.myapp.dz12.student.model.data.Dz12StudentData
-import kotlinx.android.synthetic.main.activity_dz8_edit_profile.*
-import kotlinx.android.synthetic.main.activity_dz8_edit_profile.view.*
+import kotlinx.android.synthetic.main.fragment_dz12_edit_profile.*
+import kotlinx.android.synthetic.main.fragment_dz12_edit_profile.view.*
 
 class Dz12EditFragment : Fragment(), Dz12ViewEdit {
 
@@ -22,6 +24,9 @@ class Dz12EditFragment : Fragment(), Dz12ViewEdit {
     private lateinit var ageEditText: EditText
     private lateinit var nameEditText: EditText
     private lateinit var urlEditText: EditText
+
+    private lateinit var progressBar: ProgressBar
+    private lateinit var linearLayout: LinearLayout
 
     companion object {
         private const val ID_STUDENT = "ID_STUDENT"
@@ -43,11 +48,14 @@ class Dz12EditFragment : Fragment(), Dz12ViewEdit {
     }
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        val view = inflater.inflate(R.layout.activity_dz8_edit_profile, container, false)
+        val view = inflater.inflate(R.layout.fragment_dz12_edit_profile, container, false)
 
-        ageEditText = view.findViewById<EditText>(R.id.dz8AgeEditProfileEditText)
-        nameEditText = view.findViewById<EditText>(R.id.dz8NameEditProfileEditText)
-        urlEditText = view.findViewById<EditText>(R.id.dz8UrlEditProfileEditText)
+        ageEditText = view.findViewById<EditText>(R.id.dz12AgeEditProfileEditText)
+        nameEditText = view.findViewById<EditText>(R.id.dz12NameEditProfileEditText)
+        urlEditText = view.findViewById<EditText>(R.id.dz12UrlEditProfileEditText)
+
+        progressBar = view.findViewById(R.id.dz12EditProgressBar)
+        linearLayout = view.findViewById(R.id.dz12EditLinearLayout)
 
         val idStudent = arguments?.getString(ID_STUDENT, NEW_STUDENT)
 
@@ -58,11 +66,11 @@ class Dz12EditFragment : Fragment(), Dz12ViewEdit {
             presenter.getStudentById(idStudent)
         }
 
-        view.dz8SaveEditProfileButton.setOnClickListener {
+        view.dz12SaveEditProfileButton.setOnClickListener {
 
-            val name = dz8NameEditProfileEditText.text.toString()
-            val url = dz8UrlEditProfileEditText.text.toString()
-            val age = dz8AgeEditProfileEditText.text.toString().toInt()
+            val name = dz12NameEditProfileEditText.text.toString()
+            val url = dz12UrlEditProfileEditText.text.toString()
+            val age = dz12AgeEditProfileEditText.text.toString()
 
             presenter.goToSaveOrEdit(idStudent!!, name, url, age)
         }
@@ -72,8 +80,18 @@ class Dz12EditFragment : Fragment(), Dz12ViewEdit {
 
     override fun showStudent(student: Dz12StudentData) {
         nameEditText.setText(student.name)
-        ageEditText.setText(student.age.toString())
+        ageEditText.setText(student.age)
         urlEditText.setText(student.imageUrl)
+    }
+
+    override fun showProgressBar() {
+        progressBar.visibility = View.VISIBLE
+        linearLayout.visibility = View.GONE
+    }
+
+    override fun notShowProgressBar() {
+        progressBar.visibility = View.GONE
+        linearLayout.visibility = View.VISIBLE
     }
 
     override fun showToastUpdateOk(text: String) {

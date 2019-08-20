@@ -1,7 +1,7 @@
 package by.itacademy.myapp.dz12.student.edit
 
 import android.util.Patterns
-import java.util.regex.Pattern
+// import java.util.regex.Pattern
 import by.itacademy.myapp.dz12.student.model.data.Dz12StudentData
 import by.itacademy.myapp.dz12.student.model.provider.provideStudentRepository
 import io.reactivex.android.schedulers.AndroidSchedulers
@@ -12,12 +12,13 @@ class Dz12PresenterEdit : Dz12BasePresenterEdit {
 
     private var view: Dz12ViewEdit? = null
     private val pattern = Patterns.WEB_URL
-    private var patternAge: Pattern = Pattern.compile("[1-9]([0-9]*)")
+    // private var patternAge: Pattern = Pattern.compile("[1-9]([0-9]*)")
     private val repository = provideStudentRepository()
     private var disposable: Disposable? = null
     var student: Dz12StudentData? = null
 
     override fun setView(view: Dz12ViewEdit) {
+        view.notShowProgressBar()
         this.view = view
     }
 
@@ -31,17 +32,19 @@ class Dz12PresenterEdit : Dz12BasePresenterEdit {
 
                 student = it
                 view?.showStudent(student!!)
+                view?.notShowProgressBar()
+                disposable?.dispose()
             }, {
                 view?.showErrorLoadById("Error: $it")
+                disposable?.dispose()
             })
     }
 
     override fun detachView() {
         this.view = null
-        disposable!!.dispose()
     }
 
-    private fun update(idStudent: String, name: String, imageUrl: String, age: Int) {
+    private fun update(idStudent: String, name: String, imageUrl: String, age: String) {
 
         student = Dz12StudentData(idStudent, name, imageUrl, age)
 
@@ -52,14 +55,16 @@ class Dz12PresenterEdit : Dz12BasePresenterEdit {
             .subscribe({
 
                 view?.showToastUpdateOk(it.name + " edited successfully")
+                disposable?.dispose()
             }, {
 
                 view?.showToastUpdateError("Error: $it")
+                disposable?.dispose()
             })
         view?.updatePage()
     }
 
-    private fun create(name: String, imageUrl: String, age: Int) {
+    private fun create(name: String, imageUrl: String, age: String) {
 
         val studentNewForServer = Dz12StudentData("", name, imageUrl, age)
 
@@ -70,20 +75,22 @@ class Dz12PresenterEdit : Dz12BasePresenterEdit {
             .subscribe({
 
                 view?.showToastCreateOk(it.name + "created successfully")
+                disposable?.dispose()
             }, {
 
                 view?.showToastCreateError("Error : $it")
+                disposable?.dispose()
             })
         view?.updatePage()
     }
 
-    override fun goToSaveOrEdit(idStudent: String, name: String, imageUrl: String, age: Int) {
+    override fun goToSaveOrEdit(idStudent: String, name: String, imageUrl: String, age: String) {
 
         var textErrorCorrectDataFiling = ""
 
         if (!pattern.matcher(imageUrl).matches()) {
             textErrorCorrectDataFiling = "ERROR( URL ): Not valid URL"
-        } else if (!patternAge.matcher(age.toString()).matches() && age.toString().isEmpty()) {
+        } else if (age.isEmpty()) {
             textErrorCorrectDataFiling = "ERROR( AGE ): Not valid Age, must be > 0"
         } else if (name.isEmpty()) {
             textErrorCorrectDataFiling = "ERROR( NAME ): Not valid Name, must be filled"

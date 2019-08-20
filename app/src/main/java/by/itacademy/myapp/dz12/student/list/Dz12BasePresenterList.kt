@@ -9,6 +9,6 @@ interface Dz12BasePresenterList {
     fun newListForSearch(text: String): MutableList<Dz12StudentData>
     fun loadList(text: String)
     fun reloadRecycler()
-    fun timerToast()
+    // fun timerToast()
     fun goToAddButton()
 }

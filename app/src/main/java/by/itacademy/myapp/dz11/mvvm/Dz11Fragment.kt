@@ -40,7 +40,6 @@ class Dz11Fragment : Fragment(), Dz9Adapter.ClickListener {
                     }
                     is Dz11State.Error -> {
                         error(it)
-                        errorLoad(it.throwable)
                     }
                 }
             })

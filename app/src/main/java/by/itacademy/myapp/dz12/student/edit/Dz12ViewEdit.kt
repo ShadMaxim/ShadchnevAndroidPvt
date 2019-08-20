@@ -12,4 +12,7 @@ interface Dz12ViewEdit {
     fun showToastErrorFilling(text: String)
     fun showErrorLoadById(text: String)
     fun updatePage()
+
+    fun showProgressBar()
+    fun notShowProgressBar()
 }

@@ -2,11 +2,9 @@ package by.itacademy.myapp.dz12.student.list
 
 import by.itacademy.myapp.dz12.student.model.data.Dz12StudentData
 import by.itacademy.myapp.dz12.student.model.provider.provideStudentRepository
-import io.reactivex.Observable
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.disposables.Disposable
 import io.reactivex.schedulers.Schedulers
-import java.util.concurrent.TimeUnit
 
 class Dz12PresenterList : Dz12BasePresenterList {
 
@@ -15,16 +13,15 @@ class Dz12PresenterList : Dz12BasePresenterList {
     private val repository = provideStudentRepository()
     var disposable: Disposable? = null
     var charInFilter = ""
-    var observable: Observable<Long> = Observable.interval(1, TimeUnit.SECONDS)
     private val number_page = 10
 
     override fun setView(view: Dz12ViewList) {
+
         this.view = view
     }
 
     override fun detachView() {
         this.view = null
-        disposable?.dispose()
     }
 
     override fun newListForSearch(text: String): MutableList<Dz12StudentData> {
@@ -44,35 +41,25 @@ class Dz12PresenterList : Dz12BasePresenterList {
             .observeOn(AndroidSchedulers.mainThread())
             .subscribe({ data ->
 
+                listOfStudents.clear()
                 listOfStudents.addAll(data)
                 val list = listOfStudents
 
                 view?.showNewList(list)
+                view?.notShowProgressBar()
                 view?.showToastGetOk(" list load successfully ")
+                disposable?.dispose()
             }, { throwable ->
 
                 view?.showToastGetError(throwable.toString())
+                disposable?.dispose()
             })
     }
 
     override fun reloadRecycler() {
         val list = listOfStudents
         view?.showNewList(list)
-    }
-
-    override fun timerToast() {
-
-        disposable = observable
-            .filter { it % 2 == 0.toLong() }
-            .subscribeOn(Schedulers.io())
-            .observeOn(AndroidSchedulers.mainThread())
-            .subscribe({
-
-                view?.showTimer(it)
-            }, {
-
-                view?.showTimerError(it.toString())
-            })
+        view?.showProgressBar()
     }
 
     override fun goToAddButton() {
@@ -91,10 +78,13 @@ class Dz12PresenterList : Dz12BasePresenterList {
                 val list = listOfStudents
 
                 view?.showNewList(list)
+                view?.notShowProgressBar()
                 view?.showToastGetOk(" list load successfully ")
+                disposable?.dispose()
             }, { throwable ->
 
                 view?.showToastGetError(throwable.toString())
+                disposable?.dispose()
             })
     }
 }

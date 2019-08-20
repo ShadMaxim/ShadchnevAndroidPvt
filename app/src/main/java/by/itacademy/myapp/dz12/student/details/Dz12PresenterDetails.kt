@@ -19,6 +19,7 @@ class Dz12PresenterDetails : Dz12BasePresenterDetails {
 
     override fun getStudentById(idStudent: String) {
 
+        view?.showProgressBar()
         disposable = repository
             .getById(idStudent)
             .subscribeOn(Schedulers.io())
@@ -27,9 +28,13 @@ class Dz12PresenterDetails : Dz12BasePresenterDetails {
 
                 student = it
                 view?.showStudent(student!!)
+                view?.notShowProgressBar()
+                disposable!!.dispose()
             }, {
 
                 view?.showToastError("""Error : $it""")
+                view?.notShowProgressBar()
+                disposable!!.dispose()
             })
     }
 
@@ -42,9 +47,12 @@ class Dz12PresenterDetails : Dz12BasePresenterDetails {
             .subscribe({
 
                 view?.showToastOk("deletion of " + student!!.name + " on server was successful")
+                disposable!!.dispose()
             }, {
 
                 view?.showToastError("""Error : $it""")
+                view?.notShowProgressBar()
+                disposable!!.dispose()
             })
         view?.updatePage()
     }
@@ -59,6 +67,5 @@ class Dz12PresenterDetails : Dz12BasePresenterDetails {
 
     override fun detachView() {
         this.view = null
-        disposable!!.dispose()
     }
 }
