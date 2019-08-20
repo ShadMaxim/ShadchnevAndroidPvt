@@ -2,11 +2,9 @@ package by.itacademy.myapp.dz12.student.list
 
 import by.itacademy.myapp.dz12.student.model.data.Dz12StudentData
 import by.itacademy.myapp.dz12.student.model.provider.provideStudentRepository
-import io.reactivex.Observable
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.disposables.Disposable
 import io.reactivex.schedulers.Schedulers
-import java.util.concurrent.TimeUnit
 
 class Dz12PresenterList : Dz12BasePresenterList {
 
@@ -15,10 +13,11 @@ class Dz12PresenterList : Dz12BasePresenterList {
     private val repository = provideStudentRepository()
     var disposable: Disposable? = null
     var charInFilter = ""
-    var observable: Observable<Long> = Observable.interval(1, TimeUnit.SECONDS)
+    // var observable: Observable<Long> = Observable.interval(1, TimeUnit.SECONDS)
     private val number_page = 10
 
     override fun setView(view: Dz12ViewList) {
+
         this.view = view
     }
 
@@ -48,6 +47,7 @@ class Dz12PresenterList : Dz12BasePresenterList {
                 val list = listOfStudents
 
                 view?.showNewList(list)
+                view?.notShowProgressBar()
                 view?.showToastGetOk(" list load successfully ")
             }, { throwable ->
 
@@ -58,9 +58,10 @@ class Dz12PresenterList : Dz12BasePresenterList {
     override fun reloadRecycler() {
         val list = listOfStudents
         view?.showNewList(list)
+        view?.showProgressBar()
     }
 
-    override fun timerToast() {
+    /*override fun timerToast() {
 
         disposable = observable
             .filter { it % 2 == 0.toLong() }
@@ -73,7 +74,7 @@ class Dz12PresenterList : Dz12BasePresenterList {
 
                 view?.showTimerError(it.toString())
             })
-    }
+    }*/
 
     override fun goToAddButton() {
         view?.addButtonClick()
@@ -91,6 +92,7 @@ class Dz12PresenterList : Dz12BasePresenterList {
                 val list = listOfStudents
 
                 view?.showNewList(list)
+                view?.notShowProgressBar()
                 view?.showToastGetOk(" list load successfully ")
             }, { throwable ->
 

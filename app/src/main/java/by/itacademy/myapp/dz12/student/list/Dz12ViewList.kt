@@ -10,4 +10,7 @@ interface Dz12ViewList {
     fun showTimer(number: Long)
     fun showTimerError(text: String)
     fun addButtonClick()
+
+    fun showProgressBar()
+    fun notShowProgressBar()
 }

@@ -23,6 +23,8 @@ class Dz12PresenterEdit : Dz12BasePresenterEdit {
 
     override fun getStudentById(idStudent: String) {
 
+        view?.showProgressBar()
+
         disposable = repository
             .getById(idStudent)
             .subscribeOn(Schedulers.io())
@@ -31,6 +33,7 @@ class Dz12PresenterEdit : Dz12BasePresenterEdit {
 
                 student = it
                 view?.showStudent(student!!)
+                view?.notShowProgressBar()
             }, {
                 view?.showErrorLoadById("Error: $it")
             })

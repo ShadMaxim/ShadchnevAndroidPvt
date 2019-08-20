@@ -9,6 +9,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.EditText
+import android.widget.FrameLayout
+import android.widget.ProgressBar
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.DividerItemDecoration
@@ -20,6 +22,7 @@ import by.itacademy.myapp.dz12.student.model.data.Dz12StudentData
 import by.itacademy.myapp.dz12.student.pageload.AutoLoadRecyclerListener
 import by.itacademy.myapp.dz8.SharedPrefManager
 import kotlinx.android.synthetic.main.activity_dz8_recycler.view.*
+import kotlinx.android.synthetic.main.fragment_dz12_recycler.view.*
 
 class Dz12ListFragment : Fragment(),
     Dz12ListAdapter.ClickListener, Dz12ViewList {
@@ -33,6 +36,9 @@ class Dz12ListFragment : Fragment(),
     private lateinit var scrollListener: AutoLoadRecyclerListener
     private var emptyList: MutableList<Dz12StudentData> = mutableListOf()
 
+    private lateinit var progressBar: ProgressBar
+    private lateinit var frameLayout: FrameLayout
+
     override fun onAttach(context: Context) {
         super.onAttach(context)
         if (context is Listener)
@@ -40,7 +46,7 @@ class Dz12ListFragment : Fragment(),
     }
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        val view = inflater.inflate(R.layout.activity_dz8_recycler, container, false)
+        val view = inflater.inflate(R.layout.fragment_dz12_recycler, container, false)
 
         presenter = Dz12PresenterList()
         presenter.setView(this)
@@ -48,24 +54,24 @@ class Dz12ListFragment : Fragment(),
         // presenter.timerToast()
         presenter.loadList(searchText)
 
-        val dz8RecyclerView = view.findViewById<RecyclerView>(R.id.dz8RecyclerView)
-        dz8RecyclerView.setHasFixedSize(true)
+        val dz12RecyclerView = view.findViewById<RecyclerView>(R.id.dz12RecyclerView)
+        dz12RecyclerView.setHasFixedSize(true)
 
         val decor = DividerItemDecoration(context, DividerItemDecoration.VERTICAL)
-        dz8RecyclerView.addItemDecoration(decor)
+        dz12RecyclerView.addItemDecoration(decor)
 
         val manager = LinearLayoutManager(context)
-        dz8RecyclerView.layoutManager = manager
-        dz8RecyclerView.isNestedScrollingEnabled = false
+        dz12RecyclerView.layoutManager = manager
+        dz12RecyclerView.isNestedScrollingEnabled = false
         adapter = Dz12ListAdapter(load(), this)
-        dz8RecyclerView.adapter = adapter
+        dz12RecyclerView.adapter = adapter
 
         scrollListener = object : AutoLoadRecyclerListener(manager) {
             override fun onLoadMore(page: Int, totalItemsCount: Int, view: RecyclerView) {
                 presenter.loadMore(page, searchText)
             }
         }
-        dz8RecyclerView.addOnScrollListener(scrollListener)
+        dz12RecyclerView.addOnScrollListener(scrollListener)
 
         dz8SearchEditText = view.searchStudentDz8
         dz8SearchEditText.addTextChangedListener(object : TextWatcher {
@@ -86,7 +92,7 @@ class Dz12ListFragment : Fragment(),
             }
         })
 
-        view.dz8AddImageView.setOnClickListener {
+        view.dz12AddImageView.setOnClickListener {
             presenter.goToAddButton()
         }
         return view
@@ -116,6 +122,16 @@ class Dz12ListFragment : Fragment(),
     fun updateRecyclerList() {
         var list = presenter.newListForSearch(searchText)
         showNewList(list)
+    }
+
+    override fun showProgressBar() {
+        progressBar.visibility = View.VISIBLE
+        frameLayout.visibility = View.GONE
+    }
+
+    override fun notShowProgressBar() {
+        progressBar.visibility = View.GONE
+        frameLayout.visibility = View.VISIBLE
     }
 
     override fun showToastGetOk(text: String) {

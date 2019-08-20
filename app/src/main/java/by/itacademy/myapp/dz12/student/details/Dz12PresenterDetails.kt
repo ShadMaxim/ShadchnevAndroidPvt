@@ -19,6 +19,7 @@ class Dz12PresenterDetails : Dz12BasePresenterDetails {
 
     override fun getStudentById(idStudent: String) {
 
+        view?.showProgressBar()
         disposable = repository
             .getById(idStudent)
             .subscribeOn(Schedulers.io())
@@ -27,6 +28,7 @@ class Dz12PresenterDetails : Dz12BasePresenterDetails {
 
                 student = it
                 view?.showStudent(student!!)
+                view?.notShowProgressBar()
             }, {
 
                 view?.showToastError("""Error : $it""")
