@@ -11,13 +11,13 @@ import by.itacademy.myapp.dz9.entity.Poi
 @TypeConverters(Converters::class)
 abstract class AppDataBase : RoomDatabase() {
 
-    companion object{
+    companion object {
 
         var instance: AppDataBase? = null
 
-        fun getInstance(context: Context): AppDataBase{
+        fun getInstance(context: Context): AppDataBase {
 
-            if (instance == null){
+            if (instance == null) {
                 instance = Room.databaseBuilder(context, AppDataBase::class.java, "name")
                     .fallbackToDestructiveMigration()
                     .build()
