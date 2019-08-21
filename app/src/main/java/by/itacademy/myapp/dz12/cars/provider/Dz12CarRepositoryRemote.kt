@@ -1,13 +1,14 @@
 package by.itacademy.myapp.dz12.cars.provider
 
-import by.itacademy.myapp.app.App
+import android.util.Log
+import by.itacademy.myapp.dz15.PoiDao
 import by.itacademy.myapp.dz9.entity.CarResponse
 import by.itacademy.myapp.dz9.entity.CoordParams
 import io.reactivex.Single
 
-class Dz12CarRepositoryRemote(private val api: Dz12Api) : Dz12CarRepository {
+class Dz12CarRepositoryRemote(private val api: Dz12Api, private var poiDao: PoiDao) : Dz12CarRepository {
 
-    private val poiDao = App.instance.getDataBase().getPoiDao()
+    // private val poiDao = App.instance.getDataBase().getPoiDao()
 
     override fun getCarsByCoord(params: CoordParams): Single<CarResponse> {
         return api
@@ -22,7 +23,15 @@ class Dz12CarRepositoryRemote(private val api: Dz12Api) : Dz12CarRepository {
                 poiDao.insert(it.poiList)
             }.onErrorResumeNext {
 
-                Single.just(CarResponse(poiDao.get()))
+                if (poiDao.get().isEmpty()) {
+
+                    System.out.println(it)
+                    Log.e("AAA", it.toString())
+                    Single.error(it)
+                } else {
+
+                    Single.just(CarResponse(poiDao.get()))
+                }
             }
     }
 }
