@@ -1,6 +1,5 @@
 package by.itacademy.myapp.dz12.cars.provider
 
-import android.util.Log
 import by.itacademy.myapp.dz15.PoiDao
 import by.itacademy.myapp.dz9.entity.CarResponse
 import by.itacademy.myapp.dz9.entity.CoordParams
@@ -21,13 +20,13 @@ class Dz12CarRepositoryRemote(private val api: Dz12Api, private var poiDao: PoiD
                 poiDao.insert(it.poiList)
             }.onErrorResumeNext {
 
-                if (poiDao.get().isEmpty()) {
+                val listPoiDao = poiDao.get()
+                if (listPoiDao.isEmpty()) {
 
-                    Log.e("AAA", it.toString())
                     Single.error(it)
                 } else {
 
-                    Single.just(CarResponse(poiDao.get()))
+                    Single.just(CarResponse(listPoiDao))
                 }
             }
     }
