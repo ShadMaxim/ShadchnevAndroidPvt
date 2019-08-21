@@ -8,8 +8,6 @@ import io.reactivex.Single
 
 class Dz12CarRepositoryRemote(private val api: Dz12Api, private var poiDao: PoiDao) : Dz12CarRepository {
 
-    // private val poiDao = App.instance.getDataBase().getPoiDao()
-
     override fun getCarsByCoord(params: CoordParams): Single<CarResponse> {
         return api
             .getCarsByCoord(
@@ -25,7 +23,6 @@ class Dz12CarRepositoryRemote(private val api: Dz12Api, private var poiDao: PoiD
 
                 if (poiDao.get().isEmpty()) {
 
-                    System.out.println(it)
                     Log.e("AAA", it.toString())
                     Single.error(it)
                 } else {
